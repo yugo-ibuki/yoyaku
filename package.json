@@ -1,0 +1,18 @@
+{
+  "name": "summary-articles",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run generate:data && wrangler dev",
+    "build": "npm run generate:data && worker-build --release --no-panic-recovery app",
+    "test": "cargo test --workspace",
+    "generate:data": "cargo run --quiet -p yoyaku -- build --content-dir content/articles --output public/data/articles.json",
+    "validate:data": "cargo run --quiet -p yoyaku -- validate --content-dir content/articles",
+    "deploy": "npm run generate:data && wrangler deploy",
+    "deploy:dry-run": "npm run generate:data && wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.123.0"
+  }
+}

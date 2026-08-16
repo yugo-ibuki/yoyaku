@@ -1,0 +1,17 @@
+{
+  "id": "workers-testing",
+  "url": "https://example.com/articles/workers-testing",
+  "title": "Cloudflare Workersのローカルテスト入門",
+  "source": "公式資料",
+  "genre": "テスト",
+  "technologies": ["Vitest", "Workers", "Testing"],
+  "reading_minutes": 11,
+  "created_at": "2026-08-03",
+  "updated_at": "2026-08-07",
+  "summary": [
+    "Cloudflare WorkersのRequestとResponse、Bindings、静的アセット配信をローカルで検証するための基本的なテスト構成をまとめています。",
+    "ユニットテストと実際のWorkersランタイムに近い統合テストの役割を分け、デプロイ前に確認しておきたい失敗例も紹介します。",
+    "テスト、型検査、ビルド、dry-runは別の保証を持つため、どれか一つの成功だけで公開可能とは判断しません。"
+  ],
+  "ogp": { "title": "Workerを検証する", "description": "requestからresponse、localからedgeへ" }
+}

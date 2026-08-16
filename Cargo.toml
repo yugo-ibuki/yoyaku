@@ -1,0 +1,13 @@
+[workspace]
+members = ["app", "cli"]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+rust-version = "1.95"
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1

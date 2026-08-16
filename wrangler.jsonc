@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "summary-articles",
+  "main": "./app/build/worker/shim.mjs",
+  "compatibility_date": "2026-08-16",
+  "keep_vars": true,
+  "build": {
+    "command": "worker-build --release --no-panic-recovery app"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}

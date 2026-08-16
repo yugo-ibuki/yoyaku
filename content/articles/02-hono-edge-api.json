@@ -1,0 +1,17 @@
+{
+  "id": "hono-edge-api",
+  "url": "https://example.com/articles/hono-edge-api",
+  "title": "Honoで作る、小さく高速なEdge API",
+  "source": "Qiita",
+  "genre": "API設計",
+  "technologies": ["Hono", "TypeScript", "Workers"],
+  "reading_minutes": 5,
+  "created_at": "2026-08-12",
+  "updated_at": "2026-08-12",
+  "summary": [
+    "Honoを使ってCloudflare Workers上に小さなAPIを構築する流れをまとめています。Web標準のRequestとResponseを中心に、ルーティングやバリデーションを過度に複雑にせず組み立てる方法を紹介します。",
+    "Bindingsの型付け、エラーレスポンス、ローカルテストまで一つの例で確認できるため、既存のNode.js APIからエッジ環境へ移行するときの最小構成を判断しやすくなります。",
+    "ルートは`/api`以下へ限定し、静的アセットの配信と責務を分けます。Honoのアプリケーション自体をテストから直接呼び出せるため、ネットワークサーバーを立てずにレスポンスを確認できます。"
+  ],
+  "ogp": { "title": "小さなエッジAPI", "description": "GET /articlesをHonoとWorkersで実装" }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "archive-card-ui",
+  "url": "https://example.com/articles/archive-card-ui",
+  "title": "技術記事アーカイブのカードUIを設計する",
+  "source": "Zenn",
+  "genre": "UI設計",
+  "technologies": ["CSS", "UI", "Typography"],
+  "reading_minutes": 6,
+  "created_at": "2026-08-04",
+  "updated_at": "2026-08-08",
+  "summary": [
+    "技術記事を3カラムで並べても視線が迷わないように、OGP、分類、タイトル、要約、タグ、日付の優先順位を整理しています。情報量を保ちながらカード間のリズムを揃える考え方です。",
+    "タイトルの長さやOGPの有無が異なる実データを想定し、カードの高さ、余白、文字サイズをどこで固定するかを具体例で比較しています。",
+    "装飾を増やすより、罫線、明朝体の見出し、十分な行間を使って日本語の記事一覧として読みやすく整えます。"
+  ],
+  "ogp": { "title": "情報密度を整える", "description": "grid、rhythm、type、spacing" }
+}

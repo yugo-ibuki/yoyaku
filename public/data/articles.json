@@ -1,0 +1,312 @@
+{
+  "generated_at": "2026-08-15T00:00:00Z",
+  "articles": [
+    {
+      "id": "cloudflare-workers-rust",
+      "url": "https://example.com/articles/cloudflare-workers-rust",
+      "title": "Cloudflare WorkersでRustを動かすための実践ガイド",
+      "source": "Zenn",
+      "genre": "Web開発",
+      "technologies": [
+        "Rust",
+        "WebAssembly",
+        "Cloudflare"
+      ],
+      "reading_minutes": 8,
+      "created_at": "2026-08-14",
+      "updated_at": "2026-08-15",
+      "summary": [
+        "Cloudflare Workers上でRustを動かす際の基本構成を、workers-rsとWebAssemblyの役割から整理した記事です。JavaScript中心のWorkers開発と比べて、ビルド成果物やランタイム制約がどこで異なるのかを確認できます。",
+        "実装例ではリクエスト処理、環境変数の参照、ローカル実行からデプロイまでを順に扱います。Rustを採用する判断材料と、最初の小さなWorkerを公開するまでの手順を短時間でつかめます。",
+        "まず、Cloudflare Workersは常駐サーバーではなく、リクエストなどのイベントに応じてコードを実行する環境だと説明しています。RustのコードはWebAssemblyへコンパイルされ、生成されたJavaScriptの橋渡しコードと一緒に配布されます。",
+        "workers-rsはRequestやResponse、環境変数、KVなどのWorkers APIをRustから扱うための型とマクロを提供します。生のWebAssembly連携を自分で組む範囲を減らし、通常のRustアプリケーションに近い形でハンドラーを書けます。",
+        "プロジェクト作成時にはRustツールチェーンに加えて、wasm32-unknown-unknownターゲットとWranglerが必要です。ツールのバージョンを固定すると、ローカルとCIで生成物がずれる問題を減らせます。",
+        "エントリーポイントではfetchイベントを受け取り、非同期関数からResponseを返します。非同期処理はJavaScriptのPromiseへ変換されるため、通常のスレッド型サーバーと同じ前提で設計しないことが重要です。",
+        "Workersの実行環境には一般的なOSのファイルシステムや任意のTCPソケットがありません。そのため、利用したいcrateがブラウザ向けWebAssemblyでも動くか、WorkersのAPIで置き換えられるかを事前に確認します。",
+        "依存crateを増やすほどWebAssemblyのサイズと起動時間へ影響が出ます。機能の小さなWorkerでは、標準ライブラリと少数の依存関係に絞る方が運用しやすいと述べています。",
+        "設定値はソースコードへ埋め込まず、Wranglerのvarsやsecretから受け取ります。公開リポジトリでは秘密値を含むファイルを除外し、CIでもGitHub Secretsから渡す境界を保ちます。",
+        "ローカル開発ではWranglerを使い、本番と同じWorkersランタイムに近い環境でリクエストを確認します。通常のRust単体テストと、Workers上の入出力を確認する統合テストを分けると問題の所在を追いやすくなります。",
+        "エラーは利用者向けのHTTPレスポンスと運用者向けのログを分離します。内部の詳細や秘密値をレスポンスへ含めず、ログには記事IDなど追跡に必要な情報だけを構造化して残します。",
+        "外部APIを呼ぶ場合はタイムアウトと応答サイズの上限を設けます。失敗時に無制限に再試行すると実行時間と費用が増えるため、再試行回数と対象エラーを限定します。",
+        "大きなレスポンスはすべてメモリへ読み込まず、可能ならストリームとして扱います。Workersにはメモリ上限があるため、入力サイズを信頼しない設計が必要です。",
+        "モジュールのトップレベルには不変の設定や再利用可能なクライアントだけを置きます。リクエスト固有の値をグローバル変数へ保存すると、別の呼び出しに状態が漏れる可能性があります。",
+        "デプロイ前にはcargo testだけでなく、リリースビルドとWranglerのdry-runを実行します。コンパイルできることとWorkersへ正しく梱包できることは別の確認項目です。",
+        "生成されたWebAssemblyが大きい場合はLTO、strip、codegen-unitsなどのリリース設定を見直します。ただし、最初から細かな最適化へ進むのではなく、計測結果を基に依存関係から整理します。",
+        "Cloudflareのバインディングを使える処理は、外部REST APIを経由せずWorker内のバインディングから呼びます。認証情報や余分なネットワーク往復を減らせるためです。",
+        "Rustを採用する価値は、既存のRust資産、厳密な型、CPU中心の処理がある場合に高くなります。一方、小さなルーティング中心のAPIではTypeScriptの方が開発とデプロイを単純にできる場合があります。",
+        "本サイトの構成では、この比較から配信WorkerにHonoとTypeScriptを選び、Rustは記事データの検証とOGP取得へ利用しています。両方を使うこと自体を目的にせず、それぞれが適する境界へ置いています。",
+        "記事データの生成はデプロイより前に完了させます。Workerのリクエスト処理中に記事本文やOGPを取得しないため、外部サイトの遅延や障害が閲覧画面へ波及しません。",
+        "Gitへ保存する生成物は同じ入力から同じ内容になるように並び順を固定します。時刻だけが毎回変わるフィールドを避けることで、不要な差分とレビュー負荷を減らせます。",
+        "CIではRustテスト、Clippy、TypeScriptテスト、型検査、フロントエンドビルド、Wrangler dry-runを順に実行します。どの層で失敗したかを明確にし、壊れた記事データの公開を防ぎます。",
+        "デプロイ権限は必要最小限のCloudflare API TokenとしてGitHub Secretsへ設定します。フォーク直後は秘密情報がなくてもCIの検証部分だけを利用できるようにします。",
+        "運用開始後はWorkersとworkers-rsの互換性日付、依存crate、Wranglerを定期的に更新します。更新時は一度にすべてを変えず、生成物と実行時の差分を確認できる単位に分けます。",
+        "最終的な判断として、RustはCloudflare Workersで実行可能ですが、すべての処理をRustへ寄せる必要はありません。配信、ローカル処理、データ正本の責務を分けることが、フォーク可能な小規模サイトでは最も扱いやすい構成です。"
+      ],
+      "ogp": {
+        "title": "エッジで動かすRust",
+        "description": "workerからwasm、buildからdeployまでを整理"
+      }
+    },
+    {
+      "id": "git-content-store",
+      "url": "https://example.com/articles/git-content-store",
+      "title": "Gitをデータベースとして扱うコンテンツ設計",
+      "source": "公式資料",
+      "genre": "データ管理",
+      "technologies": [
+        "Git",
+        "JSON",
+        "GitHub"
+      ],
+      "reading_minutes": 12,
+      "created_at": "2026-08-08",
+      "updated_at": "2026-08-13",
+      "summary": [
+        "記事JSONをデータの正本として扱い、Gitの履歴を更新記録として利用する構成を解説しています。専用CMSを持たずに、レビューと公開を同じPull Requestの流れへまとめられます。",
+        "ビルド時には記事を検証して検索用JSONを生成し、配信側は静的データだけを読み込みます。公開テンプレートをフォークして使う場合に、個人データと共通コードを分ける考え方も整理されています。",
+        "実行時の書き込みが不要な用途に絞ることで、バックアップ、差分確認、ロールバックをGitの標準機能へ寄せられます。"
+      ],
+      "ogp": {
+        "title": "Gitを保存領域に",
+        "description": "JSONからindexを生成しcommitからpublishへつなぐ"
+      }
+    },
+    {
+      "id": "hono-edge-api",
+      "url": "https://example.com/articles/hono-edge-api",
+      "title": "Honoで作る、小さく高速なEdge API",
+      "source": "Qiita",
+      "genre": "API設計",
+      "technologies": [
+        "Hono",
+        "TypeScript",
+        "Workers"
+      ],
+      "reading_minutes": 5,
+      "created_at": "2026-08-12",
+      "updated_at": "2026-08-12",
+      "summary": [
+        "Honoを使ってCloudflare Workers上に小さなAPIを構築する流れをまとめています。Web標準のRequestとResponseを中心に、ルーティングやバリデーションを過度に複雑にせず組み立てる方法を紹介します。",
+        "Bindingsの型付け、エラーレスポンス、ローカルテストまで一つの例で確認できるため、既存のNode.js APIからエッジ環境へ移行するときの最小構成を判断しやすくなります。",
+        "ルートは`/api`以下へ限定し、静的アセットの配信と責務を分けます。Honoのアプリケーション自体をテストから直接呼び出せるため、ネットワークサーバーを立てずにレスポンスを確認できます。"
+      ],
+      "ogp": {
+        "title": "小さなエッジAPI",
+        "description": "GET /articlesをHonoとWorkersで実装"
+      }
+    },
+    {
+      "id": "access-preview",
+      "url": "https://example.com/articles/access-preview",
+      "title": "Cloudflare Accessで構築する認証付きプレビュー環境",
+      "source": "技術ブログ",
+      "genre": "セキュリティ",
+      "technologies": [
+        "Access",
+        "Zero Trust",
+        "Tunnel"
+      ],
+      "reading_minutes": 10,
+      "created_at": "2026-08-07",
+      "updated_at": "2026-08-11",
+      "summary": [
+        "Cloudflare Tunnelで公開したプレビュー環境の前段にAccessを置き、許可した利用者だけが閲覧できる構成を説明しています。URLを知っているだけでは入れない認証境界を作れます。",
+        "メール認証とIDプロバイダー連携の違い、ポリシーの適用範囲、ローカルオリジンを外部へ直接公開しないための設定を順番に確認できます。",
+        "一時的なQuick Tunnelと、固定ホスト名を持つNamed Tunnelの用途の違いも整理しています。"
+      ],
+      "ogp": {
+        "title": "認証境界を設計する",
+        "description": "identity、policy、request、originの関係"
+      }
+    },
+    {
+      "id": "local-summary-pipeline",
+      "url": "https://example.com/articles/local-summary-pipeline",
+      "title": "記事要約をローカル処理として分離する設計",
+      "source": "Zenn",
+      "genre": "AI活用",
+      "technologies": [
+        "LLM",
+        "Local-first",
+        "Git"
+      ],
+      "reading_minutes": 7,
+      "created_at": "2026-08-06",
+      "updated_at": "2026-08-10",
+      "summary": [
+        "記事本文の取得とLLMによる要約をローカル処理に分離し、公開サイトには生成済みのデータだけを配置する設計です。実行コストや秘密情報を配信環境から切り離せます。",
+        "要約結果を人が確認してからGitへ追加するため、誤った内容が自動公開されるリスクも抑えられます。再生成やモデル変更を履歴として残す方法も扱います。",
+        "公開テンプレートは特定のLLMへ依存せず、利用者が好きな手段で作った要約を同じJSONスキーマへ保存します。"
+      ],
+      "ogp": {
+        "title": "要約処理の分離",
+        "description": "sourceからLLM、resultからrepositoryへ"
+      }
+    },
+    {
+      "id": "static-json-search",
+      "url": "https://example.com/articles/static-json-search",
+      "title": "静的JSONで実現する高速な記事検索",
+      "source": "Qiita",
+      "genre": "検索",
+      "technologies": [
+        "JSON",
+        "Search",
+        "TypeScript"
+      ],
+      "reading_minutes": 9,
+      "created_at": "2026-08-05",
+      "updated_at": "2026-08-09",
+      "summary": [
+        "タイトル、要約、ジャンル、技術タグ、作成日を正規化したJSONから、ブラウザ上で複合検索する方法を紹介しています。小規模な記事集なら外部検索サービスを使わずに高速な絞り込みができます。",
+        "日本語の表記揺れ、複数条件のAND検索、日付範囲、読了時間の扱いを例に、検索条件と表示件数を同期させる実装を確認できます。",
+        "検索処理を純粋関数に分けることで、DOMやWorkersランタイムに依存しない単体テストが可能になります。"
+      ],
+      "ogp": {
+        "title": "検索索引を作る",
+        "description": "articlesをnormalizeしindexへ変換"
+      }
+    },
+    {
+      "id": "archive-card-ui",
+      "url": "https://example.com/articles/archive-card-ui",
+      "title": "技術記事アーカイブのカードUIを設計する",
+      "source": "Zenn",
+      "genre": "UI設計",
+      "technologies": [
+        "CSS",
+        "UI",
+        "Typography"
+      ],
+      "reading_minutes": 6,
+      "created_at": "2026-08-04",
+      "updated_at": "2026-08-08",
+      "summary": [
+        "技術記事を3カラムで並べても視線が迷わないように、OGP、分類、タイトル、要約、タグ、日付の優先順位を整理しています。情報量を保ちながらカード間のリズムを揃える考え方です。",
+        "タイトルの長さやOGPの有無が異なる実データを想定し、カードの高さ、余白、文字サイズをどこで固定するかを具体例で比較しています。",
+        "装飾を増やすより、罫線、明朝体の見出し、十分な行間を使って日本語の記事一覧として読みやすく整えます。"
+      ],
+      "ogp": {
+        "title": "情報密度を整える",
+        "description": "grid、rhythm、type、spacing"
+      }
+    },
+    {
+      "id": "workers-testing",
+      "url": "https://example.com/articles/workers-testing",
+      "title": "Cloudflare Workersのローカルテスト入門",
+      "source": "公式資料",
+      "genre": "テスト",
+      "technologies": [
+        "Vitest",
+        "Workers",
+        "Testing"
+      ],
+      "reading_minutes": 11,
+      "created_at": "2026-08-03",
+      "updated_at": "2026-08-07",
+      "summary": [
+        "Cloudflare WorkersのRequestとResponse、Bindings、静的アセット配信をローカルで検証するための基本的なテスト構成をまとめています。",
+        "ユニットテストと実際のWorkersランタイムに近い統合テストの役割を分け、デプロイ前に確認しておきたい失敗例も紹介します。",
+        "テスト、型検査、ビルド、dry-runは別の保証を持つため、どれか一つの成功だけで公開可能とは判断しません。"
+      ],
+      "ogp": {
+        "title": "Workerを検証する",
+        "description": "requestからresponse、localからedgeへ"
+      }
+    },
+    {
+      "id": "ogp-without-llm",
+      "url": "https://example.com/articles/ogp-without-llm",
+      "title": "LLMを使わずにOGP情報を取得する",
+      "source": "技術ブログ",
+      "genre": "メタデータ",
+      "technologies": [
+        "OGP",
+        "HTML",
+        "Rust"
+      ],
+      "reading_minutes": 4,
+      "created_at": "2026-08-02",
+      "updated_at": "2026-08-06",
+      "summary": [
+        "URLからHTMLを取得し、og:image、og:title、og:descriptionなどのmeta要素を解析する流れを解説しています。LLMを使わず、決定的な処理として実行できます。",
+        "相対URLの解決、タイムアウト、画像がない場合の代替表示、応答サイズの上限を扱い、安全に記事データへ保存するための注意点も整理しています。",
+        "OGPがない場合は通常のtitle要素とdescriptionへフォールバックし、画像だけがない場合もカード自体は表示できます。"
+      ],
+      "ogp": {
+        "title": "OGPを取得する",
+        "description": "fetch、parse、fallback、save"
+      }
+    },
+    {
+      "id": "forkable-archive",
+      "url": "https://example.com/articles/forkable-archive",
+      "title": "フォークして使える記事管理サイトの作り方",
+      "source": "Zenn",
+      "genre": "アーキテクチャ",
+      "technologies": [
+        "OSS",
+        "GitHub",
+        "Cloudflare"
+      ],
+      "reading_minutes": 13,
+      "created_at": "2026-08-01",
+      "updated_at": "2026-08-05",
+      "summary": [
+        "共通コードとサンプルデータだけを公開リポジトリに置き、利用者が自分の記事データと設定を差し替えて使える構成を説明しています。",
+        "GitHub ActionsからCloudflare Workersへデプロイする流れ、秘密情報をコミットしない設定、上流テンプレートの更新を取り込む方法までを一通り確認できます。",
+        "フォーク固有のCloudflareアカウント、API Token、非公開記事を上流へ戻さない境界をREADMEとファイル構成の両方で示します。"
+      ],
+      "ogp": {
+        "title": "公開テンプレート",
+        "description": "fork、edit、push、deploy"
+      }
+    }
+  ],
+  "facets": {
+    "genres": [
+      "AI活用",
+      "API設計",
+      "UI設計",
+      "Web開発",
+      "アーキテクチャ",
+      "セキュリティ",
+      "テスト",
+      "データ管理",
+      "メタデータ",
+      "検索"
+    ],
+    "technologies": [
+      "Access",
+      "CSS",
+      "Cloudflare",
+      "Git",
+      "GitHub",
+      "HTML",
+      "Hono",
+      "JSON",
+      "LLM",
+      "Local-first",
+      "OGP",
+      "OSS",
+      "Rust",
+      "Search",
+      "Testing",
+      "Tunnel",
+      "TypeScript",
+      "Typography",
+      "UI",
+      "Vitest",
+      "WebAssembly",
+      "Workers",
+      "Zero Trust"
+    ],
+    "sources": [
+      "Qiita",
+      "Zenn",
+      "公式資料",
+      "技術ブログ"
+    ]
+  }
+}

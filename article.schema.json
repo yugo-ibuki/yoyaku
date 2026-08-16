@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Yoyaku article",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "url", "title", "source", "genre", "technologies", "reading_minutes", "created_at", "updated_at", "summary"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$", "minLength": 1 },
+    "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+    "title": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "minLength": 1 },
+    "genre": { "type": "string", "minLength": 1 },
+    "technologies": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "reading_minutes": { "type": "integer", "minimum": 1 },
+    "created_at": { "type": "string", "format": "date" },
+    "updated_at": { "type": "string", "format": "date" },
+    "summary": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "ogp": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "image_url": { "type": "string", "format": "uri-reference" },
+        "title": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    }
+  }
+}

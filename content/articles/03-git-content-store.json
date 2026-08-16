@@ -1,0 +1,17 @@
+{
+  "id": "git-content-store",
+  "url": "https://example.com/articles/git-content-store",
+  "title": "Gitをデータベースとして扱うコンテンツ設計",
+  "source": "公式資料",
+  "genre": "データ管理",
+  "technologies": ["Git", "JSON", "GitHub"],
+  "reading_minutes": 12,
+  "created_at": "2026-08-08",
+  "updated_at": "2026-08-13",
+  "summary": [
+    "記事JSONをデータの正本として扱い、Gitの履歴を更新記録として利用する構成を解説しています。専用CMSを持たずに、レビューと公開を同じPull Requestの流れへまとめられます。",
+    "ビルド時には記事を検証して検索用JSONを生成し、配信側は静的データだけを読み込みます。公開テンプレートをフォークして使う場合に、個人データと共通コードを分ける考え方も整理されています。",
+    "実行時の書き込みが不要な用途に絞ることで、バックアップ、差分確認、ロールバックをGitの標準機能へ寄せられます。"
+  ],
+  "ogp": { "title": "Gitを保存領域に", "description": "JSONからindexを生成しcommitからpublishへつなぐ" }
+}

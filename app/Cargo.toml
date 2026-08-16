@@ -1,0 +1,22 @@
+[package]
+name = "yoyaku-app"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+http = "1.5.0"
+serde_json = "1.0.151"
+topcoat = { version = "0.5.0", default-features = false, features = ["asset", "router", "runtime", "view"] }
+unicode-normalization = "0.1.25"
+yoyaku = { path = "../cli", default-features = false }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+worker = { version = "0.8.5", features = ["http"] }
+
+[dev-dependencies]
+tokio = { version = "1.53.1", features = ["macros", "rt"] }
