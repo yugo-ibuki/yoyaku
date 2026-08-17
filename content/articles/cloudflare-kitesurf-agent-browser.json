@@ -1,0 +1,36 @@
+{
+  "id": "cloudflare-kitesurf-agent-browser",
+  "url": "https://developers.cloudflare.com/browser-run/kitesurf/",
+  "title": "Kitesurf",
+  "source": "Cloudflare Docs",
+  "genre": "ブラウザ自動化",
+  "technologies": [
+    "Kitesurf",
+    "Cloudflare Browser Run",
+    "Cloudflare Workers",
+    "CDP",
+    "MCP",
+    "Puppeteer",
+    "Playwright"
+  ],
+  "reading_minutes": 5,
+  "created_at": "2026-08-17",
+  "updated_at": "2026-08-17",
+  "summary": [
+    "KitesurfはCloudflare Workers上で完全に動く、ステートレスで高スケールなAIエージェント向けブラウザです。Chromiumのようなデスクトップブラウザ一式ではなく、トークン数、コンテキストウィンドウ、拡張性、性能、コストを重視し、タブ、テーマ、拡張機能、ピクセル単位の正確な描画など人間向けの機能を省いています。",
+    "スクリーンショットやHTML抽出といった一般的なエージェント処理では、KitesurfはChromiumより大幅に少ないCPUとメモリで動作します。タスクの間だけ存在する隔離された一時エンジンとして、突発的に処理量が増えるAIワークロードを多数並行させる用途に向き、ベータ期間中はアカウント単位の制限内で無料提供されています。",
+    "適する用途は、ピクセル完全なChromium互換性を必要としないAIエージェント、コンテンツ抽出・PDF・スクリーンショットなど一回限りのQuick Actions、短時間で完結するステートレスな自動化です。TodoMVCのVanilla・React・Vue・Angular・Preact版、Wikipedia、Hacker News、Cloudflare Blog、Cloudflareダッシュボードの多くを正しく描画できるとされています。",
+    "現時点では動画再生、WebGL描画、実際のTLSフィンガープリントを用いるボットチャレンジとのハンドシェイク、状態を維持する長時間の認証済みセッションには対応しません。これらにはBrowser Run標準のChromiumを使い、対象サイト固有の互換性はCDP、Quick Actions、公開Playgroundで実際に試す必要があります。",
+    "Browser RunのQuick Actionsでは、任意のエンドポイントへbrowser=kitesurfクエリを追加してKitesurfを選択できます。ドキュメントは、Browser Run APIのscreenshotエンドポイントへURLをPOSTし、結果を画像ファイルとして保存する例を示しています。",
+    "Browser RunのCDPエンドポイントでもbrowser=kitesurfをURLへ追加すれば選択でき、既存のPuppeteer、Playwright、chrome-remote-interface構成をそのまま利用できます。CloudflareアカウントIDとBrowser Run APIトークンを使い、WebSocketのDevToolsエンドポイントへ接続します。",
+    "MCPとCDPに対応するAIエージェントは、chrome-devtools-mcpのwsEndpointをKitesurfのBrowser Run CDP URLへ向け、AuthorizationヘッダーにAPIトークンを渡すことで利用できます。これにより、MCPクライアントからAIエージェントがKitesurfを操作できます。",
+    "コードを書かずに試せる公開Playgroundでは、URLを入力して描画結果を操作できます。UIにChrome DevToolsが組み込まれており、展開済みDOM、コンソールメッセージ、ネットワーク活動を確認できるほか、Memoryパネルでフレームを含む各IsolateのWebAssembly使用量も観察できます。",
+    "KitesurfはW3C標準への準拠を測るWeb Platform Testsで検証され、最新実行時点で235,000を超えるサブテストに合格しています。掲載値ではDOM 97%、HTML 96%、Selection 99%、SVG 97%、Encoding 99%、CORS 95%、XHR 95%、URL 83%のカバレッジですが、数値は継続的に変化するスナップショットであり、実サイトの描画・操作互換性を保証するものではありません。",
+    "14 URLを対象にBrowser Run Quick Actionsを各5回実行した中央値では、KitesurfのスクリーンショットはCPU 380ms・メモリ57.8MiB、HTML抽出はCPU 229ms・メモリ39.4MiBでした。Chromiumのウォームプールと比べてCPU・メモリ使用量は3.1倍から7.0倍少ない一方、ウォールタイムはスクリーンショットが1.8倍、HTML抽出が1.7倍遅く、軽量性とピクセル完全性・応答時間のトレードオフがあります。"
+  ],
+  "ogp": {
+    "image_url": "https://developers.cloudflare.com/og-docs.png",
+    "title": "Kitesurf",
+    "description": "Use Kitesurf, Cloudflare's stateless, agent-first browser that runs entirely on Workers, with Browser Run for screenshots, HTML extraction, and automation."
+  }
+}
