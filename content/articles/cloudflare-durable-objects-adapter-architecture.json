@@ -1,0 +1,29 @@
+{
+  "id": "cloudflare-durable-objects-adapter-architecture",
+  "url": "https://zenn.dev/pranc1ngpegasus/articles/2180bae181446e",
+  "title": "Cloudflare Durable Objectsで実現する差し替え可能アーキテクチャ",
+  "source": "Zenn",
+  "genre": "アーキテクチャ",
+  "technologies": [
+    "Cloudflare Durable Objects",
+    "Cloudflare Workers",
+    "SQLite"
+  ],
+  "reading_minutes": 6,
+  "created_at": "2026-08-17",
+  "updated_at": "2026-08-17",
+  "summary": [
+    "複数の外部API事業者と連携するシステムでは、事業者ごとの仕様、レート制限、失敗時の挙動の違いが保守コストを押し上げます。記事では、遅延・欠測・瞬断・429を常に起こり得るものとして扱い、業務ロジックを外部仕様から切り離す設計を目指しています。",
+    "Durable Objectsを、状態を集約して意思決定するCore DOと、事業者固有のAPI実行を担うAdapter DOの2層に分割します。Core DOは共通スキーマだけを扱い、Adapter DOはAPI呼び出し、再試行、バックオフ、リトライ時の冪等性を受け持ちます。",
+    "通信経路は、外部イベントをWorkerからCore DOへ渡す入口、Core DOからAdapter DOへの実行委譲、Adapter DOからCore DOへの実行結果の反映という3つに整理します。Core DOが外部APIを直接呼ばず、必ずAdapter DOを経由することで判断と実行の境界を保ちます。",
+    "Durable Objectsは、同一IDの処理を単一インスタンスへ集約でき、状態を持つActorとして利用できます。さらにAlarmとSQLite-backed storageを組み合わせることで、状態、排他、再試行をオブジェクト内にまとめられる点が要件に適していました。",
+    "差し替え可能性を支えるため、Core DOとAdapter DOの境界契約を、正規化された観測イベントであるObservationと、正規化された実行命令であるCommandの2種類に固定します。Core DOは何をするかだけを決め、API固有の実行方法をAdapter DOへ閉じ込めるため、新しい接続先を追加してもCore側の改修を抑えられます。",
+    "Alarmは1オブジェクトにつき同時に1つという制約があるため、複数の期限付き処理はstorageにキューを持ち、alarm()で期限到来分を処理します。Core DOでは定期再評価とタイムアウト監視、Adapter DOではポーリング間隔の調整、バックオフ、復帰判定に使い分けます。",
+    "実装上の注意点として、メモリ上の状態は永続化されないこと、外部API待ちを同期パスへ入れると遅延が伝播すること、処理を1つの巨大なDOへ集約するとボトルネックになることを挙げています。将来の拡張に備え、初期段階から責務を細かく分けることが重要です。",
+    "この構成の価値はDurable Objectsの採用そのものではなく、Core DOは判断、Adapter DOは実行、両者の境界契約は固定という責務分離にあります。その結果、外部接続先の追加を大規模な改修ではなく、小さな追加作業として扱いやすくなります。"
+  ],
+  "ogp": {
+    "image_url": "https://res.cloudinary.com/zenn/image/upload/s--jOBqrfV1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cloudflare%2520Durable%2520Objects%25E3%2581%25A7%25E5%25AE%259F%25E7%258F%25BE%25E3%2581%2599%25E3%2582%258B%25E5%25B7%25AE%25E3%2581%2597%25E6%259B%25BF%25E3%2581%2588%25E5%258F%25AF%25E8%2583%25BD%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A6%25E3%2582%2593%25E3%2581%25BE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lhelZ5cnNOLVZiTTlTNEtWMWFHdnVodzRIYk5xUi1NUHdJcG4xPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title": "Cloudflare Durable Objectsで実現する差し替え可能アーキテクチャ"
+  }
+}
