@@ -11,9 +11,9 @@ description: Use when the user asks to summarize, register, save, add, or update
 
 ## 対象リポジトリを決める
 
-1. 現在のGitリポジトリに `article.schema.json`、`content/articles/`、`package.json` の `validate:data` があれば、そこを対象にする。
-2. なければ `/Users/yugo/ghq/github.com/yugo-ibuki/summary-articles` を使う。
-3. どちらも該当しなければ、編集せず対象パスを一度だけ確認する。
+1. `git rev-parse --show-toplevel` で現在のGitルートを取得する。
+2. Gitルートに `article.schema.json`、`content/articles/`、`package.json` の `validate:data` があれば、そこを対象にする。
+3. 条件を満たさなければ、別のリポジトリを推測せず、編集前に対象パスを一度だけ確認する。
 
 作業前に対象の `AGENTS.md`、`git status --short`、`article.schema.json`、`package.json`、既存記事を読む。ユーザーの未コミット変更は保持する。
 

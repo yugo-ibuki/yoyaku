@@ -1,0 +1,4 @@
+interface:
+  display_name: "記事要約を保存"
+  short_description: "記事URLからYoyaku形式の要約JSONを検証して保存します"
+  default_prompt: "Use $save-article-summary to summarize an article URL and save it in the Yoyaku repository."
