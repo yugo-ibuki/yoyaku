@@ -1,6 +1,70 @@
 {
-  "generated_at": "2026-08-17T00:00:00Z",
+  "generated_at": "2026-08-22T00:00:00Z",
   "articles": [
+    {
+      "id": "llm-continuous-memory-failure",
+      "url": "https://arxiv.org/abs/2605.12978",
+      "title": "Useful Memories Become Faulty When Continuously Updated by LLMs",
+      "source": "arXiv",
+      "genre": "AIエージェント",
+      "technologies": [
+        "大規模言語モデル",
+        "AIエージェント",
+        "エージェントメモリ",
+        "ARC-AGI"
+      ],
+      "reading_minutes": 45,
+      "created_at": "2026-08-19",
+      "updated_at": "2026-08-22",
+      "summary": [
+        "LLMエージェントが過去の軌跡を文章の教訓へ継続的に圧縮・更新するメモリは、個別の有用な経験から作っても、更新を重ねるうちに性能が上がった後で低下し、メモリなしの基準を下回ることがあると報告します。",
+        "著者らはALFWorld、ScienceWorld、WebShop、AppWorld、Mind2Webと、操作履歴を追跡できる独自のARC-AGI Streamで、CLIN、Agent Workflow Memory、Dynamic Cheatsheet、ACEなどの文章メモリ方式を調べました。",
+        "最も統制されたARC-AGIの実験では、メモリなしで19問を全問解けたGPT-5.4が、各問の正解軌跡を使って逐次統合した後には正答率54%まで低下しました。入力軌跡が悪かったのではなく、統合処理そのものが回帰の原因であることを示します。",
+        "同じ軌跡集合でも更新の順序とまとまり方で最終メモリは大きく変わります。全件を一度に統合する方式や同じタスク族ごとにまとめる方式より、少量ずつ逐次更新し異種タスクを混ぜる方式の方が、初期の誤った抽象化を後続更新が引き継ぐため劣化しやすくなります。",
+        "圧縮前の軌跡をそのまま文脈内の実例として保持するエピソード記憶のみの基準は、多くの設定で要約メモリ方式と同等かそれ以上でした。行動、途中の失敗、環境からのフィードバックという適用条件付きの証拠が、抽象化で失われずに残るためです。",
+        "ARC-AGI Streamでは、原エピソードを保持・削除・統合から選べるAuto方式が、毎回統合を強制するForce方式の精度をおおむね2倍にし、統合を完全に無効にしたエピソード管理のみの方式もAutoと同等以上でした。モデル自身も許可されるとエピソードバッファを優先して埋め、抽象ストアを疎に保ちます。",
+        "故障要因は三つに整理されます。統合前に本来別の問題族を誤ってまとめること、適用条件を落とした過度に一般的な教訓が近接タスクへ干渉すること、狭い例の流れに繰り返し適合して同じ問題族内の簡単な変形へ一般化できなくなることです。",
+        "提案する設計原則は、速く蓄積するエピソード記憶と遅く形成するスキーマ的な抽象記憶を単一の書き換えループにしないことです。原軌跡を回復可能な証拠として残し、統合は各対話後に自動実行せず、経験の適合性を確認して選択的・遅延的に行うべきだとします。",
+        "これは抽象化そのものを不要と結論づけるものではありません。長期運用では原履歴が無制限に増え、圧縮と転移も必要になるため、課題は証拠を上書きせずに信頼できる統合を行えるLLMとアーキテクチャを作ることだと位置づけます。",
+        "評価対象はテキスト中心のベンチマークとGPT-5.4系・Qwen3.5系の自然言語抽象化であり、身体性・マルチモーダル・実運用のツール環境、重み更新によるパラメトリック記憶、構造化された非テキスト記憶には一般化できるか未検証です。またAPI費用のため反復回数は少なく、図ごとのばらつきには注意が必要です。"
+      ],
+      "ogp": {
+        "image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+        "title": "Useful Memories Become Faulty When Continuously Updated by LLMs",
+        "description": "Learning from past experience benefits from two complementary forms of memory: episodic traces -- raw trajectories of what happened -- and consolidated abstractions distilled across many episodes into reusable, schema-like lessons. Recent agentic-memory systems pursue the consolidated form: an LLM rewrites past trajectories into a textual memory bank that it continuously updates with new interactions, promising self-improving agents without parameter updates. Yet we find that such consolidated memories produced by today's LLMs are often faulty even when derived from useful experiences. As consolidation proceeds, memory utility first rises, then degrades, and can fall below the no-memory baseline. More surprisingly, even when consolidating from ground-truth solutions, GPT-5.4 fails on 54% of a set of ARC-AGI problems it had previously solved without memory. We trace the regression to the consolidation step rather than the underlying experience: the same trajectories yield qualitatively different memories under different update schedules, and an episodic-only control that simply retains those trajectories remains competitive with the consolidators we test. In a controlled ARC-AGI Stream environment that exposes Retain, Delete, and Consolidate actions, agents preserve raw episodes by default and double the accuracy of their forced-consolidation counterparts; disabling consolidation entirely (episodic management only) matches this auto regime. Practically, robust agent memory should treat raw episodes as first-class evidence and gate consolidation explicitly rather than firing it after every interaction. Looking forward, reliable agentic memory will require LLMs that can consolidate without overwriting the evidence they depend on."
+      }
+    },
+    {
+      "id": "research-agent-auditable-evidence",
+      "url": "https://arxiv.org/abs/2608.05235",
+      "title": "From Trajectories to Evidence: Auditable Experimental Records for Industrial Research Agents",
+      "source": "arXiv",
+      "genre": "AIエージェント",
+      "technologies": [
+        "大規模言語モデル",
+        "AIエージェント",
+        "推薦システム",
+        "GLM-5.2",
+        "RankMixer"
+      ],
+      "reading_minutes": 30,
+      "created_at": "2026-08-22",
+      "updated_at": "2026-08-22",
+      "summary": [
+        "産業向け推薦システムを改善する研究エージェントの軌跡には、提案、コード、実行ログ、測定値、失敗、修正が混在するため、実験が完了したことだけでは再利用できる証拠になりません。本論文は、軌跡が実際に何を立証したかを判定する「trajectory-to-evidence conversion」を課題として定式化します。",
+        "提案する枠組みは、論文を対象システムへ適応するsource adaptation、複数ラウンドの証拠から主張を選別するclaim qualification、確定した記録を別の対象へ使うdownstream reuseの3段階で構成され、軌跡の最終状態ではなく検証済みの介入単位を保存します。",
+        "実行前のgenerate–verify–repairでは、生成器、証拠・制約検証器、下流要件レビュー器を別コンテキストに分離します。候補が利用可能な証拠と矛盾していないか、次工程に必要な情報を欠いていないかを独立に調べ、上限回数内で修復できなければ分岐の停止、検証済み状態へのロールバック、またはエスカレーションを行います。",
+        "実験ラウンドの有効性は、介入をコードが忠実に実装したこと、所定の実行が完了したこと、比較プロトコルが正しいこと、元論文の中心的な仕組みを保ったことの4ゲートで判定します。有効な実行でも効果の帰属が不十分なら、永続的な主張ではなく診断情報としてのみ残します。",
+        "同じ介入と変更箇所に関する複数ラウンドをまとめ、実行が有効で効果を帰属でき、発動条件と適用境界が明確な改善をRepair、条件付きで再現した失敗をGuard、証拠の矛盾・交絡・不足や未解決の条件がある主張をWithheldに分類します。再利用できる記録になるのはRepairとGuardだけです。",
+        "各記録はsource context、intervention、measured outcome、supporting evidence、applicability boundaryの5ブロックを持ち、実装差分、実行状態、評価手順、測定値、帰属確認へ追跡できます。記録群は下流評価前に凍結され、対象側の仕組み・条件・観測に応じてハイブリッド制御器がApply、Defer、Rejectを選びます。",
+        "RankMixerの本番実装を共通基準に30本の論文を複数ラウンドで適応したところ、26手法では初回より良い後続ラウンドが見つかった一方、22手法では最終ラウンドが途中の最良結果を下回りました。研究軌跡は非単調に変化するため、終点だけを記憶すると途中で得た有用な知見を失います。",
+        "同一のGLM-5.2をコンテキスト分離して検証に使うループは、15件の論文再現バンドルの提案受理率を73.3%から100%へ、コード完全性を92%から97%へ、観測可能性を67%から100%へ改善しましたが、提案との整合性は50%から52%への微増でした。同一モデル由来の相関した見落としや、Method節の網羅率が92.8%、ブロック単位では87.4%に留まる点も示されています。",
+        "Amazon Electronicsデータセットで5モデルを自動再現した公開ベンチマークでは、報告論文と再現実験の順位が完全に一致し、Spearmanの順位相関は1.0でした。またFM以外の再現モデルはすべて再現したFMを上回り、パイプラインが論文仕様を実行可能な比較へ変換できることを確認します。",
+        "14件の候補クレームを監査した結果、8件がRepair、1件がGuard、5件がWithheldとなり、9件だけが凍結レジストリへ入りました。9件はすべて5ブロック、明示的な発動条件と境界を備え、参照した34個の成果物も保存済みSHA-256と一致しました。",
+        "下流の8組の比較では、参照判定がApplyの5件中3件が有益、1件が中立、1件が有害でした。さらに64組で評価した制御器はApplyの適合率が25%、全体精度が67.2%で、クラス不均衡下の常時Reject規則の79.7%を下回っており、肯定的な適用可否判断は依然として主要なボトルネックです。",
+        "完全なワークフローから得た2候補は本番A/Bテストで、ライブ配信のページ滞在時間を0.75%、ユーザー成長の純効用を6.34%改善しました。ただしplain-agentやno-memoryとの並行対照がないため枠組み全体への因果帰属はできず、下流比較が8組の単発実行に限られることや制御器評価のクラス不均衡も、一般化に関する主要な制約です。"
+      ]
+    },
     {
       "id": "cloudflare-durable-objects-adapter-architecture",
       "url": "https://zenn.dev/pranc1ngpegasus/articles/2180bae181446e",
@@ -268,6 +332,7 @@
   ],
   "facets": {
     "genres": [
+      "AIエージェント",
       "CI/CD",
       "ITマネジメント",
       "OAuthセキュリティ",
@@ -277,6 +342,8 @@
       "ブラウザ自動化"
     ],
     "technologies": [
+      "AIエージェント",
+      "ARC-AGI",
       "AWS S3",
       "CDP",
       "Cloudflare",
@@ -287,6 +354,7 @@
       "DPoP",
       "Docker Compose",
       "Durable Objects",
+      "GLM-5.2",
       "GitHub Actions",
       "IT組織",
       "JWT",
@@ -301,12 +369,16 @@
       "Puppeteer",
       "R2",
       "RFC 9700",
+      "RankMixer",
       "Ruby on Rails",
       "SQLite",
       "mTLS",
+      "エージェントメモリ",
       "ドメイン駆動設計",
       "モデリング",
       "人材配置",
+      "大規模言語モデル",
+      "推薦システム",
       "概念設計",
       "育成",
       "認知負債"
@@ -314,7 +386,8 @@
     "sources": [
       "Cloudflare Docs",
       "Timee Product Team Blog",
-      "Zenn"
+      "Zenn",
+      "arXiv"
     ]
   }
 }

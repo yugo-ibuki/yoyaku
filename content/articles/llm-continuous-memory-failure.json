@@ -1,0 +1,33 @@
+{
+  "id": "llm-continuous-memory-failure",
+  "url": "https://arxiv.org/abs/2605.12978",
+  "title": "Useful Memories Become Faulty When Continuously Updated by LLMs",
+  "source": "arXiv",
+  "genre": "AIエージェント",
+  "technologies": [
+    "大規模言語モデル",
+    "AIエージェント",
+    "エージェントメモリ",
+    "ARC-AGI"
+  ],
+  "reading_minutes": 45,
+  "created_at": "2026-08-19",
+  "updated_at": "2026-08-22",
+  "summary": [
+    "LLMエージェントが過去の軌跡を文章の教訓へ継続的に圧縮・更新するメモリは、個別の有用な経験から作っても、更新を重ねるうちに性能が上がった後で低下し、メモリなしの基準を下回ることがあると報告します。",
+    "著者らはALFWorld、ScienceWorld、WebShop、AppWorld、Mind2Webと、操作履歴を追跡できる独自のARC-AGI Streamで、CLIN、Agent Workflow Memory、Dynamic Cheatsheet、ACEなどの文章メモリ方式を調べました。",
+    "最も統制されたARC-AGIの実験では、メモリなしで19問を全問解けたGPT-5.4が、各問の正解軌跡を使って逐次統合した後には正答率54%まで低下しました。入力軌跡が悪かったのではなく、統合処理そのものが回帰の原因であることを示します。",
+    "同じ軌跡集合でも更新の順序とまとまり方で最終メモリは大きく変わります。全件を一度に統合する方式や同じタスク族ごとにまとめる方式より、少量ずつ逐次更新し異種タスクを混ぜる方式の方が、初期の誤った抽象化を後続更新が引き継ぐため劣化しやすくなります。",
+    "圧縮前の軌跡をそのまま文脈内の実例として保持するエピソード記憶のみの基準は、多くの設定で要約メモリ方式と同等かそれ以上でした。行動、途中の失敗、環境からのフィードバックという適用条件付きの証拠が、抽象化で失われずに残るためです。",
+    "ARC-AGI Streamでは、原エピソードを保持・削除・統合から選べるAuto方式が、毎回統合を強制するForce方式の精度をおおむね2倍にし、統合を完全に無効にしたエピソード管理のみの方式もAutoと同等以上でした。モデル自身も許可されるとエピソードバッファを優先して埋め、抽象ストアを疎に保ちます。",
+    "故障要因は三つに整理されます。統合前に本来別の問題族を誤ってまとめること、適用条件を落とした過度に一般的な教訓が近接タスクへ干渉すること、狭い例の流れに繰り返し適合して同じ問題族内の簡単な変形へ一般化できなくなることです。",
+    "提案する設計原則は、速く蓄積するエピソード記憶と遅く形成するスキーマ的な抽象記憶を単一の書き換えループにしないことです。原軌跡を回復可能な証拠として残し、統合は各対話後に自動実行せず、経験の適合性を確認して選択的・遅延的に行うべきだとします。",
+    "これは抽象化そのものを不要と結論づけるものではありません。長期運用では原履歴が無制限に増え、圧縮と転移も必要になるため、課題は証拠を上書きせずに信頼できる統合を行えるLLMとアーキテクチャを作ることだと位置づけます。",
+    "評価対象はテキスト中心のベンチマークとGPT-5.4系・Qwen3.5系の自然言語抽象化であり、身体性・マルチモーダル・実運用のツール環境、重み更新によるパラメトリック記憶、構造化された非テキスト記憶には一般化できるか未検証です。またAPI費用のため反復回数は少なく、図ごとのばらつきには注意が必要です。"
+  ],
+  "ogp": {
+    "image_url": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+    "title": "Useful Memories Become Faulty When Continuously Updated by LLMs",
+    "description": "Learning from past experience benefits from two complementary forms of memory: episodic traces -- raw trajectories of what happened -- and consolidated abstractions distilled across many episodes into reusable, schema-like lessons. Recent agentic-memory systems pursue the consolidated form: an LLM rewrites past trajectories into a textual memory bank that it continuously updates with new interactions, promising self-improving agents without parameter updates. Yet we find that such consolidated memories produced by today's LLMs are often faulty even when derived from useful experiences. As consolidation proceeds, memory utility first rises, then degrades, and can fall below the no-memory baseline. More surprisingly, even when consolidating from ground-truth solutions, GPT-5.4 fails on 54% of a set of ARC-AGI problems it had previously solved without memory. We trace the regression to the consolidation step rather than the underlying experience: the same trajectories yield qualitatively different memories under different update schedules, and an episodic-only control that simply retains those trajectories remains competitive with the consolidators we test. In a controlled ARC-AGI Stream environment that exposes Retain, Delete, and Consolidate actions, agents preserve raw episodes by default and double the accuracy of their forced-consolidation counterparts; disabling consolidation entirely (episodic management only) matches this auto regime. Practically, robust agent memory should treat raw episodes as first-class evidence and gate consolidation explicitly rather than firing it after every interaction. Looking forward, reliable agentic memory will require LLMs that can consolidate without overwriting the evidence they depend on."
+  }
+}
