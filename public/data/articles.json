@@ -1,6 +1,44 @@
 {
-  "generated_at": "2026-08-26T00:00:00Z",
+  "generated_at": "2026-08-27T00:00:00Z",
   "articles": [
+    {
+      "id": "chatgpt-browser-webmcp-site-tools",
+      "url": "https://gihyo.jp/article/2026/08/chatgpt-app-browser-support-webmcp",
+      "title": "ChatGPTの内蔵ブラウザーがWebMCPに対応、Webサイトが公開するツールを「サイトツール」として利用可能に ——10日間のWebMCP Challengeも開催",
+      "source": "gihyo.jp",
+      "genre": "AIエージェント",
+      "technologies": [
+        "WebMCP",
+        "ChatGPT",
+        "Codex",
+        "ChatGPT Work",
+        "ChatGPT Sites"
+      ],
+      "reading_minutes": 7,
+      "created_at": "2026-08-27",
+      "updated_at": "2026-08-27",
+      "summary": [
+        "OpenAIはChatGPTデスクトップアプリの内蔵ブラウザーに、WebMCP対応サイトが公開する操作を構造化された「サイトツール」としてChatGPT WorkやCodexから利用できる機能を追加しました。画面を解析してクリックや入力を繰り返すだけでなく、サイト側が用意した機能を直接呼び出せます。",
+        "WebMCPでは、WebサイトがJavaScript関数やHTMLフォームを、自然言語の説明と入出力スキーマを備えたツールとして公開します。対象ページとログイン済みセッションをユーザーとエージェントが共有し、ページを離れるとツールを使えなくなる場合がある点が、ページを開かず利用できる従来のMCPサーバーとの主な違いです。",
+        "サイトツールを使うには最新版のChatGPTデスクトップアプリとWebMCP対応ページが必要で、記事時点ではGPT-5.6 SolまたはGPT-5.6 Terraが推奨され、GPT-5.6 Luna、Enterprise、Eduは対象外です。アドレスバーの「Site tools」で公開ツールを確認でき、「Sources」で直近の呼び出し内容を確認し、設定から機能全体を無効化できます。",
+        "ツール定義と実行結果はサイト側が提供するため、内蔵ブラウザーは呼び出しごとに安全性を確認し、メッセージ送信、購入、削除、権限変更などには従来の承認ポリシーを適用します。利用者にも、機密情報の共有や結果の採用前に、サイト、要求された操作、実行結果を確認することが求められます。",
+        "開発者向けには、JavaScriptでツールを登録する命令型APIと、HTMLフォームに注釈を付ける宣言型APIが用意されています。既存のアプリロジックと認証・認可・入力検証を再利用し、入力を必要最小限に限定し、変更や送信などの影響を説明し、処理を確認できる情報を結果へ含める設計が推奨されています。",
+        "OpenAIは3D編集、文書コメント、クロスワード作成、旅程編集、データ分析などのWebMCP対応例を公開しています。実用例のRunmeはクライアント側のノートブック機能をブラウザーから直接ツール化し、別のMCPサーバーを構築・運用したり、ノートブックのデータをサーバー側で扱ったりせずに、Codexが手順や内容を読み書きできるようにしています。",
+        "発表に合わせて、OpenAI、Google Chrome、Shopify、Cloudflare、Vercel、Render、Netlifyによる10日間のWebMCP Challengeが始まりました。応募締切は日本時間2026年9月4日午前5時で、公開URL、説明、音声付き3分未満の公開デモ動画、オープンソースライセンス付き公開リポジトリなどが必要です。賞金総額は3万5000ドルで、受賞発表は9月23日の予定です。",
+        "ChatGPT Workのクラウドブラウザーは、Web版・モバイル版から対応サイトへログインし、ユーザーが離席してもクラウド上で作業を継続できるようになりました。認証前にはフィッシング確認が入り、認証情報はモデルを介さずブラウザーへ渡され、予約確定や支払いなどの重要操作では承認を求めますが、自動操作を遮断するサイトやCAPTCHAでは完了できない場合があります。",
+        "ChatGPTのブラウザー拡張はChromeに加えてEdge、Brave、Opera、Vivaldiへ対応しました。5ブラウザーすべてで開いているタブの指定と操作ができ、Chrome、Edge、Brave、Vivaldiではログイン状態を保ったページの横にChatGPTを表示するサイドチャットも利用できます。",
+        "スケジュールされたタスクは時刻や間隔だけでなく、Gmail、Slack、GitHubのイベントを起点に実行できるようになりました。複数イベントは1タスクに設定できますが時刻ベースとは併用できず、アプリ接続と権限付与が必要です。Freeユーザーには最大3件まで順次提供され、タスクの共有にも対応します。",
+        "ChatGPT Sitesは同一ワークスペースのメンバーとの共同編集と公開URLの変更に対応しました。編集者はデータベースの読み取り、更新、バージョン保存、初回公開後の変更公開ができますが、初回公開、公開範囲、設定、分析、所有権、復元、編集者管理は所有者が担います。URL変更時は旧URLのパスやクエリーパラメーターを保ったまま新URLへリダイレクトされます。",
+        "macOS版にはApple Messagesプラグインが追加され、Apple Silicon搭載MacでChatGPT WorkやCodexからiMessage、SMS、RCSの検索・閲覧・作成・送信ができるようになりました。送信時は原則として本文と宛先の承認が必要です。また、Codexのローカルタスクを固定された読み取り専用スナップショットとして共有できますが、自動マスクだけに頼らず共有前の機密情報確認が必要です。",
+        "Computer HistoryはmacOS上のアプリやWebサイトでの活動をメモリーとタイムラインにまとめ、ChatGPTやCodexから参照できるChatGPT Pro、Business、Enterprise向けの機能です。初期状態では無効でメモリーの有効化が必要となり、記録対象の選択、一時停止、確認、削除ができますが、スクリーンショット、音声、プライベートブラウジングは記録しません。",
+        "Codex cloudはGitLab連携のベータ版を追加し、イシューやマージリクエストでの@codexメンション、単発レビュー、自動レビューに対応しました。コード編集・実行・コミット・プッシュにはプロジェクトごとの環境が必要で、GitHub連携にある一部のリポジトリ操作は未対応です。GitLab Self-ManagedまたはDedicatedでイベント起動のWebhookを使う場合はGitLab 19.0以降が必要です。"
+      ],
+      "ogp": {
+        "image_url": "https://gihyo.jp/assets/images/ICON/2026/3010_chatgpt-app-browser-support-webmcp.png",
+        "title": "ChatGPTの内蔵ブラウザーがWebMCPに対応、Webサイトが公開するツールを「サイトツール」として利用可能に ——10日間のWebMCP Challengeも開催 | gihyo.jp",
+        "description": "OpenAIは2026年8月25日付の「ChatGPT &amp; Codex changelog」で、ChatGPTデスクトップアプリの内蔵ブラウザーに、WebMCPを利用した「サイトツール」を追加した。"
+      }
+    },
     {
       "id": "business-value-engineering-2026",
       "url": "https://speakerdeck.com/recruitengineers/fy2026_bootcamp_kuroda",
@@ -415,12 +453,16 @@
       "ARC-AGI",
       "AWS S3",
       "CDP",
+      "ChatGPT",
+      "ChatGPT Sites",
+      "ChatGPT Work",
       "Claude Code",
       "Cloudflare",
       "Cloudflare Browser Run",
       "Cloudflare Durable Objects",
       "Cloudflare One",
       "Cloudflare Workers",
+      "Codex",
       "DPoP",
       "Docker Compose",
       "Durable Objects",
@@ -442,6 +484,7 @@
       "RankMixer",
       "Ruby on Rails",
       "SQLite",
+      "WebMCP",
       "mTLS",
       "エンジニアリングマネジメント",
       "エージェントメモリ",
@@ -465,7 +508,8 @@
       "Speaker Deck",
       "Timee Product Team Blog",
       "Zenn",
-      "arXiv"
+      "arXiv",
+      "gihyo.jp"
     ]
   }
 }
