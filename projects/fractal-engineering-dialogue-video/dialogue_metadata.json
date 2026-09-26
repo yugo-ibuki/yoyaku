@@ -1,0 +1,704 @@
+{
+  "version": 1,
+  "audio": "dialogue-new.wav",
+  "timingBasis": {
+    "method": "WhisperX Japanese CTC forced alignment using supplied exact transcripts; no ASR transcript used for timing",
+    "model": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+    "alignmentFile": "dialogue_alignment.json",
+    "silencedetect": {
+      "noise": [
+        "-38dB",
+        "-42dB"
+      ],
+      "duration": 0.25
+    },
+    "note": "Utterance bounds come from turn-gap review. Each later subtitle card starts at its first forced-aligned spoken character; the previous card remains visible until that instant."
+  },
+  "video": {
+    "width": 720,
+    "height": 1280,
+    "fps": 24
+  },
+  "utterances": [
+    {
+      "id": 1,
+      "speaker": "left",
+      "speakerLabel": "生徒",
+      "side": "left",
+      "start": 0.0,
+      "end": 4.452,
+      "text": "先生、フラクタルエンジニアリングって、結局何をするんですか？",
+      "subtitleUnits": [
+        {
+          "start": 0.0,
+          "end": 4.452,
+          "text": "先生、フラクタルエンジニアリングって、結局何をするんですか？",
+          "lines": [
+            "先生、フラクタルエンジニアリング",
+            "って、結局何をするんですか？"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "先",
+            "predictedStart": 0.261,
+            "score": 0.875,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "right",
+      "speakerLabel": "先生",
+      "side": "right",
+      "start": 5.226,
+      "end": 22.143,
+      "text": "まず、一人では大きすぎる仕事を、小さな仕事に分けます。その小さな仕事を任されたAIも、必要ならさらに分ける。この記事では、それがどこまでも続くと考えるんです",
+      "subtitleUnits": [
+        {
+          "start": 5.226,
+          "end": 12.033,
+          "text": "まず、一人では大きすぎる仕事を、小さな仕事に分けます。",
+          "lines": [
+            "まず、一人では大きすぎる仕事を、",
+            "小さな仕事に分けます。"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "ま",
+            "predictedStart": 5.266,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 12.033,
+          "end": 18.139,
+          "text": "その小さな仕事を任されたAIも、必要ならさらに分ける。",
+          "lines": [
+            "その小さな仕事を任されたAIも、",
+            "必要ならさらに分ける。"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "そ",
+            "predictedStart": 12.033,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 18.139,
+          "end": 22.143,
+          "text": "この記事では、それがどこまでも続くと考えるんです",
+          "lines": [
+            "この記事では、",
+            "それがどこまでも続くと考えるんです"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "こ",
+            "predictedStart": 18.139,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "left",
+      "speakerLabel": "生徒",
+      "side": "left",
+      "start": 22.752,
+      "end": 28.28,
+      "text": "あ、先輩が私に仕事を渡して、私が別の人に一部をお願いする感じですね",
+      "subtitleUnits": [
+        {
+          "start": 22.752,
+          "end": 28.28,
+          "text": "あ、先輩が私に仕事を渡して、私が別の人に一部をお願いする感じですね",
+          "lines": [
+            "あ、先輩が私に仕事を渡して、私が",
+            "別の人に一部をお願いする感じですね"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "あ",
+            "predictedStart": 22.752,
+            "score": 0.933,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "right",
+      "speakerLabel": "先生",
+      "side": "right",
+      "start": 28.92,
+      "end": 48.19,
+      "text": "そのとおりです。どの担当者も、受け取る、分ける、任せる、結果を確かめる、報告する、という同じ手順で動きます。小さくしても同じ形が現れるので、フラクタルと呼んでいます",
+      "subtitleUnits": [
+        {
+          "start": 28.92,
+          "end": 30.801,
+          "text": "そのとおりです。",
+          "lines": [
+            "そのとおりです。"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "そ",
+            "predictedStart": 29.0,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 30.801,
+          "end": 36.184,
+          "text": "どの担当者も、受け取る、分ける、任せる、",
+          "lines": [
+            "どの担当者も、受け取る、",
+            "分ける、任せる、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "ど",
+            "predictedStart": 30.801,
+            "score": 0.914,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 36.184,
+          "end": 42.807,
+          "text": "結果を確かめる、報告する、という同じ手順で動きます。",
+          "lines": [
+            "結果を確かめる、報告する、",
+            "という同じ手順で動きます。"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "結",
+            "predictedStart": 36.184,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 42.807,
+          "end": 48.19,
+          "text": "小さくしても同じ形が現れるので、フラクタルと呼んでいます",
+          "lines": [
+            "小さくしても同じ形が現れるので、",
+            "フラクタルと呼んでいます"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "小",
+            "predictedStart": 42.807,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speaker": "left",
+      "speakerLabel": "生徒",
+      "side": "left",
+      "start": 48.735,
+      "end": 52.744,
+      "text": "でも、どこまでも分けたら、AIが大量に動きませんか？",
+      "subtitleUnits": [
+        {
+          "start": 48.735,
+          "end": 52.744,
+          "text": "でも、どこまでも分けたら、AIが大量に動きませんか？",
+          "lines": [
+            "でも、どこまでも分けたら、",
+            "AIが大量に動きませんか？"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "で",
+            "predictedStart": 48.775,
+            "score": 0.891,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speaker": "right",
+      "speakerLabel": "先生",
+      "side": "right",
+      "start": 53.572,
+      "end": 73.459,
+      "text": "記事では、必要になった担当者だけを動かす、としています。それでも費用が気になりますよね。そこで、最初の階層に百円、次に五十円、その次に二十五円、というように予算を減らす話が出てきます",
+      "subtitleUnits": [
+        {
+          "start": 53.572,
+          "end": 59.494,
+          "text": "記事では、必要になった担当者だけを動かす、としています。",
+          "lines": [
+            "記事では、必要になった",
+            "担当者だけを動かす、としています。"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "記",
+            "predictedStart": 53.672,
+            "score": 0.943,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 59.494,
+          "end": 62.715,
+          "text": "それでも費用が気になりますよね。",
+          "lines": [
+            "それでも費用が気になりますよね。"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "そ",
+            "predictedStart": 59.494,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 62.715,
+          "end": 65.976,
+          "text": "そこで、最初の階層に百円、",
+          "lines": [
+            "そこで、最初の階層に百円、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "そ",
+            "predictedStart": 62.715,
+            "score": 0.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 65.976,
+          "end": 70.038,
+          "text": "次に五十円、その次に二十五円、",
+          "lines": [
+            "次に五十円、その次に二十五円、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "次",
+            "predictedStart": 65.976,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 70.038,
+          "end": 73.459,
+          "text": "というように予算を減らす話が出てきます",
+          "lines": [
+            "というように予算を減らす",
+            "話が出てきます"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "と",
+            "predictedStart": 70.038,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "speaker": "left",
+      "speakerLabel": "生徒",
+      "side": "left",
+      "start": 74.193,
+      "end": 76.81,
+      "text": "あ、ずっと足しても二百円に近づくだけ！",
+      "subtitleUnits": [
+        {
+          "start": 74.193,
+          "end": 76.81,
+          "text": "あ、ずっと足しても二百円に近づくだけ！",
+          "lines": [
+            "あ、ずっと足しても",
+            "二百円に近づくだけ！"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "あ",
+            "predictedStart": 74.193,
+            "score": 0.914,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "speaker": "right",
+      "speakerLabel": "先生",
+      "side": "right",
+      "start": 77.629,
+      "end": 87.758,
+      "text": "ええ。ただし、お金の計算が合うことと、無限の仕事が本当に終わることは別です。そこがこの記事の冗談です",
+      "subtitleUnits": [
+        {
+          "start": 77.629,
+          "end": 81.853,
+          "text": "ええ。ただし、お金の計算が合うことと、",
+          "lines": [
+            "ええ。ただし、",
+            "お金の計算が合うことと、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "え",
+            "predictedStart": 77.649,
+            "score": 0.985,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 81.853,
+          "end": 87.758,
+          "text": "無限の仕事が本当に終わることは別です。そこがこの記事の冗談です",
+          "lines": [
+            "無限の仕事が本当に終わることは",
+            "別です。そこがこの記事の冗談です"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "無",
+            "predictedStart": 81.853,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "speaker": "left",
+      "speakerLabel": "生徒",
+      "side": "left",
+      "start": 88.309,
+      "end": 90.732,
+      "text": "完成品の話も、冗談なんですか？",
+      "subtitleUnits": [
+        {
+          "start": 88.309,
+          "end": 90.732,
+          "text": "完成品の話も、冗談なんですか？",
+          "lines": [
+            "完成品の話も、冗談なんですか？"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "完",
+            "predictedStart": 88.329,
+            "score": 0.929,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "speaker": "right",
+      "speakerLabel": "先生",
+      "side": "right",
+      "start": 91.4,
+      "end": 102.008,
+      "text": "確認するたびに間違いが必ず半分になるなら、何度も繰り返した先で間違いはゼロになる、という話です",
+      "subtitleUnits": [
+        {
+          "start": 91.4,
+          "end": 97.004,
+          "text": "確認するたびに間違いが必ず半分になるなら、",
+          "lines": [
+            "確認するたびに",
+            "間違いが必ず半分になるなら、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "確",
+            "predictedStart": 91.5,
+            "score": 0.996,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 97.004,
+          "end": 102.008,
+          "text": "何度も繰り返した先で間違いはゼロになる、という話です",
+          "lines": [
+            "何度も繰り返した先で",
+            "間違いはゼロになる、という話です"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "何",
+            "predictedStart": 97.004,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "speaker": "left",
+      "speakerLabel": "生徒",
+      "side": "left",
+      "start": 102.68,
+      "end": 106.309,
+      "text": "でも、確認したら新しい間違いが見つかることもありますよね",
+      "subtitleUnits": [
+        {
+          "start": 102.68,
+          "end": 106.309,
+          "text": "でも、確認したら新しい間違いが見つかることもありますよね",
+          "lines": [
+            "でも、確認したら新しい間違いが",
+            "見つかることもありますよね"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "で",
+            "predictedStart": 102.7,
+            "score": 0.947,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "speaker": "right",
+      "speakerLabel": "先生",
+      "side": "right",
+      "start": 106.943,
+      "end": 115.33,
+      "text": "まさにそこです。都合のよい条件を置いて、夢のような完成品を数学っぽく説明しているんです",
+      "subtitleUnits": [
+        {
+          "start": 106.943,
+          "end": 111.267,
+          "text": "まさにそこです。都合のよい条件を置いて、",
+          "lines": [
+            "まさにそこです。",
+            "都合のよい条件を置いて、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "ま",
+            "predictedStart": 106.983,
+            "score": 0.909,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 111.267,
+          "end": 115.33,
+          "text": "夢のような完成品を数学っぽく説明しているんです",
+          "lines": [
+            "夢のような完成品を",
+            "数学っぽく説明しているんです"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "夢",
+            "predictedStart": 111.267,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "speaker": "left",
+      "speakerLabel": "生徒",
+      "side": "left",
+      "start": 115.858,
+      "end": 119.996,
+      "text": "なるほど。じゃあ、この記事から持ち帰れることは何ですか？",
+      "subtitleUnits": [
+        {
+          "start": 115.858,
+          "end": 119.996,
+          "text": "なるほど。じゃあ、この記事から持ち帰れることは何ですか？",
+          "lines": [
+            "なるほど。じゃあ、この記事から",
+            "持ち帰れることは何ですか？"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "な",
+            "predictedStart": 115.878,
+            "score": 0.805,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "speaker": "right",
+      "speakerLabel": "先生",
+      "side": "right",
+      "start": 120.664,
+      "end": 139.815,
+      "text": "AIがたくさんの案を作れるようになるほど、どの案が正しいかを確かめることが大切になる、という視点です。記事は最後に、無限に仕事を分ける話を、AIに考える時間を使わせることへ結び付けます",
+      "subtitleUnits": [
+        {
+          "start": 120.664,
+          "end": 124.966,
+          "text": "AIがたくさんの案を作れるようになるほど、",
+          "lines": [
+            "AIがたくさんの案を",
+            "作れるようになるほど、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "A",
+            "predictedStart": 120.664,
+            "score": 0.928,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 124.966,
+          "end": 129.449,
+          "text": "どの案が正しいかを確かめることが大切になる、",
+          "lines": [
+            "どの案が正しいかを確かめることが",
+            "大切になる、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "ど",
+            "predictedStart": 124.966,
+            "score": 0.982,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 129.449,
+          "end": 131.29,
+          "text": "という視点です。",
+          "lines": [
+            "という視点です。"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "と",
+            "predictedStart": 129.449,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 131.29,
+          "end": 135.613,
+          "text": "記事は最後に、無限に仕事を分ける話を、",
+          "lines": [
+            "記事は最後に、",
+            "無限に仕事を分ける話を、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "記",
+            "predictedStart": 131.29,
+            "score": 0.835,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 135.613,
+          "end": 139.815,
+          "text": "AIに考える時間を使わせることへ結び付けます",
+          "lines": [
+            "AIに考える時間を使わせることへ",
+            "結び付けます"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "A",
+            "predictedStart": 135.613,
+            "score": 0.923,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "speaker": "left",
+      "speakerLabel": "生徒",
+      "side": "left",
+      "start": 140.591,
+      "end": 148.516,
+      "text": "開発手法としてそのまま使う話じゃなくて、笑いながら、検証って大事だな、と考える記事なんですね",
+      "subtitleUnits": [
+        {
+          "start": 140.591,
+          "end": 145.274,
+          "text": "開発手法としてそのまま使う話じゃなくて、笑いながら、",
+          "lines": [
+            "開発手法としてそのまま",
+            "使う話じゃなくて、笑いながら、"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "開",
+            "predictedStart": 140.711,
+            "score": 0.889,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 145.274,
+          "end": 148.516,
+          "text": "検証って大事だな、と考える記事なんですね",
+          "lines": [
+            "検証って大事だな、",
+            "と考える記事なんですね"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "検",
+            "predictedStart": 145.274,
+            "score": 0.94,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "speaker": "right",
+      "speakerLabel": "先生",
+      "side": "right",
+      "start": 149.184,
+      "end": 157.561,
+      "text": "ええ。AI開発の手法に大げさな名前や理論が次々と付く文化も、楽しみながら風刺しています",
+      "subtitleUnits": [
+        {
+          "start": 149.184,
+          "end": 153.853,
+          "text": "ええ。AI開発の手法に大げさな名前や理論が",
+          "lines": [
+            "ええ。AI開発の手法に",
+            "大げさな名前や理論が"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "え",
+            "predictedStart": 149.204,
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 153.853,
+          "end": 157.561,
+          "text": "次々と付く文化も、楽しみながら風刺しています",
+          "lines": [
+            "次々と付く文化も、",
+            "楽しみながら風刺しています"
+          ],
+          "alignmentEvidence": {
+            "alignedFirstChar": "次",
+            "predictedStart": 153.853,
+            "score": 0.932,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    }
+  ]
+}

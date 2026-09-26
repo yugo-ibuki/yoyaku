@@ -83,6 +83,10 @@ export YOYAKU_REPOSITORY_URL=https://github.com/your-name/your-repository
 cargo run -p yoyaku -- enrich content/articles/my-article.json
 ```
 
+## 制作プロジェクト
+
+- [Fractal Engineering 猫対話動画](./projects/fractal-engineering-dialogue-video/README.md): 完成動画、最終音声、画像、台本、強制アラインメント、再現・同期検証手順
+
 ## テストとビルド
 
 ```bash
