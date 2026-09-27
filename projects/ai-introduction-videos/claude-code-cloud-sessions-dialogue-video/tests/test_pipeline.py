@@ -16,6 +16,7 @@ import verify_timeline
 
 
 PROJECT = Path(__file__).resolve().parents[1]
+ASSETS = PROJECT.parent / "assets" / "dining-room"
 
 
 def write_wav(path: Path, seconds: float = 2.0) -> None:
@@ -39,11 +40,11 @@ class StaticProjectTests(unittest.TestCase):
 
     def test_dining_images_keep_original_dimensions(self):
         for name in ("base.png", "left-speaking.png", "right-speaking.png"):
-            with Image.open(PROJECT / "assets" / name) as image:
+            with Image.open(ASSETS / name) as image:
                 self.assertEqual(image.size, (941, 1672))
 
     def test_renderer_loads_completed_speaker_poses(self):
-        left, right, base = render.load_poses(PROJECT / "assets")
+        left, right, base = render.load_poses(ASSETS)
         self.assertEqual((left.size, right.size, base.size), ((720, 1280), (720, 1280), (720, 1280)))
 
     def test_every_subtitle_line_fits_inside_600_pixels(self):

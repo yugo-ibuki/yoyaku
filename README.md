@@ -85,7 +85,7 @@ cargo run -p yoyaku -- enrich content/articles/my-article.json
 
 ## 制作プロジェクト
 
-- [Fractal Engineering 猫対話動画](./projects/fractal-engineering-dialogue-video/README.md): 完成動画、最終音声、画像、台本、強制アラインメント、再現・同期検証手順
+- [AI紹介動画](./projects/ai-introduction-videos/README.md): 猫対話による縦動画2本、共有画像素材、台本、音声、強制アラインメント、再現・同期検証手順
 
 ## テストとビルド
 

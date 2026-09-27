@@ -39,4 +39,4 @@ An unmapped character, weak score, transcript disagreement, or ambiguous wavefor
 - “Only the new audio file changed; the old JSON can stay.”
 - “The MP4 exported, so synchronization is correct.”
 
-For an executable example and its validation gate, see `projects/fractal-engineering-dialogue-video/`. This skill does not authorize publishing, pushing, replacing source media, or other external writes.
+For an executable example and its validation gate, see `projects/ai-introduction-videos/fractal-engineering-dialogue-video/`. This skill does not authorize publishing, pushing, replacing source media, or other external writes.

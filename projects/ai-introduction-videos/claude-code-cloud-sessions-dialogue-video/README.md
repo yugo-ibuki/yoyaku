@@ -12,6 +12,7 @@ Claude Codeのクラウドセッションを、左の生徒猫と右の先生猫
 - レンダーメタデータ: `dialogue_metadata.json`
 - ASR・声質証拠: `audio/asr-transcript.json`、`audio/ctc-crosscheck.json`、`audio/voice-evidence.json`
 - 視覚確認画像: `qa/review-2-27-64-95-155.png`
+- 使用画像: [`../assets/dining-room/`](../assets/dining-room/) の共通3枚
 
 動画は720×1280、24fps、H.264/AAC、164.208秒。音声原本は164.200秒、24kHzモノラルPCM16、SHA-256 `14b714b180b715362159f2688a20f35ff94af405d8faace2e7053614f561d52c`。
 
@@ -31,6 +32,7 @@ Claude Codeのクラウドセッションを、左の生徒猫と右の先生猫
 ## 再生成
 
 ```bash
+cd projects/ai-introduction-videos/claude-code-cloud-sessions-dialogue-video
 python3 align_dialogue.py \
   --audio audio/ai-studio-original.wav \
   --verified-turns verified_turns.json

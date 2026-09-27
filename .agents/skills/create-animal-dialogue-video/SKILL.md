@@ -41,7 +41,7 @@ Never derive timing from character count, text length, equal spacing, a requeste
 
 An existing project may demonstrate a pipeline, but its constants are not defaults. Reconfigure character count, species, positions, image assets, voice assignments, duration, script, timeline, canvas, frame rate, and validation thresholds for the current brief.
 
-`projects/fractal-engineering-dialogue-video/` is a two-cat, 16-turn reproduction example with project-specific assets and values. Treat its `render.py` as an example renderer, not a generic animal-video generator.
+`projects/ai-introduction-videos/fractal-engineering-dialogue-video/` is a two-cat, 16-turn reproduction example with project-specific assets and values. Treat its `render.py` as an example renderer, not a generic animal-video generator.
 
 ## Completion gate
 

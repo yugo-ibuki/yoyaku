@@ -201,7 +201,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Render the verified two-cat dialogue timeline.")
     parser.add_argument("--audio", type=Path, required=True)
     parser.add_argument("--alignment", type=Path, default=ROOT / "dialogue_alignment.json")
-    parser.add_argument("--source-dir", type=Path, default=ROOT / "assets")
+    parser.add_argument("--source-dir", type=Path, default=ROOT.parent / "assets" / "dining-room")
     parser.add_argument("--output", type=Path, default=ROOT / "claude-code-cloud-sessions-cats.mp4")
     parser.add_argument("--metadata", type=Path, default=ROOT / "dialogue_metadata.json")
     parser.add_argument("--font", type=Path, default=DEFAULT_FONT)
