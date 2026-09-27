@@ -16,7 +16,7 @@ import verify_timeline
 
 
 PROJECT = Path(__file__).resolve().parents[1]
-ASSETS = PROJECT.parent / "assets" / "dining-room"
+ASSETS = PROJECT.parent.parent / "assets" / "dining-room"
 
 
 def write_wav(path: Path, seconds: float = 2.0) -> None:

@@ -5,14 +5,14 @@
 ## 出典と来歴
 
 - 元記事: [Fractal Engineering](https://torus-engineering.uhyo.workers.dev/ja/fractal/)
-- リポジトリ内の記事要約: [`../../../content/articles/fractal-engineering.json`](../../../content/articles/fractal-engineering.json)
+- リポジトリ内の記事要約: [`../../../../content/articles/fractal-engineering.json`](../../../../content/articles/fractal-engineering.json)
 - 元画像を作成した Codex タスク: `codex://threads/01a0dd4d-b4e4-7652-8e4a-30710bf51284`
 - 画像、音声、台本、アラインメント、完成動画は 2026-09-26〜27 の制作セッションから完成版を収録した。元記事の全文は複製していない。
-- 使用画像を含む屋外カフェ、食卓、雪中焚き火の画像は、共通の[猫対話シーン素材カタログ](../assets/README.md)に整理している。この動画は `../assets/outdoor-cafe/` の3枚を直接参照する。
+- 使用画像を含む屋外カフェ、食卓、雪中焚き火の画像は、共通の[猫対話シーン素材カタログ](../../assets/README.md)に整理している。この動画は `../../assets/outdoor-cafe/` の3枚を直接参照する。
 
 ## 収録内容
 
-- `../assets/outdoor-cafe/base.png`, `../assets/outdoor-cafe/left-speaking.png`, `../assets/outdoor-cafe/right-speaking.png`: 閉口・左右発話の完成画像
+- `../../assets/outdoor-cafe/base.png`, `../../assets/outdoor-cafe/left-speaking.png`, `../../assets/outdoor-cafe/right-speaking.png`: 閉口・左右発話の完成画像
 - `dialogue-new.wav`: 24 kHz、16-bit、mono、157.920秒の完成音声
 - `dialogue_alignment.json`: WhisperX による文字単位の強制アラインメントと波形確認結果
 - `dialogue_metadata.json`: レンダリングに使う16ターン・34字幕カード
@@ -37,7 +37,7 @@ macOS、`uv`、Python 3.11、`ffmpeg`、`jq` が必要です。既定フォン�
 同梱スナップショットを変更する前に、現在のファイルが保存時点と一致することを確認します。
 
 ```bash
-cd projects/ai-introduction-videos/fractal-engineering-dialogue-video
+cd projects/ai-introduction-videos/videos/fractal-engineering-dialogue-video
 shasum -a 256 -c SHA256SUMS
 ```
 
@@ -46,7 +46,7 @@ shasum -a 256 -c SHA256SUMS
 再生成は、重い動画描画の前にタイムライン検証を通します。
 
 ```bash
-cd projects/ai-introduction-videos/fractal-engineering-dialogue-video
+cd projects/ai-introduction-videos/videos/fractal-engineering-dialogue-video
 uv venv --python 3.11 .venv
 uv pip install --python .venv/bin/python whisperx numpy pillow
 

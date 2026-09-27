@@ -3,7 +3,7 @@
 ## 画面
 
 - 縦型 720×1280、24fps、H.264/AAC、目標約3分。実際の長さは最終音声に一致させる。
-- `../assets/dining-room/base.png`、`../assets/dining-room/left-speaking.png`、`../assets/dining-room/right-speaking.png` は元のDINING/FOOD画像（941×1672）の同一構図を維持する。
+- `../../assets/dining-room/base.png`、`../../assets/dining-room/left-speaking.png`、`../../assets/dining-room/right-speaking.png` は元のDINING/FOOD画像（941×1672）の同一構図を維持する。
 - 左のオレンジ猫が `left_student`、右のグレー猫が `right_teacher`。位置、毛色、背景、小物を変更しない。
 - 発話中は完成済みの話者ポーズをターン単位で表示し、ターン間はbase画像へ戻す。
 - 画面に出す話者名は「生徒」「先生」だけ。内部IDや声の年齢・性別は表示しない。

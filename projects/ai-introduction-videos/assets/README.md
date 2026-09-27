@@ -14,8 +14,8 @@
 
 ## 来歴と利用方法
 
-- `outdoor-cafe/` は、Fractal Engineering 動画で使われていた3枚をバイト不変で移した共有保存先です。現在は `../fractal-engineering-dialogue-video/render.py` がこのディレクトリを直接参照します。
-- `dining-room/` は、Fractal Engineering プロジェクトに追加素材として保存され、Claude Code Cloud Sessions 動画へバイト単位でコピーされていた3枚です。現在は `../claude-code-cloud-sessions-dialogue-video/render.py` がこのディレクトリを直接参照します。
+- `outdoor-cafe/` は、Fractal Engineering 動画で使われていた3枚をバイト不変で移した共有保存先です。現在は `../videos/fractal-engineering-dialogue-video/render.py` がこのディレクトリを直接参照します。
+- `dining-room/` は、Fractal Engineering プロジェクトに追加素材として保存され、Claude Code Cloud Sessions 動画へバイト単位でコピーされていた3枚です。現在は `../videos/claude-code-cloud-sessions-dialogue-video/render.py` がこのディレクトリを直接参照します。
 - `snow-campfire/` は、2026-09-27 に Codex の組み込み `image_gen` で作成し、Fractal Engineering プロジェクトから移動した未使用の追加素材です。既存の縦動画には使用していません。
 
 2本の動画プロジェクトは、このカタログ内の対応する3枚を共有入力として直接参照します。画像を変更すると再レンダー結果も変わるため、変更前後に `SHA256SUMS` を更新して整合性を確認してください。

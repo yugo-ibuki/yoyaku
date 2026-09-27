@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 
 ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT.parent / "assets" / "outdoor-cafe"
+SOURCE = ROOT.parent.parent / "assets" / "outdoor-cafe"
 OUTPUT = ROOT / "fractal-engineering-cats-aligned.mp4"
 METADATA = ROOT / "dialogue_metadata.json"
 ALIGNMENT = ROOT / "dialogue_alignment.json"
