@@ -1,17 +1,20 @@
 # Fractal Engineering 猫対話動画
 
-フラクタルエンジニアリングの記事を題材にした、猫の生徒と先生による縦型対話動画の完成版と再現用素材です。現在はリポジトリ内に保存したローカル成果物で、公開・配信・デプロイはしていません。
+フラクタルエンジニアリングの記事を題材にした、猫の生徒と先生による縦型対話動画の完成版と再現用素材です。リポジトリに収録していますが、動画の配信・サイトへの掲載・デプロイはしていません。
 
 ## 出典と来歴
 
 - 元記事: [Fractal Engineering](https://torus-engineering.uhyo.workers.dev/ja/fractal/)
 - リポジトリ内の記事要約: [`../../content/articles/fractal-engineering.json`](../../content/articles/fractal-engineering.json)
 - 元画像を作成した Codex タスク: `codex://threads/01a0dd4d-b4e4-7652-8e4a-30710bf51284`
-- 画像、音声、台本、アラインメント、完成動画は 2026-09-26〜27 の制作セッションから完成版だけを収録した。元記事の全文は複製していない。
+- 画像、音声、台本、アラインメント、完成動画は 2026-09-26〜27 の制作セッションから完成版を収録し、追加素材として完成動画には未使用の食卓シーン画像も収録した。元記事の全文は複製していない。
 
 ## 収録内容
 
 - `assets/base.png`, `assets/left-speaking.png`, `assets/right-speaking.png`: 閉口・左右発話の完成画像
+- `assets/dining-room/base.png`: 追加の食卓シーン画像（完成動画には未使用）。2匹とも食べている基準画像
+- `assets/dining-room/left-speaking.png`: 追加の食卓シーン画像（完成動画には未使用）。左の橙色猫が口を開いている画像
+- `assets/dining-room/right-speaking.png`: 追加の食卓シーン画像（完成動画には未使用）。右の灰色猫が口を開いている画像
 - `dialogue-new.wav`: 24 kHz、16-bit、mono、157.920秒の完成音声
 - `dialogue_alignment.json`: WhisperX による文字単位の強制アラインメントと波形確認結果
 - `dialogue_metadata.json`: レンダリングに使う16ターン・34字幕カード
@@ -40,7 +43,7 @@ cd projects/fractal-engineering-dialogue-video
 shasum -a 256 -c SHA256SUMS
 ```
 
-`SHA256SUMS` は同梱した完成版スナップショットの整合性確認用です。アラインメントや動画を再生成すれば出力のハッシュは変わるため、再生成後にこの一覧との一致は期待しません。
+`SHA256SUMS` は同梱したスナップショットの整合性確認用です。アラインメントや動画を再生成すれば出力のハッシュは変わるため、再生成後にこの一覧との一致は期待しません。
 
 再生成は、重い動画描画の前にタイムライン検証を通します。
 
