@@ -1,0 +1,742 @@
+{
+  "version": 1,
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "14b714b180b715362159f2688a20f35ff94af405d8faace2e7053614f561d52c",
+  "timingBasis": {
+    "alignmentFile": "dialogue_alignment.json",
+    "method": "Faster Whisper ASR and -38 dB waveform silence machine review, independent CTC cross-check for disputed spans, then WhisperX Japanese forced character alignment; no subjective listening",
+    "note": "Speaker turns were machine-reviewed from ASR, waveform silences, and pitch separation; subjective listening was not performed. Later caption cards begin at forced-aligned spoken characters."
+  },
+  "video": {
+    "width": 720,
+    "height": 1280,
+    "fps": 24
+  },
+  "utterances": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 0.0,
+      "end": 5.295,
+      "text": "先生、ノートパソコンを閉じても、Claude Codeが働き続けるって本当？",
+      "subtitleUnits": [
+        {
+          "start": 0.0,
+          "end": 2.908,
+          "text": "先生、ノートパソコンを閉じても、",
+          "lines": [
+            "先生、ノートパソコンを閉じても、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 0.281,
+            "alignedFirstChar": "先",
+            "score": 0.846,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 2.908,
+          "end": 5.295,
+          "text": "Claude Codeが働き続けるって本当？",
+          "lines": [
+            "Claude Codeが",
+            "働き続けるって本当？"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 2.908,
+            "alignedFirstChar": "C",
+            "score": 0.8,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 6.109,
+      "end": 17.494,
+      "text": "本当です。クラウドセッションは、手元のパソコンではなく、クラウド側の環境で動きます。だから、ふたを閉じても処理は続きます。",
+      "subtitleUnits": [
+        {
+          "start": 6.109,
+          "end": 11.591,
+          "text": "本当です。クラウドセッションは、手元のパソコンではなく、",
+          "lines": [
+            "本当です。クラウドセッションは、",
+            "手元のパソコンではなく、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 6.149,
+            "alignedFirstChar": "本",
+            "score": 0.999,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 11.591,
+          "end": 14.433,
+          "text": "クラウド側の環境で動きます。",
+          "lines": [
+            "クラウド側の環境で動きます。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 11.591,
+            "alignedFirstChar": "ク",
+            "score": 0.875,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 14.433,
+          "end": 17.494,
+          "text": "だから、ふたを閉じても処理は続きます。",
+          "lines": [
+            "だから、ふたを閉じても",
+            "処理は続きます。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 14.433,
+            "alignedFirstChar": "だ",
+            "score": 0.8,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 18.462,
+      "end": 23.58,
+      "text": "料理を注文して、私は出かけても、厨房では作り続けてくれる感じ？",
+      "subtitleUnits": [
+        {
+          "start": 18.462,
+          "end": 23.58,
+          "text": "料理を注文して、私は出かけても、厨房では作り続けてくれる感じ？",
+          "lines": [
+            "料理を注文して、私は出かけても、",
+            "厨房では作り続けてくれる感じ？"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 18.502,
+            "alignedFirstChar": "料",
+            "score": 0.998,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 24.368,
+      "end": 35.825,
+      "text": "いい例えですね。途中の様子は、デスクトップ、ブラウザ、スマホから確認でき、別の端末でも同じセッションを続けて操作できます。",
+      "subtitleUnits": [
+        {
+          "start": 24.368,
+          "end": 27.933,
+          "text": "いい例えですね。途中の様子は、",
+          "lines": [
+            "いい例えですね。途中の様子は、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 24.368,
+            "alignedFirstChar": "い",
+            "score": 0.967,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 27.933,
+          "end": 32.22,
+          "text": "デスクトップ、ブラウザ、スマホから確認でき、",
+          "lines": [
+            "デスクトップ、ブラウザ、",
+            "スマホから確認でき、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 27.933,
+            "alignedFirstChar": "デ",
+            "score": 0.99,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 32.22,
+          "end": 35.825,
+          "text": "別の端末でも同じセッションを続けて操作できます。",
+          "lines": [
+            "別の端末でも同じセッションを",
+            "続けて操作できます。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 32.22,
+            "alignedFirstChar": "別",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 36.433,
+      "end": 39.47,
+      "text": "じゃあ、始める前に何を用意すればいいんですか？",
+      "subtitleUnits": [
+        {
+          "start": 36.433,
+          "end": 39.47,
+          "text": "じゃあ、始める前に何を用意すればいいんですか？",
+          "lines": [
+            "じゃあ、始める前に",
+            "何を用意すればいいんですか？"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 36.493,
+            "alignedFirstChar": "じ",
+            "score": 0.999,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 40.149,
+      "end": 51.41,
+      "text": "通常は、アクセスできるGitHubのリポジトリを選び、デスクトップなら実行先をローカルからクラウド環境へ切り替えて指示します。",
+      "subtitleUnits": [
+        {
+          "start": 40.149,
+          "end": 45.238,
+          "text": "通常は、アクセスできるGitHubのリポジトリを選び、",
+          "lines": [
+            "通常は、アクセスできるGitHubの",
+            "リポジトリを選び、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 40.209,
+            "alignedFirstChar": "通",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 45.238,
+          "end": 51.41,
+          "text": "デスクトップなら実行先をローカルからクラウド環境へ切り替えて指示します。",
+          "lines": [
+            "デスクトップなら実行先をローカルから",
+            "クラウド環境へ切り替えて指示します。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 45.238,
+            "alignedFirstChar": "デ",
+            "score": 0.833,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 52.161,
+      "end": 56.182,
+      "text": "私のパソコンだけにある設定や、作りかけのファイルも見えるの？",
+      "subtitleUnits": [
+        {
+          "start": 52.161,
+          "end": 56.182,
+          "text": "私のパソコンだけにある設定や、作りかけのファイルも見えるの？",
+          "lines": [
+            "私のパソコンだけにある設定や、",
+            "作りかけのファイルも見えるの？"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 52.181,
+            "alignedFirstChar": "私",
+            "score": 0.996,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 56.852,
+      "end": 75.686,
+      "text": "通常はGitHubから複製して始まるので、リポジトリにコミットしたものを使います。手元だけの設定やスクリプトは自動では入りません。ただし、ターミナルから手元のリポジトリを送る経路もあるので、開始方法は確認しましょう。",
+      "subtitleUnits": [
+        {
+          "start": 56.852,
+          "end": 60.955,
+          "text": "通常はGitHubから複製して始まるので、",
+          "lines": [
+            "通常はGitHubから",
+            "複製して始まるので、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 56.912,
+            "alignedFirstChar": "通",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 60.955,
+          "end": 64.117,
+          "text": "リポジトリにコミットしたものを使います。",
+          "lines": [
+            "リポジトリにコミットした",
+            "ものを使います。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 60.955,
+            "alignedFirstChar": "リ",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 64.117,
+          "end": 68.481,
+          "text": "手元だけの設定やスクリプトは自動では入りません。",
+          "lines": [
+            "手元だけの設定やスクリプトは",
+            "自動では入りません。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 64.117,
+            "alignedFirstChar": "手",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 68.481,
+          "end": 72.003,
+          "text": "ただし、ターミナルから手元のリポジトリを",
+          "lines": [
+            "ただし、ターミナルから",
+            "手元のリポジトリを"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 68.481,
+            "alignedFirstChar": "た",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 72.003,
+          "end": 75.686,
+          "text": "送る経路もあるので、開始方法は確認しましょう。",
+          "lines": [
+            "送る経路もあるので、",
+            "開始方法は確認しましょう。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 72.003,
+            "alignedFirstChar": "送",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 76.192,
+      "end": 80.013,
+      "text": "クラウドの作業場所は、自分向けに整えられるんですか？",
+      "subtitleUnits": [
+        {
+          "start": 76.192,
+          "end": 80.013,
+          "text": "クラウドの作業場所は、自分向けに整えられるんですか？",
+          "lines": [
+            "クラウドの作業場所は、",
+            "自分向けに整えられるんですか？"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 76.212,
+            "alignedFirstChar": "ク",
+            "score": 0.842,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 80.974,
+      "end": 95.16,
+      "text": "はい。クラウド環境という保存設定で、ネットワークの範囲、環境変数、起動前に走らせるセットアップスクリプトを用途ごとに決められます。",
+      "subtitleUnits": [
+        {
+          "start": 80.974,
+          "end": 89.798,
+          "text": "はい。クラウド環境という保存設定で、ネットワークの範囲、環境変数、",
+          "lines": [
+            "はい。クラウド環境という保存設定で、",
+            "ネットワークの範囲、環境変数、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 81.094,
+            "alignedFirstChar": "は",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 89.798,
+          "end": 93.579,
+          "text": "起動前に走らせるセットアップスクリプトを",
+          "lines": [
+            "起動前に走らせる",
+            "セットアップスクリプトを"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 89.798,
+            "alignedFirstChar": "起",
+            "score": 0.857,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 93.579,
+          "end": 95.16,
+          "text": "用途ごとに決められます。",
+          "lines": [
+            "用途ごとに決められます。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 93.579,
+            "alignedFirstChar": "用",
+            "score": 0.98,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 95.952,
+      "end": 99.093,
+      "text": "インターネットには、最初からどこへでも行けるの？",
+      "subtitleUnits": [
+        {
+          "start": 95.952,
+          "end": 99.093,
+          "text": "インターネットには、最初からどこへでも行けるの？",
+          "lines": [
+            "インターネットには、",
+            "最初からどこへでも行けるの？"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 95.992,
+            "alignedFirstChar": "イ",
+            "score": 0.624,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 99.87,
+      "end": 118.51,
+      "text": "初期のTrustedは、GitHubや主なパッケージ配布元などに絞られます。ニュースやブログを調べる仕事なら、必要な接続先を許可する設定にします。必要な行き先だけにすると、外部サイトを扱う作業にも向いています。",
+      "subtitleUnits": [
+        {
+          "start": 99.87,
+          "end": 103.073,
+          "text": "初期のTrustedは、GitHubや",
+          "lines": [
+            "初期のTrustedは、",
+            "GitHubや"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 99.97,
+            "alignedFirstChar": "初",
+            "score": 0.889,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 103.073,
+          "end": 106.938,
+          "text": "主なパッケージ配布元などに絞られます。",
+          "lines": [
+            "主なパッケージ配布元などに",
+            "絞られます。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 103.073,
+            "alignedFirstChar": "主",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 106.938,
+          "end": 113.665,
+          "text": "ニュースやブログを調べる仕事なら、必要な接続先を許可する設定にします。",
+          "lines": [
+            "ニュースやブログを調べる仕事なら、",
+            "必要な接続先を許可する設定にします。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 106.938,
+            "alignedFirstChar": "ニ",
+            "score": 0.884,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 113.665,
+          "end": 116.027,
+          "text": "必要な行き先だけにすると、",
+          "lines": [
+            "必要な行き先だけにすると、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 113.665,
+            "alignedFirstChar": "必",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 116.027,
+          "end": 118.51,
+          "text": "外部サイトを扱う作業にも向いています。",
+          "lines": [
+            "外部サイトを扱う作業にも",
+            "向いています。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 116.027,
+            "alignedFirstChar": "外",
+            "score": 0.994,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 119.068,
+      "end": 122.896,
+      "text": "見ていない間に動かすなら、便利なぶん心配もありますね。",
+      "subtitleUnits": [
+        {
+          "start": 119.068,
+          "end": 122.896,
+          "text": "見ていない間に動かすなら、便利なぶん心配もありますね。",
+          "lines": [
+            "見ていない間に動かすなら、",
+            "便利なぶん心配もありますね。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 119.088,
+            "alignedFirstChar": "見",
+            "score": 0.911,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 123.742,
+      "end": 138.126,
+      "text": "そうですね。接続先を絞るだけで作業が正しいとは限りません。終わったら会話、変更内容、テスト結果を見て、意図どおりか人が確かめましょう。",
+      "subtitleUnits": [
+        {
+          "start": 123.742,
+          "end": 130.453,
+          "text": "そうですね。接続先を絞るだけで作業が正しいとは限りません。",
+          "lines": [
+            "そうですね。接続先を絞るだけで",
+            "作業が正しいとは限りません。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 123.822,
+            "alignedFirstChar": "そ",
+            "score": 0.998,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 130.453,
+          "end": 135.782,
+          "text": "終わったら会話、変更内容、テスト結果を見て、",
+          "lines": [
+            "終わったら会話、変更内容、",
+            "テスト結果を見て、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 130.453,
+            "alignedFirstChar": "終",
+            "score": 0.995,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 135.782,
+          "end": 138.126,
+          "text": "意図どおりか人が確かめましょう。",
+          "lines": [
+            "意図どおりか人が",
+            "確かめましょう。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 135.782,
+            "alignedFirstChar": "意",
+            "score": 0.861,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 138.911,
+      "end": 148.78,
+      "text": "まとめると、パソコンを閉じても動き、どの端末からでも追いかけられる。その代わり、GitHubに置くものとクラウド環境を先に整えるんですね。",
+      "subtitleUnits": [
+        {
+          "start": 138.911,
+          "end": 144.496,
+          "text": "まとめると、パソコンを閉じても動き、どの端末からでも追いかけられる。",
+          "lines": [
+            "まとめると、パソコンを閉じても動き、",
+            "どの端末からでも追いかけられる。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 138.931,
+            "alignedFirstChar": "ま",
+            "score": 0.874,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 144.496,
+          "end": 148.78,
+          "text": "その代わり、GitHubに置くものとクラウド環境を先に整えるんですね。",
+          "lines": [
+            "その代わり、GitHubに置くものと",
+            "クラウド環境を先に整えるんですね。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 144.496,
+            "alignedFirstChar": "そ",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 149.591,
+      "end": 163.875,
+      "text": "そのとおり。クラウドセッションは、席を離れても仕事を進められる仕組みです。リポジトリ、接続先、実行準備をそろえ、最後の確認までを一組で考えましょう。",
+      "subtitleUnits": [
+        {
+          "start": 149.591,
+          "end": 152.636,
+          "text": "そのとおり。クラウドセッションは、",
+          "lines": [
+            "そのとおり。",
+            "クラウドセッションは、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 149.651,
+            "alignedFirstChar": "そ",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 152.636,
+          "end": 156.583,
+          "text": "席を離れても仕事を進められる仕組みです。",
+          "lines": [
+            "席を離れても仕事を進められる",
+            "仕組みです。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 152.636,
+            "alignedFirstChar": "席",
+            "score": 0.933,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 156.583,
+          "end": 160.95,
+          "text": "リポジトリ、接続先、実行準備をそろえ、",
+          "lines": [
+            "リポジトリ、接続先、",
+            "実行準備をそろえ、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 156.583,
+            "alignedFirstChar": "リ",
+            "score": 0.876,
+            "mappingStatus": "exact_first_char"
+          }
+        },
+        {
+          "start": 160.95,
+          "end": 163.875,
+          "text": "最後の確認までを一組で考えましょう。",
+          "lines": [
+            "最後の確認までを",
+            "一組で考えましょう。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 160.95,
+            "alignedFirstChar": "最",
+            "score": 0.993,
+            "mappingStatus": "exact_first_char"
+          }
+        }
+      ]
+    }
+  ]
+}

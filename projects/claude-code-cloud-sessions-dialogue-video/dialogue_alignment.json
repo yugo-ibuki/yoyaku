@@ -1,0 +1,818 @@
+{
+  "version": 1,
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "14b714b180b715362159f2688a20f35ff94af405d8faace2e7053614f561d52c",
+  "verifiedTurns": "verified_turns.json",
+  "method": "Faster Whisper ASR and -38 dB waveform silence machine review, independent CTC cross-check for disputed spans, then WhisperX Japanese forced character alignment; no subjective listening",
+  "utterances": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 0.0,
+      "end": 5.295,
+      "text": "先生、ノートパソコンを閉じても、Claude Codeが働き続けるって本当？",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "ASR 0.000-5.100; following -38 dB silence begins 5.295"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 1; Claudeの表記差を除き文意と語順が一致"
+      },
+      "asrText": "先生 ノートパソコンを閉じても クロードコードが働き続けるって 本当?",
+      "cards": [
+        {
+          "text": "先生、ノートパソコンを閉じても、",
+          "lines": [
+            "先生、ノートパソコンを閉じても、"
+          ],
+          "predictedStart": 0.281,
+          "alignedFirstChar": "先",
+          "score": 0.846,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 0.0,
+          "subtitleEnd": 2.908
+        },
+        {
+          "text": "Claude Codeが働き続けるって本当？",
+          "lines": [
+            "Claude Codeが",
+            "働き続けるって本当？"
+          ],
+          "predictedStart": 2.908,
+          "alignedFirstChar": "C",
+          "score": 0.8,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 2.908,
+          "subtitleEnd": 5.295
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 6.109,
+      "end": 17.494,
+      "text": "本当です。クラウドセッションは、手元のパソコンではなく、クラウド側の環境で動きます。だから、ふたを閉じても処理は続きます。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 5.295-6.109 and 17.494-18.462 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segments 2-3 match the script after punctuation normalization"
+      },
+      "asrText": "本当です クラウドセッションは 手元のパソコンではなく クラウド側の環境で動きます だから 蓋を閉じても処理は続きます",
+      "cards": [
+        {
+          "text": "本当です。クラウドセッションは、手元のパソコンではなく、",
+          "lines": [
+            "本当です。クラウドセッションは、",
+            "手元のパソコンではなく、"
+          ],
+          "predictedStart": 6.149,
+          "alignedFirstChar": "本",
+          "score": 0.999,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 6.109,
+          "subtitleEnd": 11.591
+        },
+        {
+          "text": "クラウド側の環境で動きます。",
+          "lines": [
+            "クラウド側の環境で動きます。"
+          ],
+          "predictedStart": 11.591,
+          "alignedFirstChar": "ク",
+          "score": 0.875,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 11.591,
+          "subtitleEnd": 14.433
+        },
+        {
+          "text": "だから、ふたを閉じても処理は続きます。",
+          "lines": [
+            "だから、ふたを閉じても",
+            "処理は続きます。"
+          ],
+          "predictedStart": 14.433,
+          "alignedFirstChar": "だ",
+          "score": 0.8,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 14.433,
+          "subtitleEnd": 17.494
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 18.462,
+      "end": 23.58,
+      "text": "料理を注文して、私は出かけても、厨房では作り続けてくれる感じ？",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 17.494-18.462 and 23.580-24.368 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 4; 厨房の同音付近だけ誤字"
+      },
+      "asrText": "料理を注文して 私は出かけても 中防では作り続けてくれる感じ?",
+      "cards": [
+        {
+          "text": "料理を注文して、私は出かけても、厨房では作り続けてくれる感じ？",
+          "lines": [
+            "料理を注文して、私は出かけても、",
+            "厨房では作り続けてくれる感じ？"
+          ],
+          "predictedStart": 18.502,
+          "alignedFirstChar": "料",
+          "score": 0.998,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 18.462,
+          "subtitleEnd": 23.58
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 24.368,
+      "end": 35.825,
+      "text": "いい例えですね。途中の様子は、デスクトップ、ブラウザ、スマホから確認でき、別の端末でも同じセッションを続けて操作できます。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 23.580-24.368 and 35.825-36.433 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 5 matches after punctuation normalization"
+      },
+      "asrText": "いい例えですね。途中の様子はデスクトップ、ブラウザ、スマホから確認でき、別の端末でも同じセッションを続けて操作できます。",
+      "cards": [
+        {
+          "text": "いい例えですね。途中の様子は、",
+          "lines": [
+            "いい例えですね。途中の様子は、"
+          ],
+          "predictedStart": 24.368,
+          "alignedFirstChar": "い",
+          "score": 0.967,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 24.368,
+          "subtitleEnd": 27.933
+        },
+        {
+          "text": "デスクトップ、ブラウザ、スマホから確認でき、",
+          "lines": [
+            "デスクトップ、ブラウザ、",
+            "スマホから確認でき、"
+          ],
+          "predictedStart": 27.933,
+          "alignedFirstChar": "デ",
+          "score": 0.99,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 27.933,
+          "subtitleEnd": 32.22
+        },
+        {
+          "text": "別の端末でも同じセッションを続けて操作できます。",
+          "lines": [
+            "別の端末でも同じセッションを",
+            "続けて操作できます。"
+          ],
+          "predictedStart": 32.22,
+          "alignedFirstChar": "別",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 32.22,
+          "subtitleEnd": 35.825
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 36.433,
+      "end": 39.47,
+      "text": "じゃあ、始める前に何を用意すればいいんですか？",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 35.825-36.433 and 39.470-40.149 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 6 matches after punctuation normalization"
+      },
+      "asrText": "じゃあ始める前に何を用意すればいいんですか?",
+      "cards": [
+        {
+          "text": "じゃあ、始める前に何を用意すればいいんですか？",
+          "lines": [
+            "じゃあ、始める前に",
+            "何を用意すればいいんですか？"
+          ],
+          "predictedStart": 36.493,
+          "alignedFirstChar": "じ",
+          "score": 0.999,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 36.433,
+          "subtitleEnd": 39.47
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 40.149,
+      "end": 51.41,
+      "text": "通常は、アクセスできるGitHubのリポジトリを選び、デスクトップなら実行先をローカルからクラウド環境へ切り替えて指示します。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 39.470-40.149 and 51.410-52.161 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 7 matches after punctuation normalization"
+      },
+      "asrText": "通常はアクセスできるGitHubのリポジトリを選び、デスクトップなら実行先をローカルからクラウド環境へ切り替えて指示します。",
+      "cards": [
+        {
+          "text": "通常は、アクセスできるGitHubのリポジトリを選び、",
+          "lines": [
+            "通常は、アクセスできるGitHubの",
+            "リポジトリを選び、"
+          ],
+          "predictedStart": 40.209,
+          "alignedFirstChar": "通",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 40.149,
+          "subtitleEnd": 45.238
+        },
+        {
+          "text": "デスクトップなら実行先をローカルからクラウド環境へ切り替えて指示します。",
+          "lines": [
+            "デスクトップなら実行先をローカルから",
+            "クラウド環境へ切り替えて指示します。"
+          ],
+          "predictedStart": 45.238,
+          "alignedFirstChar": "デ",
+          "score": 0.833,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 45.238,
+          "subtitleEnd": 51.41
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 52.161,
+      "end": 56.182,
+      "text": "私のパソコンだけにある設定や、作りかけのファイルも見えるの？",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 51.410-52.161 and 56.182-56.852 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 8 matches after punctuation normalization"
+      },
+      "asrText": "私のパソコンだけにある設定や作りかけのファイルも見えるの?",
+      "cards": [
+        {
+          "text": "私のパソコンだけにある設定や、作りかけのファイルも見えるの？",
+          "lines": [
+            "私のパソコンだけにある設定や、",
+            "作りかけのファイルも見えるの？"
+          ],
+          "predictedStart": 52.181,
+          "alignedFirstChar": "私",
+          "score": 0.996,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 52.161,
+          "subtitleEnd": 56.182
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 56.852,
+      "end": 75.686,
+      "text": "通常はGitHubから複製して始まるので、リポジトリにコミットしたものを使います。手元だけの設定やスクリプトは自動では入りません。ただし、ターミナルから手元のリポジトリを送る経路もあるので、開始方法は確認しましょう。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 56.182-56.852 and 75.686-76.192 at -38 dB; two ASR engines agree on disputed word"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segments 9-13 and independent Japanese CTC ASR both recognize スクリプト; final synchronized script differs from studio input スキル"
+      },
+      "asrText": "通常はGitHubから複製して始まるので リポジトリにコミットしたものを使います 手元だけの設定やスクリプトは自動では入りません ただしターミナルから手元のリポジトリを送る経路もあるので 開始方法は確認しましょう",
+      "cards": [
+        {
+          "text": "通常はGitHubから複製して始まるので、",
+          "lines": [
+            "通常はGitHubから",
+            "複製して始まるので、"
+          ],
+          "predictedStart": 56.912,
+          "alignedFirstChar": "通",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 56.852,
+          "subtitleEnd": 60.955
+        },
+        {
+          "text": "リポジトリにコミットしたものを使います。",
+          "lines": [
+            "リポジトリにコミットした",
+            "ものを使います。"
+          ],
+          "predictedStart": 60.955,
+          "alignedFirstChar": "リ",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 60.955,
+          "subtitleEnd": 64.117
+        },
+        {
+          "text": "手元だけの設定やスクリプトは自動では入りません。",
+          "lines": [
+            "手元だけの設定やスクリプトは",
+            "自動では入りません。"
+          ],
+          "predictedStart": 64.117,
+          "alignedFirstChar": "手",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 64.117,
+          "subtitleEnd": 68.481
+        },
+        {
+          "text": "ただし、ターミナルから手元のリポジトリを",
+          "lines": [
+            "ただし、ターミナルから",
+            "手元のリポジトリを"
+          ],
+          "predictedStart": 68.481,
+          "alignedFirstChar": "た",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 68.481,
+          "subtitleEnd": 72.003
+        },
+        {
+          "text": "送る経路もあるので、開始方法は確認しましょう。",
+          "lines": [
+            "送る経路もあるので、",
+            "開始方法は確認しましょう。"
+          ],
+          "predictedStart": 72.003,
+          "alignedFirstChar": "送",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 72.003,
+          "subtitleEnd": 75.686
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 76.192,
+      "end": 80.013,
+      "text": "クラウドの作業場所は、自分向けに整えられるんですか？",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 75.686-76.192 and 80.013-80.974 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 14 matches after punctuation normalization"
+      },
+      "asrText": "クラウドの作業場所は自分向けに整えられるんですか?",
+      "cards": [
+        {
+          "text": "クラウドの作業場所は、自分向けに整えられるんですか？",
+          "lines": [
+            "クラウドの作業場所は、",
+            "自分向けに整えられるんですか？"
+          ],
+          "predictedStart": 76.212,
+          "alignedFirstChar": "ク",
+          "score": 0.842,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 76.192,
+          "subtitleEnd": 80.013
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 80.974,
+      "end": 95.16,
+      "text": "はい。クラウド環境という保存設定で、ネットワークの範囲、環境変数、起動前に走らせるセットアップスクリプトを用途ごとに決められます。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 80.013-80.974 and 95.160-95.952 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segments 15-16 through word timestamp 95.240 and CTC cross-check match"
+      },
+      "asrText": "はい クラウド環境という保存設定で ネットワークの範囲 環境変数 起動前に走らせる セットアップスクリプトを用途ごとに決められます",
+      "cards": [
+        {
+          "text": "はい。クラウド環境という保存設定で、ネットワークの範囲、環境変数、",
+          "lines": [
+            "はい。クラウド環境という保存設定で、",
+            "ネットワークの範囲、環境変数、"
+          ],
+          "predictedStart": 81.094,
+          "alignedFirstChar": "は",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 80.974,
+          "subtitleEnd": 89.798
+        },
+        {
+          "text": "起動前に走らせるセットアップスクリプトを",
+          "lines": [
+            "起動前に走らせる",
+            "セットアップスクリプトを"
+          ],
+          "predictedStart": 89.798,
+          "alignedFirstChar": "起",
+          "score": 0.857,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 89.798,
+          "subtitleEnd": 93.579
+        },
+        {
+          "text": "用途ごとに決められます。",
+          "lines": [
+            "用途ごとに決められます。"
+          ],
+          "predictedStart": 93.579,
+          "alignedFirstChar": "用",
+          "score": 0.98,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 93.579,
+          "subtitleEnd": 95.16
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 95.952,
+      "end": 99.093,
+      "text": "インターネットには、最初からどこへでも行けるの？",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Speech resumes after 95.160-95.952 silence and ends at following silence 99.093"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 16 from word timestamp 95.460 and CTC cross-check match"
+      },
+      "asrText": "インターネットには最初からどこへでもいけるの?",
+      "cards": [
+        {
+          "text": "インターネットには、最初からどこへでも行けるの？",
+          "lines": [
+            "インターネットには、",
+            "最初からどこへでも行けるの？"
+          ],
+          "predictedStart": 95.992,
+          "alignedFirstChar": "イ",
+          "score": 0.624,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 95.952,
+          "subtitleEnd": 99.093
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 99.87,
+      "end": 118.51,
+      "text": "初期のTrustedは、GitHubや主なパッケージ配布元などに絞られます。ニュースやブログを調べる仕事なら、必要な接続先を許可する設定にします。必要な行き先だけにすると、外部サイトを扱う作業にも向いています。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 99.093-99.870 and 118.510-119.068 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segments 17-19 match, with English term readings and orthographic substitutions"
+      },
+      "asrText": "初期のトラストは ギットハブや主なパッケージ配布もとなどに絞られます ニュースやブログを調べる仕事なら、必要な接続先を許可する設定にします。必要な行き先だけにすると、外部サイトを扱う作業にも向いています。",
+      "cards": [
+        {
+          "text": "初期のTrustedは、GitHubや",
+          "lines": [
+            "初期のTrustedは、",
+            "GitHubや"
+          ],
+          "predictedStart": 99.97,
+          "alignedFirstChar": "初",
+          "score": 0.889,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 99.87,
+          "subtitleEnd": 103.073
+        },
+        {
+          "text": "主なパッケージ配布元などに絞られます。",
+          "lines": [
+            "主なパッケージ配布元などに",
+            "絞られます。"
+          ],
+          "predictedStart": 103.073,
+          "alignedFirstChar": "主",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 103.073,
+          "subtitleEnd": 106.938
+        },
+        {
+          "text": "ニュースやブログを調べる仕事なら、必要な接続先を許可する設定にします。",
+          "lines": [
+            "ニュースやブログを調べる仕事なら、",
+            "必要な接続先を許可する設定にします。"
+          ],
+          "predictedStart": 106.938,
+          "alignedFirstChar": "ニ",
+          "score": 0.884,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 106.938,
+          "subtitleEnd": 113.665
+        },
+        {
+          "text": "必要な行き先だけにすると、",
+          "lines": [
+            "必要な行き先だけにすると、"
+          ],
+          "predictedStart": 113.665,
+          "alignedFirstChar": "必",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 113.665,
+          "subtitleEnd": 116.027
+        },
+        {
+          "text": "外部サイトを扱う作業にも向いています。",
+          "lines": [
+            "外部サイトを扱う作業にも",
+            "向いています。"
+          ],
+          "predictedStart": 116.027,
+          "alignedFirstChar": "外",
+          "score": 0.994,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 116.027,
+          "subtitleEnd": 118.51
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 119.068,
+      "end": 122.896,
+      "text": "見ていない間に動かすなら、便利なぶん心配もありますね。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 118.510-119.068 and 122.896-123.742 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segment 20 matches after orthographic normalization"
+      },
+      "asrText": "見ていない間に動かすなら、便利な分心配もありますね。",
+      "cards": [
+        {
+          "text": "見ていない間に動かすなら、便利なぶん心配もありますね。",
+          "lines": [
+            "見ていない間に動かすなら、",
+            "便利なぶん心配もありますね。"
+          ],
+          "predictedStart": 119.088,
+          "alignedFirstChar": "見",
+          "score": 0.911,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 119.068,
+          "subtitleEnd": 122.896
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 123.742,
+      "end": 138.126,
+      "text": "そうですね。接続先を絞るだけで作業が正しいとは限りません。終わったら会話、変更内容、テスト結果を見て、意図どおりか人が確かめましょう。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 122.896-123.742 and 138.126-138.911 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segments 21-23 match except 意図どおりの同音誤字"
+      },
+      "asrText": "そうですね。接続先を絞るだけで、作業が正しいとは限りません。終わったら会話変更内容 テスト結果を見て 糸通りか人が確かめましょう",
+      "cards": [
+        {
+          "text": "そうですね。接続先を絞るだけで作業が正しいとは限りません。",
+          "lines": [
+            "そうですね。接続先を絞るだけで",
+            "作業が正しいとは限りません。"
+          ],
+          "predictedStart": 123.822,
+          "alignedFirstChar": "そ",
+          "score": 0.998,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 123.742,
+          "subtitleEnd": 130.453
+        },
+        {
+          "text": "終わったら会話、変更内容、テスト結果を見て、",
+          "lines": [
+            "終わったら会話、変更内容、",
+            "テスト結果を見て、"
+          ],
+          "predictedStart": 130.453,
+          "alignedFirstChar": "終",
+          "score": 0.995,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 130.453,
+          "subtitleEnd": 135.782
+        },
+        {
+          "text": "意図どおりか人が確かめましょう。",
+          "lines": [
+            "意図どおりか人が",
+            "確かめましょう。"
+          ],
+          "predictedStart": 135.782,
+          "alignedFirstChar": "意",
+          "score": 0.861,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 135.782,
+          "subtitleEnd": 138.126
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "speakerId": "left_student",
+      "speakerLabel": "生徒",
+      "start": 138.911,
+      "end": 148.78,
+      "text": "まとめると、パソコンを閉じても動き、どの端末からでも追いかけられる。その代わり、GitHubに置くものとクラウド環境を先に整えるんですね。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silences 138.126-138.911 and 148.780-149.591 at -38 dB"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper segments 24-25 match after punctuation normalization"
+      },
+      "asrText": "まとめるとパソコンを閉じても動き どの端末からでも追いかけられる その代わりGitHubに置くものと クラウド環境を先に整えるんですね",
+      "cards": [
+        {
+          "text": "まとめると、パソコンを閉じても動き、どの端末からでも追いかけられる。",
+          "lines": [
+            "まとめると、パソコンを閉じても動き、",
+            "どの端末からでも追いかけられる。"
+          ],
+          "predictedStart": 138.931,
+          "alignedFirstChar": "ま",
+          "score": 0.874,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 138.911,
+          "subtitleEnd": 144.496
+        },
+        {
+          "text": "その代わり、GitHubに置くものとクラウド環境を先に整えるんですね。",
+          "lines": [
+            "その代わり、GitHubに置くものと",
+            "クラウド環境を先に整えるんですね。"
+          ],
+          "predictedStart": 144.496,
+          "alignedFirstChar": "そ",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 144.496,
+          "subtitleEnd": 148.78
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "speakerId": "right_teacher",
+      "speakerLabel": "先生",
+      "start": 149.591,
+      "end": 163.875,
+      "text": "そのとおり。クラウドセッションは、席を離れても仕事を進められる仕組みです。リポジトリ、接続先、実行準備をそろえ、最後の確認までを一組で考えましょう。",
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "Boundary silence begins 148.780 and speech resumes 149.591; trailing silence begins 163.875; CTC resolves primary ASR omission"
+      },
+      "textAssessment": {
+        "status": "machine_compatible",
+        "evidence": "Faster Whisper collapses 153.960-159.400 into one token, but independent Japanese CTC ASR recognizes 仕事を進められる仕組みです リポジトリ 接続先 実行準備をそろえ; waveform contains continued speech"
+      },
+      "asrText": "その通り クラウドセッションは席を離れても仕事を [Faster Whisper missing middle] 準備を揃え、最後の確認までを一組で考えましょう",
+      "cards": [
+        {
+          "text": "そのとおり。クラウドセッションは、",
+          "lines": [
+            "そのとおり。",
+            "クラウドセッションは、"
+          ],
+          "predictedStart": 149.651,
+          "alignedFirstChar": "そ",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 149.591,
+          "subtitleEnd": 152.636
+        },
+        {
+          "text": "席を離れても仕事を進められる仕組みです。",
+          "lines": [
+            "席を離れても仕事を進められる",
+            "仕組みです。"
+          ],
+          "predictedStart": 152.636,
+          "alignedFirstChar": "席",
+          "score": 0.933,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 152.636,
+          "subtitleEnd": 156.583
+        },
+        {
+          "text": "リポジトリ、接続先、実行準備をそろえ、",
+          "lines": [
+            "リポジトリ、接続先、",
+            "実行準備をそろえ、"
+          ],
+          "predictedStart": 156.583,
+          "alignedFirstChar": "リ",
+          "score": 0.876,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 156.583,
+          "subtitleEnd": 160.95
+        },
+        {
+          "text": "最後の確認までを一組で考えましょう。",
+          "lines": [
+            "最後の確認までを",
+            "一組で考えましょう。"
+          ],
+          "predictedStart": 160.95,
+          "alignedFirstChar": "最",
+          "score": 0.993,
+          "mappingStatus": "exact_first_char",
+          "subtitleStart": 160.95,
+          "subtitleEnd": 163.875
+        }
+      ]
+    }
+  ]
+}

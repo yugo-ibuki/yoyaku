@@ -1,0 +1,192 @@
+{
+  "method": "40 ms autocorrelation frames, 10 ms hop, 60-400 Hz search, normalized peak >= 0.35, RMS >= 0.012",
+  "note": "Pitch separation supports alternating voice identity; it does not establish perceived age or gender by itself.",
+  "speakers": {
+    "left_student": {
+      "turns": 8,
+      "medianOfTurnMediansHz": 261.4
+    },
+    "right_teacher": {
+      "turns": 8,
+      "medianOfTurnMediansHz": 118.8
+    }
+  },
+  "turns": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "start": 0.0,
+      "end": 5.295,
+      "medianPitchHz": 250.0,
+      "pitchP25Hz": 208.7,
+      "pitchP75Hz": 322.2,
+      "voicedFrames": 311,
+      "medianRms": 0.08559
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "start": 6.109,
+      "end": 17.494,
+      "medianPitchHz": 127.0,
+      "pitchP25Hz": 104.3,
+      "pitchP75Hz": 164.4,
+      "voicedFrames": 556,
+      "medianRms": 0.0618
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "start": 18.462,
+      "end": 23.58,
+      "medianPitchHz": 272.7,
+      "pitchP25Hz": 221.7,
+      "pitchP75Hz": 342.9,
+      "voicedFrames": 336,
+      "medianRms": 0.10433
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "start": 24.368,
+      "end": 35.825,
+      "medianPitchHz": 116.5,
+      "pitchP25Hz": 96.0,
+      "pitchP75Hz": 138.7,
+      "voicedFrames": 513,
+      "medianRms": 0.07073
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "start": 36.433,
+      "end": 39.47,
+      "medianPitchHz": 241.2,
+      "pitchP25Hz": 220.2,
+      "pitchP75Hz": 281.5,
+      "voicedFrames": 242,
+      "medianRms": 0.12356
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "start": 40.149,
+      "end": 51.41,
+      "medianPitchHz": 123.1,
+      "pitchP25Hz": 95.2,
+      "pitchP75Hz": 167.8,
+      "voicedFrames": 585,
+      "medianRms": 0.05888
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "start": 52.161,
+      "end": 56.182,
+      "medianPitchHz": 272.7,
+      "pitchP25Hz": 224.3,
+      "pitchP75Hz": 387.1,
+      "voicedFrames": 289,
+      "medianRms": 0.12379
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "start": 56.852,
+      "end": 75.686,
+      "medianPitchHz": 137.1,
+      "pitchP25Hz": 96.6,
+      "pitchP75Hz": 171.4,
+      "voicedFrames": 939,
+      "medianRms": 0.06501
+    },
+    {
+      "id": 9,
+      "speakerId": "left_student",
+      "start": 76.192,
+      "end": 80.013,
+      "medianPitchHz": 285.7,
+      "pitchP25Hz": 233.0,
+      "pitchP75Hz": 363.6,
+      "voicedFrames": 299,
+      "medianRms": 0.13433
+    },
+    {
+      "id": 10,
+      "speakerId": "right_teacher",
+      "start": 80.974,
+      "end": 95.16,
+      "medianPitchHz": 121.2,
+      "pitchP25Hz": 86.3,
+      "pitchP75Hz": 164.4,
+      "voicedFrames": 688,
+      "medianRms": 0.04672
+    },
+    {
+      "id": 11,
+      "speakerId": "left_student",
+      "start": 95.952,
+      "end": 99.093,
+      "medianPitchHz": 279.1,
+      "pitchP25Hz": 220.7,
+      "pitchP75Hz": 363.6,
+      "voicedFrames": 238,
+      "medianRms": 0.12083
+    },
+    {
+      "id": 12,
+      "speakerId": "right_teacher",
+      "start": 99.87,
+      "end": 118.51,
+      "medianPitchHz": 115.9,
+      "pitchP25Hz": 90.6,
+      "pitchP75Hz": 165.5,
+      "voicedFrames": 883,
+      "medianRms": 0.05594
+    },
+    {
+      "id": 13,
+      "speakerId": "left_student",
+      "start": 119.068,
+      "end": 122.896,
+      "medianPitchHz": 230.8,
+      "pitchP25Hz": 206.5,
+      "pitchP75Hz": 303.8,
+      "voicedFrames": 288,
+      "medianRms": 0.13124
+    },
+    {
+      "id": 14,
+      "speakerId": "right_teacher",
+      "start": 123.742,
+      "end": 138.126,
+      "medianPitchHz": 97.2,
+      "pitchP25Hz": 86.3,
+      "pitchP75Hz": 127.7,
+      "voicedFrames": 604,
+      "medianRms": 0.06144
+    },
+    {
+      "id": 15,
+      "speakerId": "left_student",
+      "start": 138.911,
+      "end": 148.78,
+      "medianPitchHz": 247.4,
+      "pitchP25Hz": 206.5,
+      "pitchP75Hz": 304.8,
+      "voicedFrames": 616,
+      "medianRms": 0.07961
+    },
+    {
+      "id": 16,
+      "speakerId": "right_teacher",
+      "start": 149.591,
+      "end": 163.875,
+      "medianPitchHz": 98.4,
+      "pitchP25Hz": 87.3,
+      "pitchP75Hz": 144.6,
+      "voicedFrames": 625,
+      "medianRms": 0.06077
+    }
+  ]
+}
