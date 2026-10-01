@@ -1,6 +1,37 @@
 {
-  "generated_at": "2026-09-26T00:00:00Z",
+  "generated_at": "2026-10-01T00:00:00Z",
   "articles": [
+    {
+      "id": "openai-coordinated-model-distillation-campaign",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "source": "OpenAI",
+      "genre": "AIセキュリティ",
+      "technologies": [
+        "モデル蒸留",
+        "推論モデル"
+      ],
+      "reading_minutes": 4,
+      "created_at": "2026-10-01",
+      "updated_at": "2026-10-01",
+      "summary": [
+        "OpenAIは、別モデルの学習や能力再現を目的に、保護された内部推論を不正に取り出す組織的な蒸留活動を検知し、阻止したと報告した。",
+        "攻撃は暗号の解読やデータベース侵入ではなく、会話への働きかけによって非公開の推論を出力させるものだった。",
+        "別会話へ暗号化された推論を持ち込み、その内容を書き出させる試みを観測した。研究者から報告されたモデル間や会話圧縮に関する攻撃経路も確認した。",
+        "活動は7月1日に始まり、7月24〜25日には4,000人超から16,000件の関連リクエストがあった。15,000人超の関連集団を特定し、7月28日までに活動を阻止した。数値は抽出の試行を表し、成功件数ではない。",
+        "OpenAIは活動の中核をKimi開発元のMoonshot AIに関係する人物へ帰属させたが、全員が同一主体に属するかは不明としている。",
+        "抽出された推論から別モデルを訓練すると、元モデルの安全対策を引き継がずに能力が移転する可能性があり、安全保障上の懸念にもつながると説明している。",
+        "不正アカウントの停止・制限、登録時とインフラの制御強化、関連ネットワークの監視を組み合わせて対応した。",
+        "他ユーザーの暗号化推論を再利用して内容を復元する経路を閉じ、推論を漏らす可能性のあるストリーミング出力を検出・保留する検査を追加した。",
+        "第三者サービスと連携して関連アカウントへ対応し、Frontier Model Forumや政府の情報共有経路を通じて知見を共有した。持ち運びや再利用が可能な推論データを扱う他社システムにも関連リスクがある。",
+        "対策は継続中で、パートナー環境への保護展開、ツール出力の検査、分類器やモデルの拒否動作を改善し、技術的保護・組織的活動の検知と対処・脅威情報共有を強化する方針を示した。"
+      ],
+      "ogp": {
+        "image_url": "https://images.ctfassets.net/kftzwdyauwt9/7MP5Bq8wKRpAAnnhqfdA8o/3ca1f00ae7ec16c5a569eb6195e24c90/disrupting-a-coordinated-model-distillation-campaign-seo.png?w=1600&h=900&fit=fill",
+        "title": "Disrupting a coordinated model-distillation campaign",
+        "description": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation."
+      }
+    },
     {
       "id": "fractal-engineering",
       "url": "https://torus-engineering.uhyo.workers.dev/ja/fractal/",
@@ -643,6 +674,7 @@
     "genres": [
       "AIエージェント",
       "AIエージェント開発",
+      "AIセキュリティ",
       "AI活用",
       "AI駆動開発",
       "CI/CD",
@@ -717,10 +749,12 @@
       "プロンプトエンジニアリング",
       "マルチエージェント",
       "モデリング",
+      "モデル蒸留",
       "人材配置",
       "大規模言語モデル",
       "技術的負債",
       "推薦システム",
+      "推論モデル",
       "推論時計算",
       "敵対的検証",
       "概念設計",
@@ -732,6 +766,7 @@
     "sources": [
       "Cloudflare Docs",
       "DataCamp",
+      "OpenAI",
       "Speaker Deck",
       "The Pragmatic Engineer",
       "Timee Product Team Blog",
