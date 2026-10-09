@@ -1,6 +1,75 @@
 {
-  "generated_at": "2026-10-01T00:00:00Z",
+  "generated_at": "2026-10-09T00:00:00Z",
   "articles": [
+    {
+      "id": "claude-code-mods",
+      "url": "https://claude.com/ja/resources/articles/claude-code-mods",
+      "title": "Customize Claude Code with mods",
+      "source": "Claude by Anthropic",
+      "genre": "AI開発",
+      "technologies": [
+        "Claude Code",
+        "Claude Mods",
+        "TypeScript",
+        "プラグイン",
+        "Hooks"
+      ],
+      "reading_minutes": 5,
+      "created_at": "2026-10-09",
+      "updated_at": "2026-10-09",
+      "summary": [
+        "Claude Modsは、小さなTypeScript関数でClaude CodeのCLIやデスクトップアプリの動作とUIを書き換え、プラグインとして配布できる拡張機構です。",
+        "プロンプトやツール呼び出しの書き換え、再試行、権限の承認・拒否、ツール出力の秘密情報除去を実装でき、イベント処理はbefore、after、instead、wrapから選べます。UIにはボタンや入力欄も追加できます。",
+        "hooksではイベントの書き換え、UI変更、組み込み機能の置換はできません。modsはClaude Code内部の処理経路へ介入するため、より深いカスタマイズが可能です。",
+        "複数のmodsは読み込み順にイベントを受け取り、結果は逆順に戻ります。最初に読み込まれたmodがイベントを最初に見て、結果を最後に処理します。",
+        "Claude Codeへ自然言語でmodの作成とインストールを依頼でき、開発中はホットリロードで試せます。組み込みの`/diff`もmodなので、`/plugin`から無効化や置換ができます。",
+        "modsはサンドボックスで隔離されず、Claude Codeと同じ権限で同じマシンへアクセスします。信頼できる提供元だけを使う必要があります。",
+        "Team・Enterprise、またはmanaged settingsがある端末では、組み込みの`sec-default`が最初に読み込まれて拒否規則の上書きを防ぎます。独自の管理者modを先にする場合も読み込みリストへ`sec-default`を含め、管理コンソールやmanaged settingsでプラグインとマーケットプレイスを許可・遮断できます。",
+        "modはClaudeのプラグインディレクトリまたはCLIの`/plugin`から導入できます。再利用時はプラグインへ梱包してディレクトリへ提出でき、CI/CD状況ペイン、production変更の確認、監査優先読み込みなどに応用できます。"
+      ],
+      "ogp": {
+        "image_url": "https://claude.com/ja/resources/articles/claude-code-mods/opengraph-image/og",
+        "title": "Customize Claude Code with mods in TypeScript",
+        "description": "Mods are small TypeScript functions that change how Claude Code works. Rewrite prompts, block risky commands, add custom UI, or replace built-in features. Write one yourself or ask Claude Code to write it, then share it as a plugin."
+      }
+    },
+    {
+      "id": "claude-code-v2-1-287",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.287",
+      "title": "v2.1.287",
+      "source": "GitHub (anthropics/claude-code)",
+      "genre": "AI開発",
+      "technologies": [
+        "Claude Code",
+        "Claude Mods",
+        "MCP",
+        "OpenTelemetry",
+        "Remote Control",
+        "Claude Code SDK",
+        "VS Code extension"
+      ],
+      "reading_minutes": 13,
+      "created_at": "2026-10-09",
+      "updated_at": "2026-10-09",
+      "summary": [
+        "v2.1.287はClaude Modsを追加しました。テレメトリが有効なファーストパーティーセッションでは、組み込みmod「You should know」を`/plugin enable cc-plugin-you-should-know@builtin`で有効化できます。",
+        "`claude agents`に`n:<text>`フィルターを追加し、バックグラウンドセッションの再開、権限待ち表示、メッセージのキュー処理を改善しました。",
+        "OpenTelemetryの`user_prompt`へ`prompt`の複製である`prompt_text`を追加し、`prompt`と同様の削除・マスクを求めています。MCPは2025-11-25のURLプロンプトに対応しました。",
+        "危険な`rm`の常時確認、作業ツリー外へのシンボリックリンク書き込み確認、MCPツール名`__proto__`で権限上限が失われる問題を修正しました。",
+        "Remote Controlの再接続、プロキシ、macOSスリープ、ファイル送信を修正し、クラウドとリモートの一時的な送信失敗は1回再試行するようにしました。",
+        "Bedrock・Vertexのモデル制限確認を直し、Opus 4.7以降とFableは対応基盤で1Mコンテキストを既定化しました。Bedrock Guardrailsの途中遮断も正しく表示します。",
+        "SDK・ヘッドレス実行ではheartbeat、部分メッセージ終端、forkスキルのストリーム、一時的なMCP接続失敗を修正・改善しました。",
+        "`asyncRewake`の壊れたhookによる反復起動、クラウドのSessionStart hooks、途中追加したリポジトリのskills・plugins・CLAUDE.md読み込みを修正しました。",
+        "スクリーンリーダーのカーソル、キー案内、差分読み上げ、重複読み上げを修正し、Reduce motion設定にも従うようにしました。",
+        "VS Codeへ「Run in background」とagent mapの背景出力を追加し、クラウドセッション、リンク、リモート表示、プラグイン管理の不具合を修正しました。",
+        "Claude Tagの不要なSlack通知を抑え、Code Reviewのコメント切断と、新しいpushを再レビューしない問題を修正しました。"
+      ],
+      "ogp": {
+        "image_url": "https://opengraph.githubassets.com/38e4e37d33c0357b710c8c6038b064ba34ea0050a96834af61ed3857cbbb2480/anthropics/claude-code/releases/tag/v2.1.287",
+        "title": "Release v2.1.287 · anthropics/claude-code",
+        "description": "What's changed\n\nAdded Claude Mods: plugins may now modify deeper behavior\nAdded You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn ..."
+      }
+    },
     {
       "id": "openai-coordinated-model-distillation-campaign",
       "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
@@ -676,6 +745,7 @@
       "AIエージェント開発",
       "AIセキュリティ",
       "AI活用",
+      "AI開発",
       "AI駆動開発",
       "CI/CD",
       "ITマネジメント",
@@ -702,7 +772,9 @@
       "ChatGPT Work",
       "Claude Academy",
       "Claude Code",
+      "Claude Code SDK",
       "Claude Cowork",
+      "Claude Mods",
       "Cloudflare",
       "Cloudflare Browser Run",
       "Cloudflare Durable Objects",
@@ -718,6 +790,7 @@
       "Gemini Spark",
       "GitHub Actions",
       "Grok Bot",
+      "Hooks",
       "IT組織",
       "JWT",
       "Kitesurf",
@@ -727,6 +800,7 @@
       "OIDC",
       "OpenAI API",
       "OpenID Connect",
+      "OpenTelemetry",
       "PKCE",
       "Playwright",
       "Programmatic Tool Calling",
@@ -734,9 +808,12 @@
       "R2",
       "RFC 9700",
       "RankMixer",
+      "Remote Control",
       "Ruby on Rails",
       "SQLite",
       "Skills",
+      "TypeScript",
+      "VS Code extension",
       "WebMCP",
       "mTLS",
       "エンジニアリングマネジメント",
@@ -746,6 +823,7 @@
       "ドメイン駆動設計",
       "ハーネスエンジニアリング",
       "フロー効率",
+      "プラグイン",
       "プロンプトエンジニアリング",
       "マルチエージェント",
       "モデリング",
@@ -764,8 +842,10 @@
       "開発生産性"
     ],
     "sources": [
+      "Claude by Anthropic",
       "Cloudflare Docs",
       "DataCamp",
+      "GitHub (anthropics/claude-code)",
       "OpenAI",
       "Speaker Deck",
       "The Pragmatic Engineer",

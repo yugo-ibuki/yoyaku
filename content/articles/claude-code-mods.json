@@ -1,0 +1,32 @@
+{
+  "id": "claude-code-mods",
+  "url": "https://claude.com/ja/resources/articles/claude-code-mods",
+  "title": "Customize Claude Code with mods",
+  "source": "Claude by Anthropic",
+  "genre": "AI開発",
+  "technologies": [
+    "Claude Code",
+    "Claude Mods",
+    "TypeScript",
+    "プラグイン",
+    "Hooks"
+  ],
+  "reading_minutes": 5,
+  "created_at": "2026-10-09",
+  "updated_at": "2026-10-09",
+  "summary": [
+    "Claude Modsは、小さなTypeScript関数でClaude CodeのCLIやデスクトップアプリの動作とUIを書き換え、プラグインとして配布できる拡張機構です。",
+    "プロンプトやツール呼び出しの書き換え、再試行、権限の承認・拒否、ツール出力の秘密情報除去を実装でき、イベント処理はbefore、after、instead、wrapから選べます。UIにはボタンや入力欄も追加できます。",
+    "hooksではイベントの書き換え、UI変更、組み込み機能の置換はできません。modsはClaude Code内部の処理経路へ介入するため、より深いカスタマイズが可能です。",
+    "複数のmodsは読み込み順にイベントを受け取り、結果は逆順に戻ります。最初に読み込まれたmodがイベントを最初に見て、結果を最後に処理します。",
+    "Claude Codeへ自然言語でmodの作成とインストールを依頼でき、開発中はホットリロードで試せます。組み込みの`/diff`もmodなので、`/plugin`から無効化や置換ができます。",
+    "modsはサンドボックスで隔離されず、Claude Codeと同じ権限で同じマシンへアクセスします。信頼できる提供元だけを使う必要があります。",
+    "Team・Enterprise、またはmanaged settingsがある端末では、組み込みの`sec-default`が最初に読み込まれて拒否規則の上書きを防ぎます。独自の管理者modを先にする場合も読み込みリストへ`sec-default`を含め、管理コンソールやmanaged settingsでプラグインとマーケットプレイスを許可・遮断できます。",
+    "modはClaudeのプラグインディレクトリまたはCLIの`/plugin`から導入できます。再利用時はプラグインへ梱包してディレクトリへ提出でき、CI/CD状況ペイン、production変更の確認、監査優先読み込みなどに応用できます。"
+  ],
+  "ogp": {
+    "image_url": "https://claude.com/ja/resources/articles/claude-code-mods/opengraph-image/og",
+    "title": "Customize Claude Code with mods in TypeScript",
+    "description": "Mods are small TypeScript functions that change how Claude Code works. Rewrite prompts, block risky commands, add custom UI, or replace built-in features. Write one yourself or ask Claude Code to write it, then share it as a plugin."
+  }
+}
