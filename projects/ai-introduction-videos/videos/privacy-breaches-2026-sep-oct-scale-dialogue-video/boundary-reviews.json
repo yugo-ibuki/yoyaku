@@ -1,0 +1,32 @@
+{
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "subjectiveListening": false,
+  "reviews": [
+    {
+      "turnId": 2,
+      "cardNumber": 2,
+      "status": "reviewed",
+      "chosenStart": 6.705,
+      "subjectiveListening": false,
+      "evidence": "Numeric9月/九月 card. Raw aligned onset6.702,score0.998. Fresh ASR month phrase starts6.460 with timestamp overlapping the pause; previous activity ends5.900 and new activity begins6.705. Choose newly measured6.705; no uniform interval or earlier timeline used."
+    },
+    {
+      "turnId": 4,
+      "cardNumber": 3,
+      "status": "reviewed",
+      "chosenStart": 25.04,
+      "subjectiveListening": false,
+      "evidence": "約2252万 card. Raw first約 score0 andpredicted25.366. Fresh ASR約 spans25.020-25.180; prior membership-site clause activity ends24.655 and new numeral clause resumes25.040. Local ASR confirms二千二百五十二万件 and independent CTC2252万. Choose new-waveform25.040. The members hero itself already begins at its preceding別の clause, so this review does not invent a new hero switch time."
+    }
+  ],
+  "firstCardNotes": [
+    {
+      "turnId": 3,
+      "evidence": "千六百/1600 is first card of measured turn13.305-17.425. Confirmed by fresh ASR, no separate caption allocation."
+    },
+    {
+      "turnId": 6,
+      "evidence": "五千百六十三万/5163万 begins measured turn43.250. Full/local ASR and CTC confirm the value and one-second/one-item/one-year comparison."
+    }
+  ]
+}

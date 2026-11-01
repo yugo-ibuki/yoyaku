@@ -1,0 +1,14 @@
+{
+  "scope": "AI紹介動画の左の生徒猫と右の先生猫の対話シリーズ",
+  "teacherCharacterId": "right_teacher",
+  "teacher": {
+    "relativeTempoTarget": 1.1,
+    "direction": "落ち着いた教授の声。自然な会話より少し速めのテンポで話す（従来の先生の話速より約10％速めが目安）。言葉をはっきり区切り、語尾まで明瞭に話す。文中の間を長く取りすぎず、文末や話者交代では自然な間を保つ。"
+  },
+  "automaticAudioTempoPostprocess": false,
+  "notes": [
+    "relativeTempoTargetはAI Studioへ入力する演技指示の目安であり、実在を確認した数値速度パラメーターではない",
+    "案件ごとに明示された話速指定を優先する",
+    "先生以外の話者の声、方向性、話速は制作入力を維持する"
+  ]
+}

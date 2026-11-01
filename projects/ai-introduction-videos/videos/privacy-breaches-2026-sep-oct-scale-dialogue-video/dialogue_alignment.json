@@ -1,0 +1,652 @@
+{
+  "version": 1,
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "verifiedTurns": "verified_turns.json",
+  "verifiedTurnsSha256": "c8ca943ddf40632a56b96dfead2ec2761915bb666d0d6e3485595ac93589bfca",
+  "method": "speaker turns reviewed from this audio's transcript and waveform; exact TTS input force-aligned with WhisperX; display-card starts mapped through explicit pronunciation replacements",
+  "utterances": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "speakerLabel": "",
+      "start": 0.2,
+      "end": 3.245,
+      "text": "最近、情報漏洩のニュース多すぎない？",
+      "alignedTtsText": "最近、情報漏洩のニュース多すぎない？",
+      "observedText": "最近、情報ローエーのニュース多すぎない?",
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR reproduces the news-too-many question. ローエー is a phonetic transcription of漏洩 rather than a different event claim. subjectiveListening=false."
+      },
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 0}]; -38 dBFS 20 ms RMS/5 ms hop active range 0.200-3.245s; preceding inactive gap 0.200s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 214.3 Hz, first turn; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      },
+      "cards": [
+        {
+          "text": "最近、情報漏洩のニュース多すぎない？",
+          "lines": [
+            "最近、情報漏洩のニュース",
+            "多すぎない？"
+          ],
+          "predictedStart": 0.3,
+          "alignedFirstChar": "最",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 0,
+            "ttsStartIndex": 0,
+            "ttsAlignedChar": "最",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 0.2,
+          "subtitleEnd": 3.245
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "speakerLabel": "",
+      "start": 3.82,
+      "end": 12.685,
+      "text": "うん、さすがに多いと感じるよ。9月と10月だけでも、情報漏洩や不正アクセスの発表が1600件以上あるんだよ。",
+      "alignedTtsText": "うん、さすがに多いと感じるよ。九月と十月だけでも、情報漏洩や不正アクセスの発表が千六百件以上あるんだよ。",
+      "observedText": "うーん、さすがに多いと感じるよ9月と10月だけでも、情報ローエーや不正アクセスの発表が1,600件以上あるんだよ",
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR1-2 preserves the subjectiveうん response, September/October, relevant announcements and1600件以上. うーん is performance elongation of the acknowledgment, not a meaning change. CTC supports the months and六百 component; full ASR explicitly1,600. No claim of1600 independent confirmed attacks is added; the exact1654 listing value is a separately approved visual. subjectiveListening=false."
+      },
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 1}, {'segment': 2}]; -38 dBFS 20 ms RMS/5 ms hop active range 3.820-12.685s; preceding inactive gap 0.575s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 107.4 Hz, previous-turn median pitch 214.3 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      },
+      "cards": [
+        {
+          "text": "うん、さすがに多いと感じるよ。",
+          "lines": [
+            "うん、さすがに多いと感じるよ。"
+          ],
+          "predictedStart": 3.84,
+          "alignedFirstChar": "う",
+          "score": 0.833,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 0,
+            "ttsStartIndex": 0,
+            "ttsAlignedChar": "う",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 3.82,
+          "subtitleEnd": 6.705
+        },
+        {
+          "text": "9月と10月だけでも、",
+          "lines": [
+            "9月と10月だけでも、"
+          ],
+          "predictedStart": 6.705,
+          "alignedFirstChar": "九",
+          "score": 0.998,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 15,
+            "ttsStartIndex": 15,
+            "ttsAlignedChar": "九",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 6.705,
+          "subtitleEnd": 8.603,
+          "manualReview": {
+            "status": "reviewed",
+            "originalPredictedStart": 6.702,
+            "subjectiveListening": false,
+            "chosenStart": 6.705,
+            "localWaveformDbfs": -28.43,
+            "evidence": "Numeric9月/九月 card. Raw aligned onset6.702,score0.998. Fresh ASR month phrase starts6.460 with timestamp overlapping the pause; previous activity ends5.900 and new activity begins6.705. Choose newly measured6.705; no uniform interval or earlier timeline used."
+          }
+        },
+        {
+          "text": "情報漏洩や不正アクセスの発表が1600件以上あるんだよ。",
+          "lines": [
+            "情報漏洩や不正アクセスの発表が",
+            "1600件以上あるんだよ。"
+          ],
+          "predictedStart": 8.603,
+          "alignedFirstChar": "情",
+          "score": 0.999,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 26,
+            "ttsStartIndex": 25,
+            "ttsAlignedChar": "情",
+            "rulesAppliedInPrefix": [
+              {
+                "display": "9月",
+                "spoken": "九月"
+              },
+              {
+                "display": "10月",
+                "spoken": "十月"
+              }
+            ],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 8.603,
+          "subtitleEnd": 12.685
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "speakerLabel": "",
+      "start": 13.305,
+      "end": 17.425,
+      "text": "1600件以上？一つ一つの規模も大きいの？",
+      "alignedTtsText": "千六百件以上？一つ一つの規模も大きいの？",
+      "observedText": "1,600件以上?一つ一つの規模も大きいの?",
+      "textAssessment": {
+        "status": "confirmed_match",
+        "evidence": "Fresh ASR3 reproduces1600件以上 and the individual-scale question. subjectiveListening=false."
+      },
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 3}]; -38 dBFS 20 ms RMS/5 ms hop active range 13.305-17.425s; preceding inactive gap 0.620s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 233.0 Hz, previous-turn median pitch 107.4 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      },
+      "cards": [
+        {
+          "text": "1600件以上？一つ一つの規模も大きいの？",
+          "lines": [
+            "1600件以上？",
+            "一つ一つの規模も大きいの？"
+          ],
+          "predictedStart": 13.466,
+          "alignedFirstChar": "千",
+          "score": 0.996,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 0,
+            "ttsStartIndex": 0,
+            "ttsAlignedChar": "千",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 13.305,
+          "subtitleEnd": 17.425
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "speakerLabel": "",
+      "start": 18.0,
+      "end": 37.075,
+      "text": "メール配信サービスの件なんて、延べ約5163万件。別の会員サイトでも、約2252万件の情報が流出した可能性があるんだ。宿泊予約のシステムも、最大約445万人の情報が閲覧・取得された可能性がある。",
+      "alignedTtsText": "メール配信サービスの件なんて、延べ約五千百六十三万件。別の会員サイトでも、約二千二百五十二万件の情報が流出した可能性があるんだ。宿泊予約のシステムも、最大約四百四十五万人の情報が閲覧・取得された可能性がある。",
+      "observedText": "メール配信サービスの件なんて、ノベ約5,163万件別の感染サイトでも、約2,252万件の情報が流出した可能性があるんだ宿泊予約のシステムも最大約445万人の情報が 閲覧取得された可能性がある",
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR4-6 preserves延べ5163万件,2252万件 possible exposure and最大445万人 possible viewing/acquisition. Local no-prompt ASR reproduces五千百六十三万件,二千二百五十二万件,四百四十五万人. Full ASR infection-site reading is an ASR disagreement: full CTC館員サイト, local ASR関インサイト and focused independent CTC23.7-24.65の会員さいとでも support the intended membership-site wording. No corporate/service name is spoken in the machine transcripts. 延べ/約/最大/可能性 and units remain distinct. subjectiveListening=false."
+      },
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 4}, {'segment': 5}, {'segment': 6}]; -38 dBFS 20 ms RMS/5 ms hop active range 18.000-37.075s; preceding inactive gap 0.575s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 110.9 Hz, previous-turn median pitch 233.0 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      },
+      "cards": [
+        {
+          "text": "メール配信サービスの件なんて、延べ約5163万件。",
+          "lines": [
+            "メール配信サービスの件なんて、",
+            "延べ約5163万件。"
+          ],
+          "predictedStart": 18.04,
+          "alignedFirstChar": "メ",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 0,
+            "ttsStartIndex": 0,
+            "ttsAlignedChar": "メ",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 18.0,
+          "subtitleEnd": 23.444
+        },
+        {
+          "text": "別の会員サイトでも、",
+          "lines": [
+            "別の会員サイトでも、"
+          ],
+          "predictedStart": 23.444,
+          "alignedFirstChar": "別",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 25,
+            "ttsStartIndex": 27,
+            "ttsAlignedChar": "別",
+            "rulesAppliedInPrefix": [
+              {
+                "display": "5163万",
+                "spoken": "五千百六十三万"
+              }
+            ],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 23.444,
+          "subtitleEnd": 25.04
+        },
+        {
+          "text": "約2252万件の情報が流出した可能性があるんだ。",
+          "lines": [
+            "約2252万件の情報が",
+            "流出した可能性があるんだ。"
+          ],
+          "predictedStart": 25.04,
+          "alignedFirstChar": "約",
+          "score": 0.0,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 35,
+            "ttsStartIndex": 37,
+            "ttsAlignedChar": "約",
+            "rulesAppliedInPrefix": [
+              {
+                "display": "5163万",
+                "spoken": "五千百六十三万"
+              }
+            ],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 25.04,
+          "subtitleEnd": 30.049,
+          "manualReview": {
+            "status": "reviewed",
+            "originalPredictedStart": 25.366,
+            "subjectiveListening": false,
+            "chosenStart": 25.04,
+            "localWaveformDbfs": -32.65,
+            "evidence": "約2252万 card. Raw first約 score0 andpredicted25.366. Fresh ASR約 spans25.020-25.180; prior membership-site clause activity ends24.655 and new numeral clause resumes25.040. Local ASR confirms二千二百五十二万件 and independent CTC2252万. Choose new-waveform25.040. The members hero itself already begins at its preceding別の clause, so this review does not invent a new hero switch time."
+          }
+        },
+        {
+          "text": "宿泊予約のシステムも、",
+          "lines": [
+            "宿泊予約のシステムも、"
+          ],
+          "predictedStart": 30.049,
+          "alignedFirstChar": "宿",
+          "score": 0.916,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 59,
+            "ttsStartIndex": 64,
+            "ttsAlignedChar": "宿",
+            "rulesAppliedInPrefix": [
+              {
+                "display": "5163万",
+                "spoken": "五千百六十三万"
+              },
+              {
+                "display": "2252万",
+                "spoken": "二千二百五十二万"
+              }
+            ],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 30.049,
+          "subtitleEnd": 31.931
+        },
+        {
+          "text": "最大約445万人の情報が閲覧・取得された可能性がある。",
+          "lines": [
+            "最大約445万人の情報が",
+            "閲覧・取得された可能性がある。"
+          ],
+          "predictedStart": 31.931,
+          "alignedFirstChar": "最",
+          "score": 0.999,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 70,
+            "ttsStartIndex": 75,
+            "ttsAlignedChar": "最",
+            "rulesAppliedInPrefix": [
+              {
+                "display": "5163万",
+                "spoken": "五千百六十三万"
+              },
+              {
+                "display": "2252万",
+                "spoken": "二千二百五十二万"
+              }
+            ],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 31.931,
+          "subtitleEnd": 37.075
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "speakerLabel": "",
+      "start": 37.545,
+      "end": 42.655,
+      "text": "メールも会員登録も旅行の予約も、身近なものばかりだよね。",
+      "alignedTtsText": "メールも会員登録も旅行の予約も、身近なものばかりだよね。",
+      "observedText": "メールも感染登録も旅行の予約も 身近なものばかりだよね",
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR infection-registration reading is reviewed against independent CTC: broad crop yields<unk>員登録 and focused38-39.35 yields家品登録. These phonetic/member-ending outputs do not supportセン of感染; the common member-registration phrase and canonical text are consistent with the source phrase. Rest of mail/travel/everyday-relevance sentence is reproduced. This is a machine spelling assessment, not subjective listening. subjectiveListening=false."
+      },
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 7}]; -38 dBFS 20 ms RMS/5 ms hop active range 37.545-42.655s; preceding inactive gap 0.470s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 233.0 Hz, previous-turn median pitch 110.9 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      },
+      "cards": [
+        {
+          "text": "メールも会員登録も旅行の予約も、身近なものばかりだよね。",
+          "lines": [
+            "メールも会員登録も旅行の予約も、",
+            "身近なものばかりだよね。"
+          ],
+          "predictedStart": 37.565,
+          "alignedFirstChar": "メ",
+          "score": 0.997,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 0,
+            "ttsStartIndex": 0,
+            "ttsAlignedChar": "メ",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 37.545,
+          "subtitleEnd": 42.655
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "speakerLabel": "",
+      "start": 43.25,
+      "end": 52.545,
+      "text": "5163万件って、1秒に1件数えても1年以上だよ。僕はもう、ただのニュースとして聞き流せないな。",
+      "alignedTtsText": "五千百六十三万件って、一秒に一件数えても一年以上だよ。僕はもう、ただのニュースとして聞き流せないな。",
+      "observedText": "5163万件て1秒に1件数えても1年以上だよ僕はもうただのニュースとして 聞き流せないな",
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR8-9 preserves5163万件,1秒に1件数えても1年以上 and the subjective not-just-news reaction. Independent CTC supports5千…/one-second/one-item/one-year sequence with orthographic errors. The comparison is arithmetic on count, not unique people. subjectiveListening=false."
+      },
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 8}, {'segment': 9}]; -38 dBFS 20 ms RMS/5 ms hop active range 43.250-52.545s; preceding inactive gap 0.595s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 99.2 Hz, previous-turn median pitch 233.0 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      },
+      "cards": [
+        {
+          "text": "5163万件って、1秒に1件数えても1年以上だよ。",
+          "lines": [
+            "5163万件って、",
+            "1秒に1件数えても1年以上だよ。"
+          ],
+          "predictedStart": 43.29,
+          "alignedFirstChar": "五",
+          "score": 0.923,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 0,
+            "ttsStartIndex": 0,
+            "ttsAlignedChar": "五",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 43.25,
+          "subtitleEnd": 49.38
+        },
+        {
+          "text": "僕はもう、ただのニュースとして聞き流せないな。",
+          "lines": [
+            "僕はもう、ただのニュースとして",
+            "聞き流せないな。"
+          ],
+          "predictedStart": 49.38,
+          "alignedFirstChar": "僕",
+          "score": 0.999,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 25,
+            "ttsStartIndex": 27,
+            "ttsAlignedChar": "僕",
+            "rulesAppliedInPrefix": [
+              {
+                "display": "5163万",
+                "spoken": "五千百六十三万"
+              },
+              {
+                "display": "1秒",
+                "spoken": "一秒"
+              },
+              {
+                "display": "1件",
+                "spoken": "一件"
+              },
+              {
+                "display": "1年以上",
+                "spoken": "一年以上"
+              }
+            ],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 49.38,
+          "subtitleEnd": 52.545
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "speakerLabel": "",
+      "start": 53.27,
+      "end": 57.0,
+      "text": "登録したまま忘れてるサービス、結構あるんだよね。",
+      "alignedTtsText": "登録したまま忘れてるサービス、結構あるんだよね。",
+      "observedText": "登録したまま忘れてるサービス 結構あるんだよね",
+      "textAssessment": {
+        "status": "confirmed_match",
+        "evidence": "Fresh ASR10 reproduces forgotten registrations and the subjective closing question. subjectiveListening=false."
+      },
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 10}]; -38 dBFS 20 ms RMS/5 ms hop active range 53.270-57.000s; preceding inactive gap 0.725s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 228.6 Hz, previous-turn median pitch 99.2 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      },
+      "cards": [
+        {
+          "text": "登録したまま忘れてるサービス、結構あるんだよね。",
+          "lines": [
+            "登録したまま忘れてるサービス、",
+            "結構あるんだよね。"
+          ],
+          "predictedStart": 53.35,
+          "alignedFirstChar": "登",
+          "score": 0.898,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 0,
+            "ttsStartIndex": 0,
+            "ttsAlignedChar": "登",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 53.27,
+          "subtitleEnd": 57.0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "speakerLabel": "",
+      "start": 57.54,
+      "end": 78.25,
+      "text": "僕なら、まず公式アプリやブックマークから案内を確認するかな。使い回してるパスワードは変えて、パスキーや多要素認証も使いたいね。利用明細も見ておきたい。メールやSMSのリンクから、慌ててログインしないようにしよう。こたつから出なくても、そのくらいはできるしね。",
+      "alignedTtsText": "僕なら、まず公式アプリやブックマークから案内を確認するかな。使い回してるパスワードは変えて、パスキーや多要素認証も使いたいね。利用明細も見ておきたい。メールやエスエムエスのリンクから、慌ててログインしないようにしよう。こたつから出なくても、そのくらいはできるしね。",
+      "observedText": "僕ならまず公式アプリやブックマークから案内を確認するかな使い回してるパスワードは変えてパスキーや多様素認証も使いたいね利用名材も見ておきたいメールやSNSのリンクから慌ててログインしないようにしようこたつから出なくてもそのくらいはできるしね",
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR11-15 preserves official-app/bookmark check, reused passwords, passkeys/multi-factor authentication, statements, avoiding email/SMS login links and kotatsu. 多様素/利用名材 are recognition variants; independent CTC explicitly利用明細. ASR SNS differs from explicit TTSエスエムエス; broad and focused CTC bothエスエメース support the M consonant rather thanヌ, so adopted as an acronym recognition disagreement. No advice was omitted or rewritten. subjectiveListening=false."
+      },
+      "turnReview": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 11}, {'segment': 12}, {'segment': 13}, {'segment': 14}, {'segment': 15}]; -38 dBFS 20 ms RMS/5 ms hop active range 57.540-78.250s; preceding inactive gap 0.540s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 112.1 Hz, previous-turn median pitch 228.6 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      },
+      "cards": [
+        {
+          "text": "僕なら、まず公式アプリやブックマークから案内を確認するかな。",
+          "lines": [
+            "僕なら、まず公式アプリや",
+            "ブックマークから案内を確認するかな。"
+          ],
+          "predictedStart": 57.62,
+          "alignedFirstChar": "僕",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 0,
+            "ttsStartIndex": 0,
+            "ttsAlignedChar": "僕",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 57.54,
+          "subtitleEnd": 63.363
+        },
+        {
+          "text": "使い回してるパスワードは変えて、",
+          "lines": [
+            "使い回してるパスワードは変えて、"
+          ],
+          "predictedStart": 63.363,
+          "alignedFirstChar": "使",
+          "score": 0.999,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 30,
+            "ttsStartIndex": 30,
+            "ttsAlignedChar": "使",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 63.363,
+          "subtitleEnd": 65.664
+        },
+        {
+          "text": "パスキーや多要素認証も使いたいね。",
+          "lines": [
+            "パスキーや多要素認証も使いたいね。"
+          ],
+          "predictedStart": 65.664,
+          "alignedFirstChar": "パ",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 46,
+            "ttsStartIndex": 46,
+            "ttsAlignedChar": "パ",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 65.664,
+          "subtitleEnd": 68.685
+        },
+        {
+          "text": "利用明細も見ておきたい。",
+          "lines": [
+            "利用明細も見ておきたい。"
+          ],
+          "predictedStart": 68.685,
+          "alignedFirstChar": "利",
+          "score": 1.0,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 63,
+            "ttsStartIndex": 63,
+            "ttsAlignedChar": "利",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 68.685,
+          "subtitleEnd": 70.846
+        },
+        {
+          "text": "メールやSMSのリンクから、慌ててログインしないようにしよう。",
+          "lines": [
+            "メールやSMSのリンクから、",
+            "慌ててログインしないようにしよう。"
+          ],
+          "predictedStart": 70.846,
+          "alignedFirstChar": "メ",
+          "score": 0.857,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 75,
+            "ttsStartIndex": 75,
+            "ttsAlignedChar": "メ",
+            "rulesAppliedInPrefix": [],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 70.846,
+          "subtitleEnd": 75.609
+        },
+        {
+          "text": "こたつから出なくても、そのくらいはできるしね。",
+          "lines": [
+            "こたつから出なくても、",
+            "そのくらいはできるしね。"
+          ],
+          "predictedStart": 75.609,
+          "alignedFirstChar": "こ",
+          "score": 0.857,
+          "mappingStatus": "exact_first_char",
+          "pronunciationMapping": {
+            "displayStartIndex": 106,
+            "ttsStartIndex": 109,
+            "ttsAlignedChar": "こ",
+            "rulesAppliedInPrefix": [
+              {
+                "display": "SMS",
+                "spoken": "エスエムエス"
+              }
+            ],
+            "basis": "explicit_turn_scoped_display_to_tts_replacements"
+          },
+          "subtitleStart": 75.609,
+          "subtitleEnd": 78.25
+        }
+      ]
+    }
+  ],
+  "lowConfidenceReview": {
+    "reviewFile": "boundary-reviews.json",
+    "reviewFileSha256": "389fbecaba6681a813228a53be7d895768e6fa1ae3713b76ea2f29f130d7afbe",
+    "requiredCount": 2,
+    "status": "complete"
+  }
+}

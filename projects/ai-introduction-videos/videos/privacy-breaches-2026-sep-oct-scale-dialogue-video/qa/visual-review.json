@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "reviewDate": "2026-11-02",
+  "timezone": "Asia/Jayapura",
+  "status": "passed_full_contact_sheet_visual_review",
+  "reviewer": "parent agent direct image inspection",
+  "video": "privacy-breaches-2026-sep-oct-scale-cats.mp4",
+  "videoSha256": "d760976ed638bdf24bc91c82f368b58c59bde339de73c932922ff488fa93c3d1",
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "contactSheetsReviewed": [
+    {
+      "path": "contact-sheet-01.png",
+      "sha256": "70568a2ce978517b51ea2dfdff9ba76a34b7ad765c8b49ede8cc51f67d4a146f"
+    },
+    {
+      "path": "contact-sheet-02.png",
+      "sha256": "b029be23843ff08c39cf09423bfbe84e9096eb74e30277b971d07f25d6e91740"
+    },
+    {
+      "path": "contact-sheet-03.png",
+      "sha256": "489cb03606401543c8d7b143746c962ffb83f648913edbd80a69ba4e9abc62d7"
+    },
+    {
+      "path": "contact-sheet-04.png",
+      "sha256": "8c7be9153cd83d2e266e1715f28b91e19f9d6947c2daebb6a69765cf27154faa"
+    },
+    {
+      "path": "contact-sheet-05.png",
+      "sha256": "6d388cdcb0cffc390af7b547e60b6b076cd06a9ec8f1a86fb937a564a5f387ef"
+    }
+  ],
+  "framesReviewed": 50,
+  "coverage": {
+    "endpoint": 2,
+    "speaker-peak": 8,
+    "subtitle-card": 20,
+    "handoff-before": 7,
+    "handoff-after": 7,
+    "numeric-overlay": 5,
+    "silence": 1
+  },
+  "checks": {
+    "all20CaptionsReadableWithinFrame": true,
+    "all7HandoffsReviewedBeforeAndAfter": true,
+    "all8SpeakerPeaksReviewed": true,
+    "all5NumericStatesReviewed": true,
+    "numericLabelsValuesUnitsQualifiersCorrect": true,
+    "numericPanelsDoNotCoverFacesOrSubtitles": true,
+    "listenerAndBackgroundStable": true,
+    "speakerOnlyMouthPatch": true,
+    "approvalMatches8Turns": true,
+    "allUserCountermeasuresRetained": true,
+    "individualCompanyNamesAbsentFromDisplayedContent": true,
+    "dateAndAnonymousAttributionVisible": true,
+    "openingEndingAndTailSilenceReviewed": true
+  },
+  "issues": [],
+  "subjectiveFullAudioListening": false,
+  "otherVerification": {
+    "unittestsPassed": 10,
+    "independentTimelineVerificationPassed": true,
+    "videoDurationSeconds": 78.6,
+    "aacStartOffsetSeconds": 0,
+    "aacWaveformCorrelation": 0.99989195,
+    "aacDurationDifferenceSeconds": 0.034667
+  },
+  "limits": "Visual review covers50 extracted frames on5 complete contact sheets and is distinct from machine audio validation; no human full-length listening is claimed."
+}

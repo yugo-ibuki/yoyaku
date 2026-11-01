@@ -1,7 +1,14 @@
-fdd35a08ffd288f347eceea8eeaad9754487f885c443cc3be93aeaddeeeee27f  ./README.md
+dec6bcd515510bd52a3c627588d28e97800f17c0d6ed8b3aaf5c25e5dbb97c20  ./README.md
 2b49969ee044c24f2749d9289aebb8e6ec5e20f5ed4a6b32bd59428824027947  ./dining-room/base.png
 91209ad7c78e36703b861e06de03fafb1691e17842512c2292e302d561385b56  ./dining-room/left-speaking.png
 0ec4193606ac7113245092fc0d0b84e0ca4b424750340b225d9b058205b25489  ./dining-room/right-speaking.png
+ec7a76fd2f3c6cf6b8e422b0d5adc9eba781bab047cb275df143b14394784e3a  ./kotatsu-mikan/PROMPTS.md
+a6615540a9689dd7a368814363eb4b83abf7c76b605670b5fdbb8c086acf7ac9  ./kotatsu-mikan/README.md
+46adb161dedb4812760dc3874c8d54a6bd5a3bf9351284c2e669d3c5f857932a  ./kotatsu-mikan/base-sample.png
+46adb161dedb4812760dc3874c8d54a6bd5a3bf9351284c2e669d3c5f857932a  ./kotatsu-mikan/base.png
+7ba7b5bca551cc032713187d3a84900898b29a1668253c01bb341ec4805008ff  ./kotatsu-mikan/generation-prompt.txt
+bdf203bf9c35d98dde5e2212cecffe58410134b2c1eb7978c4a50c0c35341ed2  ./kotatsu-mikan/left-speaking.png
+4ee5a5b6cc15cba7394965cf7d212096627aef8535e7cfc9d13c67723d1e6e45  ./kotatsu-mikan/right-speaking.png
 e76f863b27c76a65c3947ce0295bc43b24dc746f7f449ad8830f89e2f19eaf4a  ./outdoor-cafe/base.png
 90e8bd4e3072c3d15e530513120fb090252b8ba26dbdb819ec7710613541b0c0  ./outdoor-cafe/left-speaking.png
 f949129be735ecc9f50a01caa7e94b30249155be25ccc0dd0da5ec4702c0cfc3  ./outdoor-cafe/right-speaking.png

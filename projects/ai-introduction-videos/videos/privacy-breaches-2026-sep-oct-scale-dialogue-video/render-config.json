@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "status": "ready",
+  "sourceSize": [
+    1672,
+    941
+  ],
+  "expectedAssets": {
+    "base.png": "46adb161dedb4812760dc3874c8d54a6bd5a3bf9351284c2e669d3c5f857932a",
+    "left-speaking.png": "bdf203bf9c35d98dde5e2212cecffe58410134b2c1eb7978c4a50c0c35341ed2",
+    "right-speaking.png": "4ee5a5b6cc15cba7394965cf7d212096627aef8535e7cfc9d13c67723d1e6e45"
+  },
+  "mouthRegions": {
+    "left_student": {
+      "shape": "ellipse",
+      "box": [
+        545,
+        273,
+        617,
+        330
+      ],
+      "featherPx": 3
+    },
+    "right_teacher": {
+      "shape": "ellipse",
+      "box": [
+        1088,
+        285,
+        1152,
+        337
+      ],
+      "featherPx": 3
+    }
+  },
+  "rmsWindowSeconds": 0.06,
+  "openThresholdDbfs": -38.0,
+  "notes": [
+    "3枚の採用素材を目視し、鼻・目を避けて開口と顎の最小楕円を指定。背景と聞き手はbase.pngに固定。",
+    "boxは元画像1672x941上の[x0,y0,x1,y1]。音声しきい値は最終音声で全ターン検証する。"
+  ]
+}

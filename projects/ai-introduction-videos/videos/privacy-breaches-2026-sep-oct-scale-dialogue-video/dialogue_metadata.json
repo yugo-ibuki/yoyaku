@@ -1,0 +1,809 @@
+{
+  "version": 1,
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "audioDuration": 78.6,
+  "scriptApproval": {
+    "approved": true,
+    "scriptSha256": "e38ff2e0631e41e7543ee593eb6e1544bb9f682e6d5d8abb30956f34a1e0af26",
+    "reviewSha256": "cbb26b9a0e325a83bdd00bac2f74ab49edb1779fd048188e76a987bf80a1bdc9"
+  },
+  "timingBasis": {
+    "alignmentFile": "dialogue_alignment.json",
+    "method": "speaker turns reviewed from this audio's transcript and waveform; exact TTS input force-aligned with WhisperX; display-card starts mapped through explicit pronunciation replacements"
+  },
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "composition": "fixed-base-with-speaker-mouth-patch",
+    "subtitlePosition": "bottom",
+    "visibleSpeakerLabels": false
+  },
+  "renderConfig": {
+    "path": "render-config.json",
+    "sha256": "1cf0f38fd5cc0fbfa221ac384c05680d88b4f191c23c7118de52282f3937257d"
+  },
+  "asOf": "2026-11-01",
+  "publicationRange": {
+    "from": "2026-09-01",
+    "through": "2026-10-31"
+  },
+  "sourceLabels": {
+    "L9": "公表一覧 2026-09",
+    "L10": "公表一覧 2026-10",
+    "A": "事例A 2026-10-26",
+    "B": "事例B 2026-10-15",
+    "C": "事例C 2026-10-09",
+    "MATH": "件数の算術比較",
+    "CAA": "消費者庁 対策資料"
+  },
+  "embeddedMetadata": {
+    "title": "猫と学ぶ 情報漏洩の数字と規模",
+    "comment": "企業・サービス・自治体名なし版・公表期間 2026-09-01–2026-10-31・確認時点 2026-11-01"
+  },
+  "numericPanel": [
+    80,
+    385,
+    1200,
+    535
+  ],
+  "numericOverlays": [
+    {
+      "stateId": "listing",
+      "turnId": 2,
+      "label": "9〜10月の関連事案",
+      "number": "1,654件",
+      "qualifier": "公表・掲載事案数／漏洩のおそれ等を含む",
+      "sourceValue": 1654,
+      "unit": "件",
+      "start": 3.82,
+      "end": 12.685,
+      "firstCard": 1,
+      "lastCard": 3
+    },
+    {
+      "stateId": "mail",
+      "turnId": 4,
+      "label": "メール配信",
+      "number": "延べ約5,163万件",
+      "qualifier": "",
+      "sourceValue": 51628280,
+      "unit": "延べ件",
+      "start": 18.0,
+      "end": 23.444,
+      "firstCard": 1,
+      "lastCard": 1
+    },
+    {
+      "stateId": "members",
+      "turnId": 4,
+      "label": "会員情報",
+      "number": "約2,252万件",
+      "qualifier": "流出の可能性",
+      "sourceValue": 22519960,
+      "unit": "件",
+      "start": 23.444,
+      "end": 30.049,
+      "firstCard": 2,
+      "lastCard": 3
+    },
+    {
+      "stateId": "travel",
+      "turnId": 4,
+      "label": "宿泊予約",
+      "number": "最大約445万人",
+      "qualifier": "閲覧・取得の可能性",
+      "sourceValue": 4450000,
+      "unit": "最大人数",
+      "start": 30.049,
+      "end": 37.075,
+      "firstCard": 4,
+      "lastCard": 5
+    },
+    {
+      "stateId": "comparison",
+      "turnId": 6,
+      "label": "規模の実感",
+      "number": "5,163万件",
+      "qualifier": "1秒に1件でも1年以上",
+      "sourceValue": 51630000,
+      "unit": "件",
+      "start": 43.25,
+      "end": 52.545,
+      "firstCard": 1,
+      "lastCard": 2
+    }
+  ],
+  "assets": {
+    "base.png": {
+      "path": "../../assets/kotatsu-mikan/base.png",
+      "sha256": "46adb161dedb4812760dc3874c8d54a6bd5a3bf9351284c2e669d3c5f857932a"
+    },
+    "left-speaking.png": {
+      "path": "../../assets/kotatsu-mikan/left-speaking.png",
+      "sha256": "bdf203bf9c35d98dde5e2212cecffe58410134b2c1eb7978c4a50c0c35341ed2"
+    },
+    "right-speaking.png": {
+      "path": "../../assets/kotatsu-mikan/right-speaking.png",
+      "sha256": "4ee5a5b6cc15cba7394965cf7d212096627aef8535e7cfc9d13c67723d1e6e45"
+    }
+  },
+  "utterances": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "speakerLabel": "",
+      "start": 0.2,
+      "end": 3.245,
+      "text": "最近、情報漏洩のニュース多すぎない？",
+      "sourceIds": [],
+      "sourceAttribution": "",
+      "mouthMotion": {
+        "method": "speaker-only masked mouth patch gated by local RMS",
+        "speakingAsset": "left-speaking.png",
+        "listenerMouthMotion": false,
+        "openThresholdDbfs": -38.0,
+        "rmsWindowSeconds": 0.06,
+        "peakTime": 1.367,
+        "peakDbfs": -13.18
+      },
+      "subtitleUnits": [
+        {
+          "start": 0.2,
+          "end": 3.245,
+          "text": "最近、情報漏洩のニュース多すぎない？",
+          "lines": [
+            "最近、情報漏洩のニュース",
+            "多すぎない？"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 0.3,
+            "alignedFirstChar": "最",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 0,
+              "ttsStartIndex": 0,
+              "ttsAlignedChar": "最",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "speakerLabel": "",
+      "start": 3.82,
+      "end": 12.685,
+      "text": "うん、さすがに多いと感じるよ。9月と10月だけでも、情報漏洩や不正アクセスの発表が1600件以上あるんだよ。",
+      "sourceIds": [
+        "L9",
+        "L10"
+      ],
+      "sourceAttribution": "出典：公表一覧 2026-09 ／ 公表一覧 2026-10",
+      "mouthMotion": {
+        "method": "speaker-only masked mouth patch gated by local RMS",
+        "speakingAsset": "right-speaking.png",
+        "listenerMouthMotion": false,
+        "openThresholdDbfs": -38.0,
+        "rmsWindowSeconds": 0.06,
+        "peakTime": 3.945,
+        "peakDbfs": -9.47
+      },
+      "subtitleUnits": [
+        {
+          "start": 3.82,
+          "end": 6.705,
+          "text": "うん、さすがに多いと感じるよ。",
+          "lines": [
+            "うん、さすがに多いと感じるよ。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 3.84,
+            "alignedFirstChar": "う",
+            "score": 0.833,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 0,
+              "ttsStartIndex": 0,
+              "ttsAlignedChar": "う",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 6.705,
+          "end": 8.603,
+          "text": "9月と10月だけでも、",
+          "lines": [
+            "9月と10月だけでも、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 6.705,
+            "alignedFirstChar": "九",
+            "score": 0.998,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 15,
+              "ttsStartIndex": 15,
+              "ttsAlignedChar": "九",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 8.603,
+          "end": 12.685,
+          "text": "情報漏洩や不正アクセスの発表が1600件以上あるんだよ。",
+          "lines": [
+            "情報漏洩や不正アクセスの発表が",
+            "1600件以上あるんだよ。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 8.603,
+            "alignedFirstChar": "情",
+            "score": 0.999,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 26,
+              "ttsStartIndex": 25,
+              "ttsAlignedChar": "情",
+              "rulesAppliedInPrefix": [
+                {
+                  "display": "9月",
+                  "spoken": "九月"
+                },
+                {
+                  "display": "10月",
+                  "spoken": "十月"
+                }
+              ],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "speakerLabel": "",
+      "start": 13.305,
+      "end": 17.425,
+      "text": "1600件以上？一つ一つの規模も大きいの？",
+      "sourceIds": [
+        "L9",
+        "L10"
+      ],
+      "sourceAttribution": "出典：公表一覧 2026-09 ／ 公表一覧 2026-10",
+      "mouthMotion": {
+        "method": "speaker-only masked mouth patch gated by local RMS",
+        "speakingAsset": "left-speaking.png",
+        "listenerMouthMotion": false,
+        "openThresholdDbfs": -38.0,
+        "rmsWindowSeconds": 0.06,
+        "peakTime": 13.847,
+        "peakDbfs": -13.38
+      },
+      "subtitleUnits": [
+        {
+          "start": 13.305,
+          "end": 17.425,
+          "text": "1600件以上？一つ一つの規模も大きいの？",
+          "lines": [
+            "1600件以上？",
+            "一つ一つの規模も大きいの？"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 13.466,
+            "alignedFirstChar": "千",
+            "score": 0.996,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 0,
+              "ttsStartIndex": 0,
+              "ttsAlignedChar": "千",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "speakerLabel": "",
+      "start": 18.0,
+      "end": 37.075,
+      "text": "メール配信サービスの件なんて、延べ約5163万件。別の会員サイトでも、約2252万件の情報が流出した可能性があるんだ。宿泊予約のシステムも、最大約445万人の情報が閲覧・取得された可能性がある。",
+      "sourceIds": [
+        "A",
+        "B",
+        "C"
+      ],
+      "sourceAttribution": "出典：事例A 2026-10-26 ／ 事例B 2026-10-15 ／ 事例C 2026-10-09",
+      "mouthMotion": {
+        "method": "speaker-only masked mouth patch gated by local RMS",
+        "speakingAsset": "right-speaking.png",
+        "listenerMouthMotion": false,
+        "openThresholdDbfs": -38.0,
+        "rmsWindowSeconds": 0.06,
+        "peakTime": 18.667,
+        "peakDbfs": -9.77
+      },
+      "subtitleUnits": [
+        {
+          "start": 18.0,
+          "end": 23.444,
+          "text": "メール配信サービスの件なんて、延べ約5163万件。",
+          "lines": [
+            "メール配信サービスの件なんて、",
+            "延べ約5163万件。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 18.04,
+            "alignedFirstChar": "メ",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 0,
+              "ttsStartIndex": 0,
+              "ttsAlignedChar": "メ",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 23.444,
+          "end": 25.04,
+          "text": "別の会員サイトでも、",
+          "lines": [
+            "別の会員サイトでも、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 23.444,
+            "alignedFirstChar": "別",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 25,
+              "ttsStartIndex": 27,
+              "ttsAlignedChar": "別",
+              "rulesAppliedInPrefix": [
+                {
+                  "display": "5163万",
+                  "spoken": "五千百六十三万"
+                }
+              ],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 25.04,
+          "end": 30.049,
+          "text": "約2252万件の情報が流出した可能性があるんだ。",
+          "lines": [
+            "約2252万件の情報が",
+            "流出した可能性があるんだ。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 25.04,
+            "alignedFirstChar": "約",
+            "score": 0.0,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 35,
+              "ttsStartIndex": 37,
+              "ttsAlignedChar": "約",
+              "rulesAppliedInPrefix": [
+                {
+                  "display": "5163万",
+                  "spoken": "五千百六十三万"
+                }
+              ],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 30.049,
+          "end": 31.931,
+          "text": "宿泊予約のシステムも、",
+          "lines": [
+            "宿泊予約のシステムも、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 30.049,
+            "alignedFirstChar": "宿",
+            "score": 0.916,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 59,
+              "ttsStartIndex": 64,
+              "ttsAlignedChar": "宿",
+              "rulesAppliedInPrefix": [
+                {
+                  "display": "5163万",
+                  "spoken": "五千百六十三万"
+                },
+                {
+                  "display": "2252万",
+                  "spoken": "二千二百五十二万"
+                }
+              ],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 31.931,
+          "end": 37.075,
+          "text": "最大約445万人の情報が閲覧・取得された可能性がある。",
+          "lines": [
+            "最大約445万人の情報が",
+            "閲覧・取得された可能性がある。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 31.931,
+            "alignedFirstChar": "最",
+            "score": 0.999,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 70,
+              "ttsStartIndex": 75,
+              "ttsAlignedChar": "最",
+              "rulesAppliedInPrefix": [
+                {
+                  "display": "5163万",
+                  "spoken": "五千百六十三万"
+                },
+                {
+                  "display": "2252万",
+                  "spoken": "二千二百五十二万"
+                }
+              ],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "speakerLabel": "",
+      "start": 37.545,
+      "end": 42.655,
+      "text": "メールも会員登録も旅行の予約も、身近なものばかりだよね。",
+      "sourceIds": [],
+      "sourceAttribution": "",
+      "mouthMotion": {
+        "method": "speaker-only masked mouth patch gated by local RMS",
+        "speakingAsset": "left-speaking.png",
+        "listenerMouthMotion": false,
+        "openThresholdDbfs": -38.0,
+        "rmsWindowSeconds": 0.06,
+        "peakTime": 38.878,
+        "peakDbfs": -13.1
+      },
+      "subtitleUnits": [
+        {
+          "start": 37.545,
+          "end": 42.655,
+          "text": "メールも会員登録も旅行の予約も、身近なものばかりだよね。",
+          "lines": [
+            "メールも会員登録も旅行の予約も、",
+            "身近なものばかりだよね。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 37.565,
+            "alignedFirstChar": "メ",
+            "score": 0.997,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 0,
+              "ttsStartIndex": 0,
+              "ttsAlignedChar": "メ",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "speakerLabel": "",
+      "start": 43.25,
+      "end": 52.545,
+      "text": "5163万件って、1秒に1件数えても1年以上だよ。僕はもう、ただのニュースとして聞き流せないな。",
+      "sourceIds": [
+        "A",
+        "MATH"
+      ],
+      "sourceAttribution": "出典：事例A 2026-10-26 ／ 件数の算術比較",
+      "mouthMotion": {
+        "method": "speaker-only masked mouth patch gated by local RMS",
+        "speakingAsset": "right-speaking.png",
+        "listenerMouthMotion": false,
+        "openThresholdDbfs": -38.0,
+        "rmsWindowSeconds": 0.06,
+        "peakTime": 47.958,
+        "peakDbfs": -10.04
+      },
+      "subtitleUnits": [
+        {
+          "start": 43.25,
+          "end": 49.38,
+          "text": "5163万件って、1秒に1件数えても1年以上だよ。",
+          "lines": [
+            "5163万件って、",
+            "1秒に1件数えても1年以上だよ。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 43.29,
+            "alignedFirstChar": "五",
+            "score": 0.923,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 0,
+              "ttsStartIndex": 0,
+              "ttsAlignedChar": "五",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 49.38,
+          "end": 52.545,
+          "text": "僕はもう、ただのニュースとして聞き流せないな。",
+          "lines": [
+            "僕はもう、ただのニュースとして",
+            "聞き流せないな。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 49.38,
+            "alignedFirstChar": "僕",
+            "score": 0.999,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 25,
+              "ttsStartIndex": 27,
+              "ttsAlignedChar": "僕",
+              "rulesAppliedInPrefix": [
+                {
+                  "display": "5163万",
+                  "spoken": "五千百六十三万"
+                },
+                {
+                  "display": "1秒",
+                  "spoken": "一秒"
+                },
+                {
+                  "display": "1件",
+                  "spoken": "一件"
+                },
+                {
+                  "display": "1年以上",
+                  "spoken": "一年以上"
+                }
+              ],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "speakerLabel": "",
+      "start": 53.27,
+      "end": 57.0,
+      "text": "登録したまま忘れてるサービス、結構あるんだよね。",
+      "sourceIds": [],
+      "sourceAttribution": "",
+      "mouthMotion": {
+        "method": "speaker-only masked mouth patch gated by local RMS",
+        "speakingAsset": "left-speaking.png",
+        "listenerMouthMotion": false,
+        "openThresholdDbfs": -38.0,
+        "rmsWindowSeconds": 0.06,
+        "peakTime": 56.02,
+        "peakDbfs": -13.17
+      },
+      "subtitleUnits": [
+        {
+          "start": 53.27,
+          "end": 57.0,
+          "text": "登録したまま忘れてるサービス、結構あるんだよね。",
+          "lines": [
+            "登録したまま忘れてるサービス、",
+            "結構あるんだよね。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 53.35,
+            "alignedFirstChar": "登",
+            "score": 0.898,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 0,
+              "ttsStartIndex": 0,
+              "ttsAlignedChar": "登",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "speakerLabel": "",
+      "start": 57.54,
+      "end": 78.25,
+      "text": "僕なら、まず公式アプリやブックマークから案内を確認するかな。使い回してるパスワードは変えて、パスキーや多要素認証も使いたいね。利用明細も見ておきたい。メールやSMSのリンクから、慌ててログインしないようにしよう。こたつから出なくても、そのくらいはできるしね。",
+      "sourceIds": [
+        "CAA"
+      ],
+      "sourceAttribution": "出典：消費者庁 対策資料",
+      "mouthMotion": {
+        "method": "speaker-only masked mouth patch gated by local RMS",
+        "speakingAsset": "right-speaking.png",
+        "listenerMouthMotion": false,
+        "openThresholdDbfs": -38.0,
+        "rmsWindowSeconds": 0.06,
+        "peakTime": 60.29,
+        "peakDbfs": -9.58
+      },
+      "subtitleUnits": [
+        {
+          "start": 57.54,
+          "end": 63.363,
+          "text": "僕なら、まず公式アプリやブックマークから案内を確認するかな。",
+          "lines": [
+            "僕なら、まず公式アプリや",
+            "ブックマークから案内を確認するかな。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 57.62,
+            "alignedFirstChar": "僕",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 0,
+              "ttsStartIndex": 0,
+              "ttsAlignedChar": "僕",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 63.363,
+          "end": 65.664,
+          "text": "使い回してるパスワードは変えて、",
+          "lines": [
+            "使い回してるパスワードは変えて、"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 63.363,
+            "alignedFirstChar": "使",
+            "score": 0.999,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 30,
+              "ttsStartIndex": 30,
+              "ttsAlignedChar": "使",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 65.664,
+          "end": 68.685,
+          "text": "パスキーや多要素認証も使いたいね。",
+          "lines": [
+            "パスキーや多要素認証も使いたいね。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 65.664,
+            "alignedFirstChar": "パ",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 46,
+              "ttsStartIndex": 46,
+              "ttsAlignedChar": "パ",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 68.685,
+          "end": 70.846,
+          "text": "利用明細も見ておきたい。",
+          "lines": [
+            "利用明細も見ておきたい。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 68.685,
+            "alignedFirstChar": "利",
+            "score": 1.0,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 63,
+              "ttsStartIndex": 63,
+              "ttsAlignedChar": "利",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 70.846,
+          "end": 75.609,
+          "text": "メールやSMSのリンクから、慌ててログインしないようにしよう。",
+          "lines": [
+            "メールやSMSのリンクから、",
+            "慌ててログインしないようにしよう。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 70.846,
+            "alignedFirstChar": "メ",
+            "score": 0.857,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 75,
+              "ttsStartIndex": 75,
+              "ttsAlignedChar": "メ",
+              "rulesAppliedInPrefix": [],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        },
+        {
+          "start": 75.609,
+          "end": 78.25,
+          "text": "こたつから出なくても、そのくらいはできるしね。",
+          "lines": [
+            "こたつから出なくても、",
+            "そのくらいはできるしね。"
+          ],
+          "alignmentEvidence": {
+            "predictedStart": 75.609,
+            "alignedFirstChar": "こ",
+            "score": 0.857,
+            "mappingStatus": "exact_first_char",
+            "pronunciationMapping": {
+              "displayStartIndex": 106,
+              "ttsStartIndex": 109,
+              "ttsAlignedChar": "こ",
+              "rulesAppliedInPrefix": [
+                {
+                  "display": "SMS",
+                  "spoken": "エスエムエス"
+                }
+              ],
+              "basis": "explicit_turn_scoped_display_to_tts_replacements"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

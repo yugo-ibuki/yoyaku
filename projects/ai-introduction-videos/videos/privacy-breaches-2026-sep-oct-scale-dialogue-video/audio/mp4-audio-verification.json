@@ -1,0 +1,12 @@
+{
+  "referenceSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "extractedPcm": "audio/verification-from-mp4.wav",
+  "extractedPcmSha256": "33ac5cc439e515f1ef2e34d581aa9f5693919ef3c7239e15d526d798f21b5703",
+  "sampleRate": 24000,
+  "referenceDuration": 78.6,
+  "extractedDuration": 78.634667,
+  "durationDifference": 0.034667,
+  "startOffsetSeconds": 0.0,
+  "probeCorrelation": 0.99991729,
+  "waveformCorrelation": 0.99989195
+}

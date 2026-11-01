@@ -1,0 +1,61 @@
+{
+  "status": "static_layout_samples_no_audio_timing",
+  "renderConfigSha256": "1cf0f38fd5cc0fbfa221ac384c05680d88b4f191c23c7118de52282f3937257d",
+  "canonicalScriptSha256": "e38ff2e0631e41e7543ee593eb6e1544bb9f682e6d5d8abb30956f34a1e0af26",
+  "frames": [
+    {
+      "file": "base-frame.png",
+      "sha256": "035332359211e8a5b70e8ab0a877792674aac1016e9106227b55b4794de9341f",
+      "turnId": null,
+      "cardNumber": null
+    },
+    {
+      "file": "left-speaking-frame.png",
+      "sha256": "4f981f7feb0dc61c6349ee7c9a038f90239c3237a5a364f951244c9ebe82fd4d",
+      "turnId": 1,
+      "cardNumber": 1
+    },
+    {
+      "file": "right-speaking-frame.png",
+      "sha256": "71de75f9a39e53a6b31a13660030d23442f772f6a5696d8ce388301b75bb0bc7",
+      "turnId": 2,
+      "cardNumber": 3
+    },
+    {
+      "file": "hero-mail-frame.png",
+      "sha256": "44cd89cdb7798fa096c104ad7461f030a4319191053b54ba5828d6064c80435b",
+      "turnId": 4,
+      "cardNumber": 1
+    },
+    {
+      "file": "hero-members-frame.png",
+      "sha256": "dc3835bdb3bd966ec6478a9f1e192b59024e9d66b667babd7a0cf2532d04d093",
+      "turnId": 4,
+      "cardNumber": 3
+    },
+    {
+      "file": "hero-travel-frame.png",
+      "sha256": "7a85f4316fb0f412d591c2f235e03734bf87e18881e0b70f75f46646dfbaa491",
+      "turnId": 4,
+      "cardNumber": 5
+    },
+    {
+      "file": "hero-comparison-frame.png",
+      "sha256": "cc7d23c7ae3a16b3918e87162fee262a2001310af5473df1329480fbb518c103",
+      "turnId": 6,
+      "cardNumber": 1
+    },
+    {
+      "file": "cta-frame.png",
+      "sha256": "0a2290348a481218ecb379ef34e1a5dd922d3394db438652201bad09f0789d41",
+      "turnId": 8,
+      "cardNumber": 1
+    },
+    {
+      "file": "cta-links-frame.png",
+      "sha256": "4f574a2f5198a1f620b2d2c2ba52e82762203c0c34819e8f01a1c9910c63a5a3",
+      "turnId": 8,
+      "cardNumber": 5
+    }
+  ]
+}

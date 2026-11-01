@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-01T15:24:24.246Z",
+  "project": "Private Services Dev",
+  "model": "gemini-3.8-flash-tts",
+  "speechBlocks": 8,
+  "textsMatched": true,
+  "stylesMatched": true,
+  "speakersMatched": true,
+  "fillerChecked": "false"
+}

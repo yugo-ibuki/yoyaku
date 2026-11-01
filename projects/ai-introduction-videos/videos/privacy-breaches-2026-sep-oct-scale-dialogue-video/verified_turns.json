@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "asr": "audio/asr-transcript.json",
+  "asrSha256": "6c2e384994682deb9fcbb9078f95c4e329cea4a46ada5b8b3c37720c40d8c3f6",
+  "plan": "audio/turn-review-plan.json",
+  "planSha256": "c3bceb593f20ac0bc9fa1210e3f61427ae2f9a5b6de173c65a8960f582cd8c08",
+  "audioInfo": {
+    "channels": 1,
+    "sampleWidth": 2,
+    "sampleRate": 24000,
+    "duration": 78.6
+  },
+  "status": "machine_reviewed_no_subjective_listening",
+  "turns": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "scriptText": "最近、情報漏洩のニュース多すぎない？",
+      "ttsText": "最近、情報漏洩のニュース多すぎない？",
+      "observedText": "最近、情報ローエーのニュース多すぎない?",
+      "asrReferences": [
+        {
+          "segment": 0
+        }
+      ],
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR reproduces the news-too-many question. ローエー is a phonetic transcription of漏洩 rather than a different event claim. subjectiveListening=false."
+      },
+      "start": 0.2,
+      "end": 3.245,
+      "review": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 0}]; -38 dBFS 20 ms RMS/5 ms hop active range 0.200-3.245s; preceding inactive gap 0.200s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 214.3 Hz, first turn; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      }
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "scriptText": "うん、さすがに多いと感じるよ。9月と10月だけでも、情報漏洩や不正アクセスの発表が1600件以上あるんだよ。",
+      "ttsText": "うん、さすがに多いと感じるよ。九月と十月だけでも、情報漏洩や不正アクセスの発表が千六百件以上あるんだよ。",
+      "observedText": "うーん、さすがに多いと感じるよ9月と10月だけでも、情報ローエーや不正アクセスの発表が1,600件以上あるんだよ",
+      "asrReferences": [
+        {
+          "segment": 1
+        },
+        {
+          "segment": 2
+        }
+      ],
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR1-2 preserves the subjectiveうん response, September/October, relevant announcements and1600件以上. うーん is performance elongation of the acknowledgment, not a meaning change. CTC supports the months and六百 component; full ASR explicitly1,600. No claim of1600 independent confirmed attacks is added; the exact1654 listing value is a separately approved visual. subjectiveListening=false."
+      },
+      "start": 3.82,
+      "end": 12.685,
+      "review": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 1}, {'segment': 2}]; -38 dBFS 20 ms RMS/5 ms hop active range 3.820-12.685s; preceding inactive gap 0.575s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 107.4 Hz, previous-turn median pitch 214.3 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      }
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "scriptText": "1600件以上？一つ一つの規模も大きいの？",
+      "ttsText": "千六百件以上？一つ一つの規模も大きいの？",
+      "observedText": "1,600件以上?一つ一つの規模も大きいの?",
+      "asrReferences": [
+        {
+          "segment": 3
+        }
+      ],
+      "textAssessment": {
+        "status": "confirmed_match",
+        "evidence": "Fresh ASR3 reproduces1600件以上 and the individual-scale question. subjectiveListening=false."
+      },
+      "start": 13.305,
+      "end": 17.425,
+      "review": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 3}]; -38 dBFS 20 ms RMS/5 ms hop active range 13.305-17.425s; preceding inactive gap 0.620s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 233.0 Hz, previous-turn median pitch 107.4 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      }
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "scriptText": "メール配信サービスの件なんて、延べ約5163万件。別の会員サイトでも、約2252万件の情報が流出した可能性があるんだ。宿泊予約のシステムも、最大約445万人の情報が閲覧・取得された可能性がある。",
+      "ttsText": "メール配信サービスの件なんて、延べ約五千百六十三万件。別の会員サイトでも、約二千二百五十二万件の情報が流出した可能性があるんだ。宿泊予約のシステムも、最大約四百四十五万人の情報が閲覧・取得された可能性がある。",
+      "observedText": "メール配信サービスの件なんて、ノベ約5,163万件別の感染サイトでも、約2,252万件の情報が流出した可能性があるんだ宿泊予約のシステムも最大約445万人の情報が 閲覧取得された可能性がある",
+      "asrReferences": [
+        {
+          "segment": 4
+        },
+        {
+          "segment": 5
+        },
+        {
+          "segment": 6
+        }
+      ],
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR4-6 preserves延べ5163万件,2252万件 possible exposure and最大445万人 possible viewing/acquisition. Local no-prompt ASR reproduces五千百六十三万件,二千二百五十二万件,四百四十五万人. Full ASR infection-site reading is an ASR disagreement: full CTC館員サイト, local ASR関インサイト and focused independent CTC23.7-24.65の会員さいとでも support the intended membership-site wording. No corporate/service name is spoken in the machine transcripts. 延べ/約/最大/可能性 and units remain distinct. subjectiveListening=false."
+      },
+      "start": 18.0,
+      "end": 37.075,
+      "review": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 4}, {'segment': 5}, {'segment': 6}]; -38 dBFS 20 ms RMS/5 ms hop active range 18.000-37.075s; preceding inactive gap 0.575s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 110.9 Hz, previous-turn median pitch 233.0 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      }
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "scriptText": "メールも会員登録も旅行の予約も、身近なものばかりだよね。",
+      "ttsText": "メールも会員登録も旅行の予約も、身近なものばかりだよね。",
+      "observedText": "メールも感染登録も旅行の予約も 身近なものばかりだよね",
+      "asrReferences": [
+        {
+          "segment": 7
+        }
+      ],
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR infection-registration reading is reviewed against independent CTC: broad crop yields<unk>員登録 and focused38-39.35 yields家品登録. These phonetic/member-ending outputs do not supportセン of感染; the common member-registration phrase and canonical text are consistent with the source phrase. Rest of mail/travel/everyday-relevance sentence is reproduced. This is a machine spelling assessment, not subjective listening. subjectiveListening=false."
+      },
+      "start": 37.545,
+      "end": 42.655,
+      "review": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 7}]; -38 dBFS 20 ms RMS/5 ms hop active range 37.545-42.655s; preceding inactive gap 0.470s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 233.0 Hz, previous-turn median pitch 110.9 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      }
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "scriptText": "5163万件って、1秒に1件数えても1年以上だよ。僕はもう、ただのニュースとして聞き流せないな。",
+      "ttsText": "五千百六十三万件って、一秒に一件数えても一年以上だよ。僕はもう、ただのニュースとして聞き流せないな。",
+      "observedText": "5163万件て1秒に1件数えても1年以上だよ僕はもうただのニュースとして 聞き流せないな",
+      "asrReferences": [
+        {
+          "segment": 8
+        },
+        {
+          "segment": 9
+        }
+      ],
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR8-9 preserves5163万件,1秒に1件数えても1年以上 and the subjective not-just-news reaction. Independent CTC supports5千…/one-second/one-item/one-year sequence with orthographic errors. The comparison is arithmetic on count, not unique people. subjectiveListening=false."
+      },
+      "start": 43.25,
+      "end": 52.545,
+      "review": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 8}, {'segment': 9}]; -38 dBFS 20 ms RMS/5 ms hop active range 43.250-52.545s; preceding inactive gap 0.595s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 99.2 Hz, previous-turn median pitch 233.0 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      }
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "scriptText": "登録したまま忘れてるサービス、結構あるんだよね。",
+      "ttsText": "登録したまま忘れてるサービス、結構あるんだよね。",
+      "observedText": "登録したまま忘れてるサービス 結構あるんだよね",
+      "asrReferences": [
+        {
+          "segment": 10
+        }
+      ],
+      "textAssessment": {
+        "status": "confirmed_match",
+        "evidence": "Fresh ASR10 reproduces forgotten registrations and the subjective closing question. subjectiveListening=false."
+      },
+      "start": 53.27,
+      "end": 57.0,
+      "review": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 10}]; -38 dBFS 20 ms RMS/5 ms hop active range 53.270-57.000s; preceding inactive gap 0.725s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 228.6 Hz, previous-turn median pitch 99.2 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      }
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "scriptText": "僕なら、まず公式アプリやブックマークから案内を確認するかな。使い回してるパスワードは変えて、パスキーや多要素認証も使いたいね。利用明細も見ておきたい。メールやSMSのリンクから、慌ててログインしないようにしよう。こたつから出なくても、そのくらいはできるしね。",
+      "ttsText": "僕なら、まず公式アプリやブックマークから案内を確認するかな。使い回してるパスワードは変えて、パスキーや多要素認証も使いたいね。利用明細も見ておきたい。メールやエスエムエスのリンクから、慌ててログインしないようにしよう。こたつから出なくても、そのくらいはできるしね。",
+      "observedText": "僕ならまず公式アプリやブックマークから案内を確認するかな使い回してるパスワードは変えてパスキーや多様素認証も使いたいね利用名材も見ておきたいメールやSNSのリンクから慌ててログインしないようにしようこたつから出なくてもそのくらいはできるしね",
+      "asrReferences": [
+        {
+          "segment": 11
+        },
+        {
+          "segment": 12
+        },
+        {
+          "segment": 13
+        },
+        {
+          "segment": 14
+        },
+        {
+          "segment": 15
+        }
+      ],
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR11-15 preserves official-app/bookmark check, reused passwords, passkeys/multi-factor authentication, statements, avoiding email/SMS login links and kotatsu. 多様素/利用名材 are recognition variants; independent CTC explicitly利用明細. ASR SNS differs from explicit TTSエスエムエス; broad and focused CTC bothエスエメース support the M consonant rather thanヌ, so adopted as an acronym recognition disagreement. No advice was omitted or rewritten. subjectiveListening=false."
+      },
+      "start": 57.54,
+      "end": 78.25,
+      "review": {
+        "status": "machine_reviewed",
+        "subjectiveListening": false,
+        "evidence": "fresh ASR slices [{'segment': 11}, {'segment': 12}, {'segment': 13}, {'segment': 14}, {'segment': 15}]; -38 dBFS 20 ms RMS/5 ms hop active range 57.540-78.250s; preceding inactive gap 0.540s; speaker identity follows live-UI-verified alternating blocks and is cross-checked by voice evidence; boundary-specific review: Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported.; voice-evidence current median pitch 112.1 Hz, previous-turn median pitch 228.6 Hz; speaker group medians left 230.8 Hz/right 109.2 Hz"
+      }
+    }
+  ],
+  "voiceEvidence": {
+    "file": "voice-evidence.json",
+    "sha256": "3388669de3678102b959186f1af8238ec4e9473fbccc9f99d908147cb4187fea",
+    "leftMedianHz": 230.8,
+    "rightMedianHz": 109.2,
+    "subjectiveListening": false
+  }
+}

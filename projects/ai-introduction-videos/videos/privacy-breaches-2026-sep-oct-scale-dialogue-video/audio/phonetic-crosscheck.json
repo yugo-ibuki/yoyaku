@@ -1,0 +1,26 @@
+{
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "engine": "cf031e020336460d15a417eba710bbc5bb43be9a",
+  "note": "Independent CTC output is supporting machine evidence, not full subjective listening.",
+  "segments": [
+    {
+      "label": "member-site-focused",
+      "start": 23.7,
+      "end": 24.65,
+      "text": "の会員さいとでも"
+    },
+    {
+      "label": "member-registration-focused",
+      "start": 38.0,
+      "end": 39.35,
+      "text": "も家品登録も"
+    },
+    {
+      "label": "SMS-focused",
+      "start": 71.15,
+      "end": 72.15,
+      "text": "やエスエメースの"
+    }
+  ]
+}

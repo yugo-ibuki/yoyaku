@@ -1,0 +1,530 @@
+{
+  "video": "privacy-breaches-2026-sep-oct-scale-cats.mp4",
+  "videoSha256": "d760976ed638bdf24bc91c82f368b58c59bde339de73c932922ff488fa93c3d1",
+  "metadata": "dialogue_metadata.json",
+  "metadataSha256": "121b9e620da1af58196f11977dcc4752661422cbf2c306eb79a6871f9fbf3ef3",
+  "reviewStatus": "passed_full_contact_sheet_visual_review",
+  "paginatedContactSheets": [
+    "contact-sheet-01.png",
+    "contact-sheet-02.png",
+    "contact-sheet-03.png",
+    "contact-sheet-04.png",
+    "contact-sheet-05.png"
+  ],
+  "coverage": {
+    "subtitleCards": 20,
+    "handoffBefore": 7,
+    "handoffAfter": 7,
+    "speakerPeaks": 8,
+    "endpoints": 2,
+    "numericStates": 5
+  },
+  "samples": [
+    {
+      "kind": "endpoint",
+      "time": 0.020833333333333332,
+      "expectedMouth": "both:closed before first measured turn",
+      "label": "冒頭",
+      "file": "001-endpoint-00-00.png",
+      "sha256": "a023e2cc578c1935323d5577071b65955abc6d358853e294c50ccb131310c554"
+    },
+    {
+      "kind": "speaker-peak",
+      "turnId": 1,
+      "speakerId": "left_student",
+      "time": 1.367,
+      "expectedMouth": "left_student:open listener:closed",
+      "label": "T01 left_student",
+      "file": "002-speaker-peak-01-00.png",
+      "sha256": "499e29c8168f35cb74fe173a61cd30fb5f509112227489d315530187d377f391"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 1,
+      "cardNumber": 1,
+      "time": 1.7225000000000001,
+      "expectedText": "最近、情報漏洩のニュース多すぎない？",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T01 C01",
+      "file": "003-subtitle-card-01-01.png",
+      "sha256": "0a0ddf0926c599f7783c46c1b982da03de8ea3d7aa8935a1e6e0430837849af0"
+    },
+    {
+      "kind": "handoff-before",
+      "afterTurn": 1,
+      "time": 3.2241666666666666,
+      "expectedMouth": "left_student tail; listener unchanged",
+      "label": "T01→T02 前",
+      "file": "004-handoff-before-01-00.png",
+      "sha256": "f70cb6a722c1d33e42c47211889524e29ff79bffd9089bc8bc01330b97000ebc"
+    },
+    {
+      "kind": "handoff-after",
+      "turnId": 2,
+      "time": 3.8408333333333333,
+      "expectedMouth": "right_teacher onset; listener unchanged",
+      "label": "T01→T02 後",
+      "file": "005-handoff-after-02-00.png",
+      "sha256": "4dc8c5e29c0be793de5affcda545885e3b287beb2a940172b3ac3a0d29bebe50"
+    },
+    {
+      "kind": "speaker-peak",
+      "turnId": 2,
+      "speakerId": "right_teacher",
+      "time": 3.945,
+      "expectedMouth": "right_teacher:open listener:closed",
+      "label": "T02 right_teacher",
+      "file": "006-speaker-peak-02-00.png",
+      "sha256": "af8c72d334d8b0ce0803d1b6b9edfa2867858b13e886ae9b66f4ec66df619393"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 2,
+      "cardNumber": 1,
+      "time": 5.2625,
+      "expectedText": "うん、さすがに多いと感じるよ。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T02 C01",
+      "file": "007-subtitle-card-02-01.png",
+      "sha256": "fd90bfb75c9090f1501a611fb6e8d3fff2970aa07c8f61db020e7c5677aeb2bc"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 2,
+      "cardNumber": 2,
+      "time": 7.654,
+      "expectedText": "9月と10月だけでも、",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T02 C02",
+      "file": "008-subtitle-card-02-02.png",
+      "sha256": "0dec652742407690cd80f5c77d7ca5cc8ee24fe20ba3684433cd340f2af295b1"
+    },
+    {
+      "kind": "numeric-overlay",
+      "turnId": 2,
+      "time": 8.2525,
+      "expectedNumber": "1,654件",
+      "expectedQualifier": "公表・掲載事案数／漏洩のおそれ等を含む",
+      "stateId": "listing",
+      "label": "数字 listing",
+      "file": "009-numeric-overlay-02-00.png",
+      "sha256": "f72b0a84fc39c469c935e9ca9f76c84dd486f8627006cc01ee823d54226a53b2"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 2,
+      "cardNumber": 3,
+      "time": 10.644,
+      "expectedText": "情報漏洩や不正アクセスの発表が1600件以上あるんだよ。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T02 C03",
+      "file": "010-subtitle-card-02-03.png",
+      "sha256": "f94bd6348c7d59ead3e6ea50c8f4914299253d3ce5b2afc61acce440d60c59e2"
+    },
+    {
+      "kind": "handoff-before",
+      "afterTurn": 2,
+      "time": 12.664166666666667,
+      "expectedMouth": "right_teacher tail; listener unchanged",
+      "label": "T02→T03 前",
+      "file": "011-handoff-before-02-00.png",
+      "sha256": "d0ee2a2683dc46d98a2791e536cbbafd066a6b40ef29890946fad0f69d759c95"
+    },
+    {
+      "kind": "handoff-after",
+      "turnId": 3,
+      "time": 13.325833333333334,
+      "expectedMouth": "left_student onset; listener unchanged",
+      "label": "T02→T03 後",
+      "file": "012-handoff-after-03-00.png",
+      "sha256": "80d49f0e65bb44a0e84685f906603d44b7750dc0dfafc672c63de21b651cfe07"
+    },
+    {
+      "kind": "speaker-peak",
+      "turnId": 3,
+      "speakerId": "left_student",
+      "time": 13.847,
+      "expectedMouth": "left_student:open listener:closed",
+      "label": "T03 left_student",
+      "file": "013-speaker-peak-03-00.png",
+      "sha256": "c727aa8c9fe69582e34a7d39600bf96f3259cb7bf4b42d825a24d99c6e939e88"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 3,
+      "cardNumber": 1,
+      "time": 15.365,
+      "expectedText": "1600件以上？一つ一つの規模も大きいの？",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T03 C01",
+      "file": "014-subtitle-card-03-01.png",
+      "sha256": "b657a79e539d9633ac51e2431205733bbd3e7ff7f257cb4d00db6de9ca48a402"
+    },
+    {
+      "kind": "handoff-before",
+      "afterTurn": 3,
+      "time": 17.40416666666667,
+      "expectedMouth": "left_student tail; listener unchanged",
+      "label": "T03→T04 前",
+      "file": "015-handoff-before-03-00.png",
+      "sha256": "0a8b44329a6e18db4f19d209a8d22e4cac48192a3158fdd54a3f24451d5e187a"
+    },
+    {
+      "kind": "handoff-after",
+      "turnId": 4,
+      "time": 18.020833333333332,
+      "expectedMouth": "right_teacher onset; listener unchanged",
+      "label": "T03→T04 後",
+      "file": "016-handoff-after-04-00.png",
+      "sha256": "b833e2b00e9dfeec3d721ac59ab9af3e21eb7cb42203b8f015db7fbd95290d33"
+    },
+    {
+      "kind": "speaker-peak",
+      "turnId": 4,
+      "speakerId": "right_teacher",
+      "time": 18.667,
+      "expectedMouth": "right_teacher:open listener:closed",
+      "label": "T04 right_teacher",
+      "file": "017-speaker-peak-04-00.png",
+      "sha256": "b5fe38ada8df8d3de0329886fd2eb203657f73bebfca3efe257332693a8edf1e"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 4,
+      "cardNumber": 1,
+      "time": 20.722,
+      "expectedText": "メール配信サービスの件なんて、延べ約5163万件。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T04 C01",
+      "file": "018-subtitle-card-04-01.png",
+      "sha256": "c52cd5330224267b2f8fa9b9a48c23c75ecbb844c11258e352b210f641b2ab36"
+    },
+    {
+      "kind": "numeric-overlay",
+      "turnId": 4,
+      "time": 20.722,
+      "expectedNumber": "延べ約5,163万件",
+      "expectedQualifier": "",
+      "stateId": "mail",
+      "label": "数字 mail",
+      "file": "019-numeric-overlay-04-00.png",
+      "sha256": "c52cd5330224267b2f8fa9b9a48c23c75ecbb844c11258e352b210f641b2ab36"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 4,
+      "cardNumber": 2,
+      "time": 24.241999999999997,
+      "expectedText": "別の会員サイトでも、",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T04 C02",
+      "file": "020-subtitle-card-04-02.png",
+      "sha256": "b3283241847e3273907499a042733472f49611611c33cd1c6d88610e45252338"
+    },
+    {
+      "kind": "numeric-overlay",
+      "turnId": 4,
+      "time": 26.746499999999997,
+      "expectedNumber": "約2,252万件",
+      "expectedQualifier": "流出の可能性",
+      "stateId": "members",
+      "label": "数字 members",
+      "file": "021-numeric-overlay-04-00.png",
+      "sha256": "5592ec286b9dcf8af582668c5b87e39c134a5280e5da51f4dcfe0566a0a1fdfe"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 4,
+      "cardNumber": 3,
+      "time": 27.5445,
+      "expectedText": "約2252万件の情報が流出した可能性があるんだ。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T04 C03",
+      "file": "022-subtitle-card-04-03.png",
+      "sha256": "b4264618a56ee0806e798b0123e1d4fd586d6bd8d597b5c56f39fe16978fd9c2"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 4,
+      "cardNumber": 4,
+      "time": 30.990000000000002,
+      "expectedText": "宿泊予約のシステムも、",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T04 C04",
+      "file": "023-subtitle-card-04-04.png",
+      "sha256": "be8e47a8ab7978c11ecfd178dfc01fdda250127c208e64dca895d6362f6a41b1"
+    },
+    {
+      "kind": "numeric-overlay",
+      "turnId": 4,
+      "time": 33.562,
+      "expectedNumber": "最大約445万人",
+      "expectedQualifier": "閲覧・取得の可能性",
+      "stateId": "travel",
+      "label": "数字 travel",
+      "file": "024-numeric-overlay-04-00.png",
+      "sha256": "1718d23093253febc0e0e142df772a2861c010e64c078705d1dae725e4f08b56"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 4,
+      "cardNumber": 5,
+      "time": 34.503,
+      "expectedText": "最大約445万人の情報が閲覧・取得された可能性がある。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T04 C05",
+      "file": "025-subtitle-card-04-05.png",
+      "sha256": "6b4dfba29d7a17e079e0bc8ceb6da34264bc59d1a2cf8d3bb8744a25ad99a157"
+    },
+    {
+      "kind": "handoff-before",
+      "afterTurn": 4,
+      "time": 37.05416666666667,
+      "expectedMouth": "right_teacher tail; listener unchanged",
+      "label": "T04→T05 前",
+      "file": "026-handoff-before-04-00.png",
+      "sha256": "c1f90acf4cd8036238ef8703ade05e4cf239ce65f1c92bc56d2607e1914c2914"
+    },
+    {
+      "kind": "handoff-after",
+      "turnId": 5,
+      "time": 37.56583333333334,
+      "expectedMouth": "left_student onset; listener unchanged",
+      "label": "T04→T05 後",
+      "file": "027-handoff-after-05-00.png",
+      "sha256": "38ce0cbc4ba4c0c4cb3bfaedaaa23636ab148f34d932eaf0560ef3cac47b7ab4"
+    },
+    {
+      "kind": "speaker-peak",
+      "turnId": 5,
+      "speakerId": "left_student",
+      "time": 38.878,
+      "expectedMouth": "left_student:open listener:closed",
+      "label": "T05 left_student",
+      "file": "028-speaker-peak-05-00.png",
+      "sha256": "ab23a458b0e7a47146662c47e2a8270007c372853b9e06d9f528db00ef84b638"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 5,
+      "cardNumber": 1,
+      "time": 40.1,
+      "expectedText": "メールも会員登録も旅行の予約も、身近なものばかりだよね。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T05 C01",
+      "file": "029-subtitle-card-05-01.png",
+      "sha256": "dca53f376fc7c909f64691a9badab0b6d8e210c6241b857fcf8824884f3bbfad"
+    },
+    {
+      "kind": "handoff-before",
+      "afterTurn": 5,
+      "time": 42.634166666666665,
+      "expectedMouth": "left_student tail; listener unchanged",
+      "label": "T05→T06 前",
+      "file": "030-handoff-before-05-00.png",
+      "sha256": "0d963c911a636943146e0be74ae639ff8d8c438f6cb92ad1d2cd5b8f257c0977"
+    },
+    {
+      "kind": "handoff-after",
+      "turnId": 6,
+      "time": 43.270833333333336,
+      "expectedMouth": "right_teacher onset; listener unchanged",
+      "label": "T05→T06 後",
+      "file": "031-handoff-after-06-00.png",
+      "sha256": "9dad4e2d7ead8e55304c58ba30b6a349b1e43c0f56cd60a9fdc81e2f835b08f2"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 6,
+      "cardNumber": 1,
+      "time": 46.315,
+      "expectedText": "5163万件って、1秒に1件数えても1年以上だよ。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T06 C01",
+      "file": "032-subtitle-card-06-01.png",
+      "sha256": "51d6cab7bf526d5f14d9bc3a21ab7cee3fa7c42a432568754855fd5116c937cb"
+    },
+    {
+      "kind": "numeric-overlay",
+      "turnId": 6,
+      "time": 47.8975,
+      "expectedNumber": "5,163万件",
+      "expectedQualifier": "1秒に1件でも1年以上",
+      "stateId": "comparison",
+      "label": "数字 comparison",
+      "file": "033-numeric-overlay-06-00.png",
+      "sha256": "15c7680fe561c92c86e842f0c7d87577de2b3d053a084d1607f31d6def3d4d3f"
+    },
+    {
+      "kind": "speaker-peak",
+      "turnId": 6,
+      "speakerId": "right_teacher",
+      "time": 47.958,
+      "expectedMouth": "right_teacher:open listener:closed",
+      "label": "T06 right_teacher",
+      "file": "034-speaker-peak-06-00.png",
+      "sha256": "2d56e560a17cc51accdd8c1e093d4a24887a88b3e471a0e8923ed22710ef03f9"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 6,
+      "cardNumber": 2,
+      "time": 50.962500000000006,
+      "expectedText": "僕はもう、ただのニュースとして聞き流せないな。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T06 C02",
+      "file": "035-subtitle-card-06-02.png",
+      "sha256": "de21743b8b7ea5cfc01a2890b46f1d7e1e8922c339e37141a55217a5af3a9943"
+    },
+    {
+      "kind": "handoff-before",
+      "afterTurn": 6,
+      "time": 52.524166666666666,
+      "expectedMouth": "right_teacher tail; listener unchanged",
+      "label": "T06→T07 前",
+      "file": "036-handoff-before-06-00.png",
+      "sha256": "4cac238c68d26f4fd5c9ca550f558d39f0c9d1c439d8708ff957e4b386eeeecf"
+    },
+    {
+      "kind": "handoff-after",
+      "turnId": 7,
+      "time": 53.29083333333334,
+      "expectedMouth": "left_student onset; listener unchanged",
+      "label": "T06→T07 後",
+      "file": "037-handoff-after-07-00.png",
+      "sha256": "a2511e86af2f0665b663003a2862cff66ea2ee193f8ba05f54d8a1896d90e60e"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 7,
+      "cardNumber": 1,
+      "time": 55.135000000000005,
+      "expectedText": "登録したまま忘れてるサービス、結構あるんだよね。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T07 C01",
+      "file": "038-subtitle-card-07-01.png",
+      "sha256": "da03b7ec255ba94f77dbe00e2bfb17bea1ba735f1a89a1c3c8e58a14d9eedd6c"
+    },
+    {
+      "kind": "speaker-peak",
+      "turnId": 7,
+      "speakerId": "left_student",
+      "time": 56.02,
+      "expectedMouth": "left_student:open listener:closed",
+      "label": "T07 left_student",
+      "file": "039-speaker-peak-07-00.png",
+      "sha256": "3729e68b1e1d8a567e6cf1206e93566e322cf59342a2cd50238665186d5a24e7"
+    },
+    {
+      "kind": "handoff-before",
+      "afterTurn": 7,
+      "time": 56.979166666666664,
+      "expectedMouth": "left_student tail; listener unchanged",
+      "label": "T07→T08 前",
+      "file": "040-handoff-before-07-00.png",
+      "sha256": "81dbf7367cb4f003c6901c7c69c6e2cb722152e947405d296da4b3f0d283617f"
+    },
+    {
+      "kind": "handoff-after",
+      "turnId": 8,
+      "time": 57.560833333333335,
+      "expectedMouth": "right_teacher onset; listener unchanged",
+      "label": "T07→T08 後",
+      "file": "041-handoff-after-08-00.png",
+      "sha256": "a74fa899b8d0222b81df00c343642328a72684f69c62c180beb21717614bf90f"
+    },
+    {
+      "kind": "speaker-peak",
+      "turnId": 8,
+      "speakerId": "right_teacher",
+      "time": 60.29,
+      "expectedMouth": "right_teacher:open listener:closed",
+      "label": "T08 right_teacher",
+      "file": "042-speaker-peak-08-00.png",
+      "sha256": "1f10efa1e0d23bfc755f27ce6f419d070041f8f8d066c477ac75b4364a5af27e"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 8,
+      "cardNumber": 1,
+      "time": 60.451499999999996,
+      "expectedText": "僕なら、まず公式アプリやブックマークから案内を確認するかな。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T08 C01",
+      "file": "043-subtitle-card-08-01.png",
+      "sha256": "afa560d4fe892aa24e0c78e01b2543af56b1bd9f0fae47c5534b4d05b9249e1d"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 8,
+      "cardNumber": 2,
+      "time": 64.5135,
+      "expectedText": "使い回してるパスワードは変えて、",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T08 C02",
+      "file": "044-subtitle-card-08-02.png",
+      "sha256": "948ec3d89a2b7fb8a49a37dc02502e0fea4c5f081a8dfa18c6f8be4b273b2ddc"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 8,
+      "cardNumber": 3,
+      "time": 67.1745,
+      "expectedText": "パスキーや多要素認証も使いたいね。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T08 C03",
+      "file": "045-subtitle-card-08-03.png",
+      "sha256": "100ff6c86e85985ccddc405279e11803646e26c3b9f22f43c698179f62aedb79"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 8,
+      "cardNumber": 4,
+      "time": 69.7655,
+      "expectedText": "利用明細も見ておきたい。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T08 C04",
+      "file": "046-subtitle-card-08-04.png",
+      "sha256": "eb58ed40227325c3cb658803791be268131df6859fdb1716dad0b1d6f6d3e0e7"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 8,
+      "cardNumber": 5,
+      "time": 73.22749999999999,
+      "expectedText": "メールやSMSのリンクから、慌ててログインしないようにしよう。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T08 C05",
+      "file": "047-subtitle-card-08-05.png",
+      "sha256": "5d692cd2928bf2aab93b156ad6bff38ada9ad2509ac5b7d62b0e894f6500a88f"
+    },
+    {
+      "kind": "subtitle-card",
+      "turnId": 8,
+      "cardNumber": 6,
+      "time": 76.92949999999999,
+      "expectedText": "こたつから出なくても、そのくらいはできるしね。",
+      "expectedMouth": "speaker RMS-gated; listener unchanged",
+      "label": "T08 C06",
+      "file": "048-subtitle-card-08-06.png",
+      "sha256": "2d5fc52ab623192c9ea35d605c0be7f3e1d46fed3851376ac0c6e20ee94a5920"
+    },
+    {
+      "kind": "silence",
+      "time": 78.425,
+      "expectedMouth": "both:closed",
+      "label": "末尾無音",
+      "file": "049-silence-00-00.png",
+      "sha256": "c889a28a433590ceb06809e7c4a0132bf52bfaee560f7acb65845f3d4a5c3cfb"
+    },
+    {
+      "kind": "endpoint",
+      "time": 78.51666666666667,
+      "expectedMouth": "both:closed at final frame",
+      "label": "末尾",
+      "file": "050-endpoint-00-00.png",
+      "sha256": "29cc06a05f2cf12268b072ef86bfafa76811292b39914d68710e9e00e45dcaca"
+    }
+  ],
+  "visualReview": "visual-review.json"
+}

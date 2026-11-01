@@ -3,6 +3,20 @@
 この雛形を案件の既存形式へ合わせて保存する。分からない値は推測せず `不明` と書き、認証情報、API キー、Cookie は記録しない。
 
 ```yaml
+stage: "research_and_script" # 提示後は awaiting_script_approval。確認後に audio / video / verification へ進む
+
+script_approval:
+  status: "pending"
+  approved: false
+  target_script_path: ""
+  target_script_sha256_or_version: ""
+  presented_source_mapping_path: ""
+  presented_estimated_duration_seconds: null
+  presented_at: null
+  approved_at: null
+  user_reply_summary: ""
+  evidence_reference: "" # 当該版への明示的な返答を確認できる記録
+
 run:
   checked_at: "YYYY-MM-DDTHH:MM:SS+TZ"
   account: "画面で識別できる非機密情報"
@@ -16,6 +30,13 @@ run:
     speaker_count: "画面または公式資料で確認した値 / 不明"
     input_length: "画面または公式資料で確認した値 / 不明"
   generation_strategy: "single_run または segmented"
+
+speech_settings:
+  config_path: "使用した共通設定ファイル / なし"
+  config_sha256: "共通設定ファイルの SHA-256 / なし"
+  relative_tempo_target: "演技指示上の目安 / 案件固有指定のため適用なし"
+  target_status: "実行未確認 / UI入力済み・聴感未確認 / 聴感確認済み"
+  style_instructions: "Speech UIへ実際に入力したStyle instructions"
 
 speakers:
   - character_id: "stable-character-id"
@@ -80,5 +101,7 @@ external_actions:
   pushed: false
   billing_or_subscription_changed: false
 ```
+
+`script_approval` は当該台本への明示的な確認を得るまで `pending` / `false` を保つ。意味・構成を変えたら再び確認待ちとし、別版への承認や単なる生成依頼を証拠にしない。
 
 生成し直して採用音声のハッシュが変わったら、`derived` にある旧音声由来のタイムライン、動画、検証結果を再利用しない。

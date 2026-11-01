@@ -1,0 +1,143 @@
+{
+  "status": "machine_checks_passed_parent_visual_review_separate",
+  "subjectiveListening": false,
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "videoSha256": "d760976ed638bdf24bc91c82f368b58c59bde339de73c932922ff488fa93c3d1",
+  "approvedScript": {
+    "approved": true,
+    "scriptSha256": "e38ff2e0631e41e7543ee593eb6e1544bb9f682e6d5d8abb30956f34a1e0af26",
+    "reviewSha256": "cbb26b9a0e325a83bdd00bac2f74ab49edb1779fd048188e76a987bf80a1bdc9"
+  },
+  "timeline": {
+    "turns": 8,
+    "cards": 20,
+    "speakers": {
+      "left_student": 4,
+      "right_teacher": 4
+    },
+    "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+    "audioDuration": 78.6,
+    "video": {
+      "duration": 78.6,
+      "video": "h264",
+      "audio": "aac",
+      "size": "1280x720",
+      "fps": 24
+    },
+    "renderedAudio": {
+      "referenceSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+      "extractedPcm": "audio/verification-from-mp4.wav",
+      "extractedPcmSha256": "33ac5cc439e515f1ef2e34d581aa9f5693919ef3c7239e15d526d798f21b5703",
+      "sampleRate": 24000,
+      "referenceDuration": 78.6,
+      "extractedDuration": 78.634667,
+      "durationDifference": 0.034667,
+      "startOffsetSeconds": 0.0,
+      "probeCorrelation": 0.99991729,
+      "waveformCorrelation": 0.99989195
+    }
+  },
+  "coverage": {
+    "subtitleCards": 20,
+    "handoffBefore": 7,
+    "handoffAfter": 7,
+    "speakerPeaks": 8,
+    "endpoints": 2,
+    "numericStates": 5
+  },
+  "frameCount": 50,
+  "contactSheetPages": 5,
+  "numericOverlays": [
+    {
+      "stateId": "listing",
+      "turnId": 2,
+      "label": "9〜10月の関連事案",
+      "number": "1,654件",
+      "qualifier": "公表・掲載事案数／漏洩のおそれ等を含む",
+      "sourceValue": 1654,
+      "unit": "件",
+      "start": 3.82,
+      "end": 12.685,
+      "firstCard": 1,
+      "lastCard": 3
+    },
+    {
+      "stateId": "mail",
+      "turnId": 4,
+      "label": "メール配信",
+      "number": "延べ約5,163万件",
+      "qualifier": "",
+      "sourceValue": 51628280,
+      "unit": "延べ件",
+      "start": 18.0,
+      "end": 23.444,
+      "firstCard": 1,
+      "lastCard": 1
+    },
+    {
+      "stateId": "members",
+      "turnId": 4,
+      "label": "会員情報",
+      "number": "約2,252万件",
+      "qualifier": "流出の可能性",
+      "sourceValue": 22519960,
+      "unit": "件",
+      "start": 23.444,
+      "end": 30.049,
+      "firstCard": 2,
+      "lastCard": 3
+    },
+    {
+      "stateId": "travel",
+      "turnId": 4,
+      "label": "宿泊予約",
+      "number": "最大約445万人",
+      "qualifier": "閲覧・取得の可能性",
+      "sourceValue": 4450000,
+      "unit": "最大人数",
+      "start": 30.049,
+      "end": 37.075,
+      "firstCard": 4,
+      "lastCard": 5
+    },
+    {
+      "stateId": "comparison",
+      "turnId": 6,
+      "label": "規模の実感",
+      "number": "5,163万件",
+      "qualifier": "1秒に1件でも1年以上",
+      "sourceValue": 51630000,
+      "unit": "件",
+      "start": 43.25,
+      "end": 52.545,
+      "firstCard": 1,
+      "lastCard": 2
+    }
+  ],
+  "numericPanel": [
+    80,
+    385,
+    1200,
+    535
+  ],
+  "boundaryReviewCount": 2,
+  "voiceGroupMediansHz": {
+    "left_student": 230.8,
+    "right_teacher": 109.2
+  },
+  "checks": {
+    "testsPassed": 10,
+    "testsFailed": 0,
+    "sourceAst": "passed",
+    "frameHashes": "all50_matched",
+    "approvalHashes": "matched",
+    "numericCaptionBindings": "matched",
+    "privacy": "passed",
+    "durationLimitSeconds": 120
+  },
+  "visualReview": "Parent reported all5 pages/50 frames passed; formal record owned by parent",
+  "limitations": [
+    "No subjective full-audio listening performed.",
+    "Raw ASR/CTC disagreements and phonetic review decisions are retained."
+  ]
+}

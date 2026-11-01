@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "stage": "approved_script_input_preparation",
+  "status": "approved",
+  "approved": true,
+  "approvedDate": "2026-11-02",
+  "approvedTime": null,
+  "timezone": "Asia/Jayapura",
+  "userReply": "おk、じゃ動画作って",
+  "evidence": "Parent relayed the explicit user confirmation of the latest8-turn419-character scale draft in this chat. Exact clock time has not been provided.",
+  "reviewDocument": "SCRIPT_REVIEW_SCALE.md",
+  "reviewDocumentSha256": "cbb26b9a0e325a83bdd00bac2f74ab49edb1779fd048188e76a987bf80a1bdc9",
+  "canonicalScript": "turns.json",
+  "canonicalScriptSha256": "e38ff2e0631e41e7543ee593eb6e1544bb9f682e6d5d8abb30956f34a1e0af26",
+  "note": "Review snapshot is a byte-exact copy including its historical pending labels; this later approval record records the current confirmed state. Display text exactly matches the confirmed8-turn draft; only pronunciation spellings and subtitle line breaks differ."
+}
