@@ -2,6 +2,41 @@
   "generated_at": "2026-11-01T00:00:00Z",
   "articles": [
     {
+      "id": "ai-ambition-altitude-depth-range",
+      "url": "https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/",
+      "title": "How to be more ambitious: A tutorial for humans with models",
+      "source": "Felix Rieseberg",
+      "genre": "AI活用",
+      "technologies": [
+        "Claude",
+        "MCP",
+        "マルチエージェント",
+        "統計モデリング"
+      ],
+      "reading_minutes": 8,
+      "created_at": "2026-11-01",
+      "updated_at": "2026-11-01",
+      "summary": [
+        "AI活用の目標を、同じ仕事を速くするSpeed、個別作業から成果へ視点を上げるAltitude、専門家の方法で掘り下げるDepth、複数分野の知識や道具を組み合わせるRangeの4方向に整理する。著者はClaudeを使うが、考え方は特定のモデルに限定しない。",
+        "Altitudeでは、依頼する作業の先で何を実現したいかを問い直す。個別のクラッシュ修正を頼む段階から、アプリをクラッシュのない状態に保つ役割を任せる段階へ進むように、手順よりも継続的な成果を目標にする。",
+        "四半期レビューの例では、スライドの数値更新から、事業の変化と原因の分析、急ぐべき3つの意思決定と賛否の整理へ進める。さらに、問題の早期発見と資源配分という目的に合う仕組みを設計し、過去データで有効性を確かめ、従来方式と1四半期並行運用する案を示す。",
+        "成果を継続して任せるには、AIが自律的に調査・検証できる環境が必要になる。クラッシュ対応では、レポートの取得、アプリ版とGitコミットの対応付け、Windows・macOS・Linuxでの再現と修正確認を可能にした。Altitudeは明確な最終成果がある仕事に向き、創作への適用には限界もあるとする。",
+        "Depthでは、専門家らしい言葉遣いを求めるだけでなく、その分野の優れた専門家と同じ資料・手法・道具を使わせる。顧客離脱の分析なら、Markdownの表だけで済ませず、データベースや統計モデルを使って問題の根拠へ踏み込む。",
+        "著者は、現状の延長よりも高い具体的な目標を置き、モデルが難しいと判断しても探索を続けるよう促す。表示時間を10秒から5秒にする依頼を200ミリ秒へ引き上げる例を挙げるが、その達成を保証するものではない。",
+        "既存の説明や前提を原データから検証し直し、未知の発見につなげる。顧客離脱をオンボーディングの問題と決めつけず、ログから再現できるかを調べ、過去1年の顧客行動を再現するシミュレーションと未見データで、未知の早期離脱シグナルを検証する例を示す。",
+        "結果の評価をモデル自身だけに任せず、独立した評価者や、すぐにフィードバックを返す検証ツールを使う。依頼を深める際には、専門家なら追加する作業、最も加工の少ない材料、具体的な手法と道具、人間やモデルの主観以外で正しさを示す方法の4点を整理してから、依頼文を組み直す。",
+        "Rangeでは、成果物の名詞を、実現したい行動を表す動詞へ言い換える。レビュー資料を作る仕事を、忙しい人が因果関係を理解し、不確実な状況で30分以内に意思決定する仕事と捉えることで、役立つ別分野の知識や技法を探しやすくする。",
+        "分野を広げる際は、分析者、記者、編集者、映像・音響の専門家、空売り投資家や不正会計調査の専門家などが実際に行う調査や制作の方法を取り入れる。マルチエージェントも活用できるが、人物になりきった文章を作るだけでなく、その専門家の具体的な作業を実行させることが重要だとする。",
+        "著者は、同僚がBlenderで内装を描く例を見て、自分のホームページにも3D表現を使う発想を得たと述べる。こうした探索には、AIが必要なソフトウェアを使えるコンピューターと、MCPなどを通じた関連データへのアクセスが前提になる。",
+        "結びでは、自分ならできると信じる力である自己効力感に触れ、具体的で難しい目標、他者の成功を見ること、失敗を許す姿勢が挑戦を後押しすると論じる。能力が短期間で変化するAI時代には、過去の自分の専門分野や実現可能性の思い込みだけで目標を狭めない方法が必要だと締めくくる。"
+      ],
+      "ogp": {
+        "image_url": "https://storage.ghost.io/c/89/e0/89e08557-681a-40be-8264-278bf46d6b25/content/images/size/w1200/2026/10/modo_de_volar_a_way_of_flying_1951.10.55-1.jpg",
+        "title": "How to be more ambitious: A tutorial for humans with models",
+        "description": "I work on Claude. It's an interesting experience: Every day I learn about yet another feat accomplished with or by Claude that I hadn't considered, didn't think possible, or simply lacked the curiosity and time to try. This month, it may have helped discover a new planet,"
+      }
+    },
+    {
       "id": "every-ai-internal-system-redesign",
       "url": "https://tech.every.tv/entry/2026/10/16/205624",
       "title": "AI時代に業務に入り込み社内システムを作り直して学んだこと",
@@ -806,6 +841,7 @@
       "ChatGPT",
       "ChatGPT Sites",
       "ChatGPT Work",
+      "Claude",
       "Claude Academy",
       "Claude Code",
       "Claude Code SDK",
@@ -874,6 +910,7 @@
       "敵対的検証",
       "概念設計",
       "生成AI",
+      "統計モデリング",
       "育成",
       "要件定義",
       "認知負債",
@@ -883,6 +920,7 @@
       "Claude by Anthropic",
       "Cloudflare Docs",
       "DataCamp",
+      "Felix Rieseberg",
       "GitHub (anthropics/claude-code)",
       "OpenAI",
       "Speaker Deck",
