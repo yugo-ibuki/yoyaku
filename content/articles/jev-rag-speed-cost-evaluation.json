@@ -1,0 +1,36 @@
+{
+  "id": "jev-rag-speed-cost-evaluation",
+  "url": "https://qiita.com/kikuziro/items/2be9091b328d8b844640",
+  "title": "JevでRAG検索の爆速化＆コスト削減は実現できるのか検証してみた",
+  "source": "Qiita",
+  "genre": "検索拡張生成",
+  "technologies": [
+    "Jev",
+    "RAG",
+    "Amazon Bedrock",
+    "Cohere Rerank",
+    "DynamoDB"
+  ],
+  "reading_minutes": 21,
+  "created_at": "2026-10-01",
+  "updated_at": "2026-10-01",
+  "summary": [
+    "Jevは文章を生成せず、型付きの質問へ選択肢・yes/no・スコアを返し、複数の判断を一括処理する。",
+    "検証は架空の社内規程40文書・400チャンクと120問を使用し、数値は2026年9月の測定結果である。",
+    "20チャンクのリランクはJevが290ms・1,000件当たり$0.25、Cohereが198ms・$2.00で、Jevは安いが遅い。",
+    "JevのRecall@1は0.983だが、リランク前のRecall@5も1.000であり、小規模データでは精度の優劣を判断できない。",
+    "話題の関連度と回答根拠の有無は異なるため、回答可否をリランクスコアの閾値だけで判断しない。",
+    "Jevの回答可否判定は正解率99.2%、答えのない類似質問の見逃し率0.0%、回答可能な質問の誤遮断率1.7%だった。",
+    "回答不可なら生成を省き1,459msから263msへ短縮でき、全体の約3.7%を止めれば判定費用を回収できるが、回答可能な質問には判定時間が加わる。",
+    "関連度と回答根拠を計40問として一括判定する構成は、正解率99.2%を保ち、292ms・1,000件当たり$0.34だった。",
+    "検索前の対象範囲判定では対象外への応答が1,794msから241msへ、1,000件当たり$3.28から$0.044へ減ったが、対象内100問中2問を誤遮断した。",
+    "対象範囲は具体的に記述し、単独では意味が分からない継続発話には会話履歴を渡すか判定を省く。",
+    "導入前に実データで回答不可・対象外の割合と誤遮断を測り、条件や閾値を調整する必要がある。",
+    "確信度による生成モデルの振り分けやガードレールへの応用は、記事では未検証の案である。"
+  ],
+  "ogp": {
+    "image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYyOTMzNDg5JTJGMjVhNjVmY2U1ZWRiZDU5NWUxZDYzZDNjZGI4ODdjOTZmMWE2Njc4ZiUyRnhfbGFyZ2UucG5nJTNGMTc4MjkxNzQ3Mz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGE0MmU0MmVjOGZmN2JlMzJjMzM0YTVkMmNiMzBiY2U%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dae51c5ee676e08f856bda33ea94c63f2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9SmV2JUUzJTgxJUE3UkFHJUU2JUE0JTlDJUU3JUI0JUEyJUUzJTgxJUFFJUU3JTg4JTg2JUU5JTgwJTlGJUU1JThDJTk2JUVGJUJDJTg2JUUzJTgyJUIzJUUzJTgyJUI5JUUzJTgzJTg4JUU1JTg5JThBJUU2JUI4JTlCJUUzJTgxJUFGJUU1JUFFJTlGJUU3JThGJUJFJUUzJTgxJUE3JUUzJTgxJThEJUUzJTgyJThCJUUzJTgxJUFFJUUzJTgxJThCJUU2JUE0JTlDJUU4JUE4JUJDJUUzJTgxJTk3JUUzJTgxJUE2JUUzJTgxJUJGJUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YmRjZmE0NTVkMThiOTk4YTI0YjZhNGNjNWNhOGIxMmU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBraWt1emlybyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM3OGI3M2Q5YTRjOWFhNTIyZjZmYzE4YWMzN2YwOThh&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=37ebd559bb780ea786d70a1a986df279",
+    "title": "JevでRAG検索の爆速化＆コスト削減は実現できるのか検証してみた - Qiita",
+    "description": "👋 はじめに RAGのあちこちにJevを差し込んでどこがどう変わるのか測ってみました！ 🎯 対象購読者 ぶっちゃけJevってRAG検索に使えるの？と思っている方 RAG検索を愛している方 ⚡ Jevってなに？ JevはTypeSafe AIが2026年9月15日に..."
+  }
+}
