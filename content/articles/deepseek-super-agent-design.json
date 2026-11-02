@@ -1,0 +1,38 @@
+{
+  "id": "deepseek-super-agent-design",
+  "url": "https://x.com/DeepSeekHarness/status/2116857257245987236",
+  "title": "Exploring Super-agent Design: Towards a More Autonomous Agent System",
+  "source": "X",
+  "genre": "ソフトウェア設計",
+  "technologies": [
+    "DeepSeek Harness",
+    "AIエージェント",
+    "マルチエージェント",
+    "ReAct"
+  ],
+  "reading_minutes": 30,
+  "created_at": "2026-11-02",
+  "updated_at": "2026-11-02",
+  "summary": [
+    "個々のタスクを解く能力が高まると、人が指示や確認に割く注意力が制約になる。記事は継続的・生産的・能動的・持続的に働くSuper-agentの設計案であり、中国語原文の機械翻訳として公開されている。",
+    "長寿命のRouterは各チャネルでのユーザー応答、全体調整、新規タスクの割り振りを担い、作業自体は実行しない。Workerはタスクごとの独立したコンテキストと実行ツールを持ち、結果をRouterへ返す。Routerには軽量モデル、Workerには高能力モデルを使う構成を想定する。",
+    "チャット、メール、レビュー、CIなどをTriggerとして受け取り、Fast Pathではコードで送信元や許可リストなどの確定条件を確認し、Slow PathではLLMが文脈や自然言語の方針に照らして処理の要否を判断する。",
+    "同じPR、チャットの話題、メールのやり取りをThreadとして束ねる。新規ThreadはRouterがWorkerへ割り振り、購読済みThreadの続報はコードでWorkerへ直接転送する。ThreadとWorkerは多対多で結び、共有Threadの更新は全購読者へ通知する。",
+    "Inline & Spillでは必要な要約と関連IDをコンテキストに残し、長文や参照頻度の低い情報を外部へ置く。Chain of RecallではTrigger、Thread、Workerの一意IDを手掛かりに参照を段階的にたどり、必要な履歴を復元する。",
+    "投機的な実行では、会議メールから予定確認、調査、返信下書きを先に進める。社内での例ではバグ報告を受けて黙って再現と修正を試し、再現できて単純な修正も確認できた場合だけ結果を届ける方針を使う。",
+    "非同期ReActは長時間の処理をstartとstopで制御し、開始時には即座にStartedを返し、完了を後続イベントで受け取る。推論ステップの終了後に新しい指示を受け付ける仕組みはDeepSeek Harnessに実装済みだが、既定では無効である。",
+    "応答はチャネルに合わせ、チャットでは短く、GitHub、メール、文書では構造化した詳しい説明を返す。ユーザーとの窓口をRouterへ集約し、Workerはユーザーへ直接返信しない。",
+    "Agent Loopは状態を持たず伸縮できるクラウドコンテナで動かし、セッションをDBへ永続化する。実行環境は手元や別の端末に残して軽量daemon経由でコマンドやコンテキストを渡し、自分の端末を使うBYOMと、オフライン端末の再接続後に必要なタスクを再開する構成を想定する。",
+    "外部のWatchdog Sessionが定期メッセージで監視し、API障害や状態復旧などの基盤上の問題と、Workerの停滞や目的からの逸脱を検知して復旧を促す。",
+    "予備実験は約300メッセージと約20件の作業依頼を使い、各方式を5回実行した。完了時間のp50／p95はSuper-agentが12.4／15.7分、単一セッションとsubagentを使う中立的な指示が20.4／29.5分、委任優先の指示が13.8／29.0分だった。コーディングを時間のかかるツールで模擬しており、実装能力やコード品質を測った結果ではない。",
+    "Super-agentのcache-readは2,320万トークンで、中立的な指示の単一セッションは610万、委任優先は1,080万だった。簡略化した実験条件では速度と安定性の改善が見られた一方、トークン使用量は増えている。",
+    "続報の直接転送を外すと完了時間は12.6／15.5分でほぼ変わらないが、cache-readは3,180万トークンへ約37%増え、Routerの判断も約30%増えた。直接転送はこの実験では主にRouterの負荷とトークン使用量を抑えている。",
+    "Router単独の負荷実験ではTriggerが毎分1件から40件へ増えると、平均バッチ数は1.0から2.8、リクエスト時間は2.5秒から3.9秒となった。バッチでまとめることで、判断1件当たりに換算した時間は6.4秒から1.6秒へ下がった。",
+    "大規模化、数か月以上の長期記憶、途中介入のUI、情報共有と権限境界、エージェント間通信、セキュリティとプライバシーは未解決の課題である。プロンプトインジェクションやクラウド侵害が接続先PCへ及ぶ危険があり、認証情報をモデルへ見せずに使う仕組みが必要とされる。公開されたdsh-superagent-prototypeは技術検証用の試作で、公式DeepSeek製品ではない。"
+  ],
+  "ogp": {
+    "image_url": "https://pbs.twimg.com/media/HWCG3p_a4AAGJPI?format=webp&name=large",
+    "title": "DeepSeek Harness on X: \"Exploring Super-agent Design: Towards a More Autonomous Agent System\" / X",
+    "description": "Exploring Super-agent Design: Towards a More Autonomous Agent System"
+  }
+}
