@@ -1,6 +1,40 @@
 {
-  "generated_at": "2026-11-02T00:00:00Z",
+  "generated_at": "2026-11-03T00:00:00Z",
   "articles": [
+    {
+      "id": "isucon2026-competition-day",
+      "url": "https://zenn.dev/luvtechno/articles/isucon2026-competition-day",
+      "title": "ISUCON2026 で優勝しました（当日編）",
+      "source": "Zenn",
+      "genre": "AIエージェント",
+      "technologies": [
+        "Claude Code",
+        "Claude Opus 5.5",
+        "Go",
+        "PostgreSQL",
+        "mmap",
+        "HMAC"
+      ],
+      "reading_minutes": 25,
+      "created_at": "2026-11-03",
+      "updated_at": "2026-11-03",
+      "summary": [
+        "チームTyping Bearsは、3か月間に100回以上の評価を重ねて整備した自律型Claude CodeでISUCON2026に優勝しました。競技開始後の人間による追加入力は0回で、著者は家族との普段どおりの土曜日を過ごしました。",
+        "課題の写真SNS「ISUReal」は、asiaに2台、europeとamericaに各1台の計4台で動き、リージョン間の往復遅延は約100msでした。欧米の活動にはasiaの1.5倍の得点が付き、通信遅延と配点を踏まえた最適化が重要でした。",
+        "中央のPostgresへの問い合わせが欧米の応答を遅らせていたため、各サーバーのメモリから読み取る構成へ刷新しました。書き込みはasia2が順序を決めてファイルへ永続化し、全台へ同じ順番で配信します。変更されない過去データは読み取り専用ファイルへ移し、mmapで参照しました。",
+        "書き込み直後に古い結果を返さないよう、書き込み応答はasia2が順序を決めてから60ms待ち、読み取り時も手元のデータが「現在時刻−60ms」まで追随したことを確認しました。新しい画像は受信サーバーへ保存し、他サーバーは必要になった時点で所有サーバーから取得します。",
+        "画像URLの署名はHMACを1000回繰り返す仕様を維持し、有効期限を固定して事前計算する方式へ変更しました。nginxの撤去も同時に実施して388,921点に達しましたが、両者の効果は個別に測定していません。",
+        "JPEG全体のデコードとヘッダ検査を両方実行していたデバッグモードを外すと483,958点になりました。ただし、ヘッダだけの検査は本体が壊れたJPEGを通す可能性があり、元の検査との完全な同等性を確認したわけではありません。",
+        "GoのGC、メモリ上限、OSのdirtyページ設定を調整し、投稿APIのp99応答時間は約20秒から約8秒へ短縮しました。開始1時間22分で506,241点に達しましたが、応答時間の改善は再現した一方、スコアへの寄与はばらつきのため断定できません。",
+        "サーバーに余力があるのにリクエスト数が伸びないことから、ベンチマーカー側の処理能力が上限という仮説を立てました。通知を地域ごとにずらし、高負荷時にasiaの応答を遅らせて高配点の欧米へ処理を回すことで615,485点に達しましたが、ボトルネックの原因は確定していません。",
+        "スコアの停滞を検知したhookが監査役サブエージェントの起動を促し、判断記録をチェック項目と照合しました。その提案から負荷に応じた可変遅延を試して最高629,638点を記録しましたが、同じ構成でも474,987〜629,638点と大きく変動し、可変遅延の効果は確定できません。",
+        "終盤は全台の再起動、データ永続化、ブラウザ操作を確認し、残りの実行回数と再試行の期待値から停止を判断しました。最終スコアは625,857点で、負荷走行86回、コミット19個、人間への呼び出し0回を記録し、モデルにはClaude Opus 5.5を使用しました。"
+      ],
+      "ogp": {
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--GF9caNks--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ISUCON2026%2520%25E3%2581%25A7%25E5%2584%25AA%25E5%258B%259D%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2588%25E5%25BD%2593%25E6%2597%25A5%25E7%25B7%25A8%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yoshinori%2520Kawasaki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTEpMVlQ2WjlNQlhlcndlbDZoY1JYUDVLSjAxYWNITUdNcmUwVThZTG5EaDY4PXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+        "title": "ISUCON2026 で優勝しました（当日編）"
+      }
+    },
     {
       "id": "deepseek-super-agent-design",
       "url": "https://x.com/DeepSeekHarness/status/2116857257245987236",
@@ -679,6 +713,7 @@
       "Claude",
       "Claude Code",
       "Claude Cowork",
+      "Claude Opus 5.5",
       "Cloudflare",
       "Cloudflare Browser Run",
       "Cloudflare Durable Objects",
@@ -696,7 +731,9 @@
       "GLM-5.2",
       "Gemini Spark",
       "GitHub Actions",
+      "Go",
       "Grok Bot",
+      "HMAC",
       "IT組織",
       "JWT",
       "Jev",
@@ -708,6 +745,7 @@
       "OpenID Connect",
       "PKCE",
       "Playwright",
+      "PostgreSQL",
       "Puppeteer",
       "R2",
       "RAG",
@@ -719,6 +757,7 @@
       "Skills",
       "WebMCP",
       "mTLS",
+      "mmap",
       "エンジニアリングマネジメント",
       "エージェントメモリ",
       "ドメイン駆動設計",
