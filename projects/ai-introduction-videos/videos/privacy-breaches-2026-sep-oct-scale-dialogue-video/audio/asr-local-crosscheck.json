@@ -1,0 +1,30 @@
+{
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "method": "new-WAV local crop re-decode without supplied script/prompt; beam10,VADoff",
+  "segments": [
+    {
+      "label": "T4-member-site",
+      "start": 23,
+      "end": 25.3,
+      "text": "別の関インサイトでも役"
+    },
+    {
+      "label": "T5-member-registration",
+      "start": 37.4,
+      "end": 40,
+      "text": "メールも感染登録も旅行"
+    },
+    {
+      "label": "T8-statement-SMS",
+      "start": 68.3,
+      "end": 75,
+      "text": "利用明細も見ておきたいメールやSNSのリンクから慌ててログインしないようにしよう"
+    },
+    {
+      "label": "T4-numeric-values",
+      "start": 19.5,
+      "end": 37.2,
+      "text": "なんてのべ約五千百六十三万件 別の感染サイトでも約二千二百五十二万件の情報が流出した可能性 があるんだ宿泊予約のシステムも最大約四百四十五万人の情報 が閲覧取得された可能性がある"
+    }
+  ]
+}

@@ -1,0 +1,2081 @@
+{
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "engine": "faster-whisper",
+  "model": "536b0662742c02347bc0e980a01041f333bce120",
+  "language": "ja",
+  "languageProbability": 1.0,
+  "settings": {
+    "beamSize": 5,
+    "temperature": 0.0,
+    "wordTimestamps": true,
+    "vadFilter": true,
+    "conditionOnPreviousText": false
+  },
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.12,
+      "text": "最近、情報ローエーのニュース多すぎない?",
+      "avgLogprob": -0.1956,
+      "noSpeechProb": 0.0329,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.64,
+          "text": "最近、",
+          "probability": 0.639
+        },
+        {
+          "start": 1.2,
+          "end": 1.4,
+          "text": "情",
+          "probability": 0.9274
+        },
+        {
+          "start": 1.4,
+          "end": 1.62,
+          "text": "報",
+          "probability": 0.9977
+        },
+        {
+          "start": 1.62,
+          "end": 1.78,
+          "text": "ロ",
+          "probability": 0.0907
+        },
+        {
+          "start": 1.78,
+          "end": 1.86,
+          "text": "ー",
+          "probability": 0.7203
+        },
+        {
+          "start": 1.86,
+          "end": 1.94,
+          "text": "エ",
+          "probability": 0.8979
+        },
+        {
+          "start": 1.94,
+          "end": 1.98,
+          "text": "ー",
+          "probability": 0.9099
+        },
+        {
+          "start": 1.98,
+          "end": 2.08,
+          "text": "の",
+          "probability": 0.9948
+        },
+        {
+          "start": 2.08,
+          "end": 2.22,
+          "text": "ニ",
+          "probability": 0.9674
+        },
+        {
+          "start": 2.22,
+          "end": 2.26,
+          "text": "ュ",
+          "probability": 0.9987
+        },
+        {
+          "start": 2.26,
+          "end": 2.28,
+          "text": "ー",
+          "probability": 0.9996
+        },
+        {
+          "start": 2.28,
+          "end": 2.44,
+          "text": "ス",
+          "probability": 0.9994
+        },
+        {
+          "start": 2.44,
+          "end": 2.62,
+          "text": "多",
+          "probability": 0.7577
+        },
+        {
+          "start": 2.62,
+          "end": 2.84,
+          "text": "す",
+          "probability": 0.984
+        },
+        {
+          "start": 2.84,
+          "end": 2.94,
+          "text": "ぎ",
+          "probability": 0.9995
+        },
+        {
+          "start": 2.94,
+          "end": 3.12,
+          "text": "ない?",
+          "probability": 0.9968
+        }
+      ]
+    },
+    {
+      "start": 3.8,
+      "end": 5.98,
+      "text": "うーん、さすがに多いと感じるよ",
+      "avgLogprob": -0.1956,
+      "noSpeechProb": 0.0329,
+      "words": [
+        {
+          "start": 3.8,
+          "end": 4.02,
+          "text": "う",
+          "probability": 0.5074
+        },
+        {
+          "start": 4.02,
+          "end": 4.3,
+          "text": "ーん、",
+          "probability": 0.6831
+        },
+        {
+          "start": 4.42,
+          "end": 4.56,
+          "text": "さ",
+          "probability": 0.6766
+        },
+        {
+          "start": 4.56,
+          "end": 4.72,
+          "text": "す",
+          "probability": 0.997
+        },
+        {
+          "start": 4.72,
+          "end": 4.8,
+          "text": "が",
+          "probability": 0.9993
+        },
+        {
+          "start": 4.8,
+          "end": 4.94,
+          "text": "に",
+          "probability": 0.999
+        },
+        {
+          "start": 4.94,
+          "end": 5.16,
+          "text": "多",
+          "probability": 0.9532
+        },
+        {
+          "start": 5.16,
+          "end": 5.26,
+          "text": "い",
+          "probability": 0.9926
+        },
+        {
+          "start": 5.26,
+          "end": 5.36,
+          "text": "と",
+          "probability": 0.9373
+        },
+        {
+          "start": 5.36,
+          "end": 5.56,
+          "text": "感じ",
+          "probability": 0.9962
+        },
+        {
+          "start": 5.56,
+          "end": 5.74,
+          "text": "る",
+          "probability": 0.9993
+        },
+        {
+          "start": 5.74,
+          "end": 5.98,
+          "text": "よ",
+          "probability": 0.9967
+        }
+      ]
+    },
+    {
+      "start": 6.46,
+      "end": 12.7,
+      "text": "9月と10月だけでも、情報ローエーや不正アクセスの発表が1,600件以上あるんだよ",
+      "avgLogprob": -0.1956,
+      "noSpeechProb": 0.0329,
+      "words": [
+        {
+          "start": 6.46,
+          "end": 6.82,
+          "text": "9",
+          "probability": 0.3917
+        },
+        {
+          "start": 6.82,
+          "end": 7.0,
+          "text": "月",
+          "probability": 0.9834
+        },
+        {
+          "start": 7.0,
+          "end": 7.16,
+          "text": "と",
+          "probability": 0.9978
+        },
+        {
+          "start": 7.16,
+          "end": 7.34,
+          "text": "10",
+          "probability": 0.9918
+        },
+        {
+          "start": 7.34,
+          "end": 7.52,
+          "text": "月",
+          "probability": 0.9996
+        },
+        {
+          "start": 7.52,
+          "end": 7.76,
+          "text": "だけ",
+          "probability": 0.9936
+        },
+        {
+          "start": 7.76,
+          "end": 8.04,
+          "text": "でも、",
+          "probability": 0.9867
+        },
+        {
+          "start": 8.36,
+          "end": 8.76,
+          "text": "情",
+          "probability": 0.9623
+        },
+        {
+          "start": 8.76,
+          "end": 8.94,
+          "text": "報",
+          "probability": 0.9997
+        },
+        {
+          "start": 8.94,
+          "end": 9.16,
+          "text": "ロ",
+          "probability": 0.9854
+        },
+        {
+          "start": 9.16,
+          "end": 9.22,
+          "text": "ー",
+          "probability": 0.9982
+        },
+        {
+          "start": 9.22,
+          "end": 9.34,
+          "text": "エ",
+          "probability": 0.9963
+        },
+        {
+          "start": 9.34,
+          "end": 9.38,
+          "text": "ー",
+          "probability": 0.9934
+        },
+        {
+          "start": 9.38,
+          "end": 9.5,
+          "text": "や",
+          "probability": 0.9941
+        },
+        {
+          "start": 9.5,
+          "end": 9.68,
+          "text": "不",
+          "probability": 0.8135
+        },
+        {
+          "start": 9.68,
+          "end": 9.82,
+          "text": "正",
+          "probability": 0.7248
+        },
+        {
+          "start": 9.82,
+          "end": 9.96,
+          "text": "ア",
+          "probability": 0.952
+        },
+        {
+          "start": 9.96,
+          "end": 10.04,
+          "text": "ク",
+          "probability": 0.9969
+        },
+        {
+          "start": 10.04,
+          "end": 10.14,
+          "text": "セ",
+          "probability": 0.9987
+        },
+        {
+          "start": 10.14,
+          "end": 10.22,
+          "text": "ス",
+          "probability": 0.9986
+        },
+        {
+          "start": 10.22,
+          "end": 10.34,
+          "text": "の",
+          "probability": 0.9938
+        },
+        {
+          "start": 10.34,
+          "end": 10.54,
+          "text": "発",
+          "probability": 0.9947
+        },
+        {
+          "start": 10.54,
+          "end": 10.76,
+          "text": "表",
+          "probability": 0.9928
+        },
+        {
+          "start": 10.76,
+          "end": 10.92,
+          "text": "が",
+          "probability": 0.993
+        },
+        {
+          "start": 10.92,
+          "end": 11.2,
+          "text": "1,",
+          "probability": 0.2956
+        },
+        {
+          "start": 11.2,
+          "end": 11.46,
+          "text": "600",
+          "probability": 0.9972
+        },
+        {
+          "start": 11.46,
+          "end": 11.9,
+          "text": "件",
+          "probability": 0.9618
+        },
+        {
+          "start": 11.9,
+          "end": 12.12,
+          "text": "以上",
+          "probability": 0.9948
+        },
+        {
+          "start": 12.12,
+          "end": 12.32,
+          "text": "ある",
+          "probability": 0.9842
+        },
+        {
+          "start": 12.32,
+          "end": 12.5,
+          "text": "んだ",
+          "probability": 0.9968
+        },
+        {
+          "start": 12.5,
+          "end": 12.7,
+          "text": "よ",
+          "probability": 0.9979
+        }
+      ]
+    },
+    {
+      "start": 13.12,
+      "end": 17.3,
+      "text": "1,600件以上?一つ一つの規模も大きいの?",
+      "avgLogprob": -0.1956,
+      "noSpeechProb": 0.0329,
+      "words": [
+        {
+          "start": 13.12,
+          "end": 13.48,
+          "text": "1,",
+          "probability": 0.8978
+        },
+        {
+          "start": 13.72,
+          "end": 14.0,
+          "text": "600",
+          "probability": 0.9977
+        },
+        {
+          "start": 14.0,
+          "end": 14.54,
+          "text": "件",
+          "probability": 0.9963
+        },
+        {
+          "start": 14.54,
+          "end": 14.88,
+          "text": "以上?",
+          "probability": 0.9969
+        },
+        {
+          "start": 15.58,
+          "end": 15.8,
+          "text": "一",
+          "probability": 0.35
+        },
+        {
+          "start": 15.8,
+          "end": 16.02,
+          "text": "つ",
+          "probability": 0.9892
+        },
+        {
+          "start": 16.02,
+          "end": 16.12,
+          "text": "一",
+          "probability": 0.9347
+        },
+        {
+          "start": 16.12,
+          "end": 16.3,
+          "text": "つ",
+          "probability": 0.9984
+        },
+        {
+          "start": 16.3,
+          "end": 16.42,
+          "text": "の",
+          "probability": 0.9959
+        },
+        {
+          "start": 16.42,
+          "end": 16.54,
+          "text": "規",
+          "probability": 0.8267
+        },
+        {
+          "start": 16.54,
+          "end": 16.64,
+          "text": "模",
+          "probability": 0.9852
+        },
+        {
+          "start": 16.64,
+          "end": 16.8,
+          "text": "も",
+          "probability": 0.9856
+        },
+        {
+          "start": 16.8,
+          "end": 16.94,
+          "text": "大",
+          "probability": 0.9238
+        },
+        {
+          "start": 16.94,
+          "end": 17.12,
+          "text": "き",
+          "probability": 0.9982
+        },
+        {
+          "start": 17.12,
+          "end": 17.2,
+          "text": "い",
+          "probability": 0.9944
+        },
+        {
+          "start": 17.2,
+          "end": 17.3,
+          "text": "の?",
+          "probability": 0.9945
+        }
+      ]
+    },
+    {
+      "start": 17.78,
+      "end": 22.74,
+      "text": "メール配信サービスの件なんて、ノベ約5,163万件",
+      "avgLogprob": -0.1956,
+      "noSpeechProb": 0.0329,
+      "words": [
+        {
+          "start": 17.78,
+          "end": 18.12,
+          "text": "メ",
+          "probability": 0.9357
+        },
+        {
+          "start": 18.12,
+          "end": 18.32,
+          "text": "ール",
+          "probability": 0.9933
+        },
+        {
+          "start": 18.32,
+          "end": 18.5,
+          "text": "配",
+          "probability": 0.9904
+        },
+        {
+          "start": 18.5,
+          "end": 18.68,
+          "text": "信",
+          "probability": 0.999
+        },
+        {
+          "start": 18.68,
+          "end": 18.88,
+          "text": "サ",
+          "probability": 0.9939
+        },
+        {
+          "start": 18.88,
+          "end": 18.98,
+          "text": "ービ",
+          "probability": 0.9985
+        },
+        {
+          "start": 18.98,
+          "end": 19.08,
+          "text": "ス",
+          "probability": 0.9996
+        },
+        {
+          "start": 19.08,
+          "end": 19.22,
+          "text": "の",
+          "probability": 0.9994
+        },
+        {
+          "start": 19.22,
+          "end": 19.38,
+          "text": "件",
+          "probability": 0.7004
+        },
+        {
+          "start": 19.38,
+          "end": 19.56,
+          "text": "なん",
+          "probability": 0.9102
+        },
+        {
+          "start": 19.56,
+          "end": 19.8,
+          "text": "て、",
+          "probability": 0.9963
+        },
+        {
+          "start": 20.22,
+          "end": 20.42,
+          "text": "ノ",
+          "probability": 0.1556
+        },
+        {
+          "start": 20.42,
+          "end": 20.56,
+          "text": "ベ",
+          "probability": 0.8682
+        },
+        {
+          "start": 20.56,
+          "end": 20.82,
+          "text": "約",
+          "probability": 0.98
+        },
+        {
+          "start": 20.82,
+          "end": 21.16,
+          "text": "5,",
+          "probability": 0.9669
+        },
+        {
+          "start": 21.26,
+          "end": 21.6,
+          "text": "16",
+          "probability": 0.979
+        },
+        {
+          "start": 21.6,
+          "end": 22.26,
+          "text": "3",
+          "probability": 0.9989
+        },
+        {
+          "start": 22.26,
+          "end": 22.46,
+          "text": "万",
+          "probability": 0.9244
+        },
+        {
+          "start": 22.46,
+          "end": 22.74,
+          "text": "件",
+          "probability": 0.9948
+        }
+      ]
+    },
+    {
+      "start": 23.16,
+      "end": 29.28,
+      "text": "別の感染サイトでも、約2,252万件の情報が流出した可能性があるんだ",
+      "avgLogprob": -0.1956,
+      "noSpeechProb": 0.0329,
+      "words": [
+        {
+          "start": 23.16,
+          "end": 23.52,
+          "text": "別",
+          "probability": 0.8566
+        },
+        {
+          "start": 23.52,
+          "end": 23.8,
+          "text": "の",
+          "probability": 0.9988
+        },
+        {
+          "start": 23.8,
+          "end": 23.96,
+          "text": "感",
+          "probability": 0.3571
+        },
+        {
+          "start": 23.96,
+          "end": 24.12,
+          "text": "染",
+          "probability": 0.535
+        },
+        {
+          "start": 24.12,
+          "end": 24.24,
+          "text": "サ",
+          "probability": 0.9827
+        },
+        {
+          "start": 24.24,
+          "end": 24.3,
+          "text": "イ",
+          "probability": 0.9993
+        },
+        {
+          "start": 24.3,
+          "end": 24.38,
+          "text": "ト",
+          "probability": 0.9955
+        },
+        {
+          "start": 24.38,
+          "end": 24.56,
+          "text": "でも、",
+          "probability": 0.9955
+        },
+        {
+          "start": 25.02,
+          "end": 25.18,
+          "text": "約",
+          "probability": 0.9914
+        },
+        {
+          "start": 25.18,
+          "end": 25.48,
+          "text": "2,",
+          "probability": 0.9773
+        },
+        {
+          "start": 25.66,
+          "end": 26.02,
+          "text": "25",
+          "probability": 0.8268
+        },
+        {
+          "start": 26.02,
+          "end": 26.56,
+          "text": "2",
+          "probability": 0.9988
+        },
+        {
+          "start": 26.56,
+          "end": 26.74,
+          "text": "万",
+          "probability": 0.977
+        },
+        {
+          "start": 26.74,
+          "end": 26.96,
+          "text": "件",
+          "probability": 0.9942
+        },
+        {
+          "start": 26.96,
+          "end": 27.12,
+          "text": "の",
+          "probability": 0.9962
+        },
+        {
+          "start": 27.12,
+          "end": 27.32,
+          "text": "情",
+          "probability": 0.9841
+        },
+        {
+          "start": 27.32,
+          "end": 27.52,
+          "text": "報",
+          "probability": 0.9997
+        },
+        {
+          "start": 27.52,
+          "end": 27.7,
+          "text": "が",
+          "probability": 0.9989
+        },
+        {
+          "start": 27.7,
+          "end": 27.92,
+          "text": "流",
+          "probability": 0.6317
+        },
+        {
+          "start": 27.92,
+          "end": 28.08,
+          "text": "出",
+          "probability": 0.982
+        },
+        {
+          "start": 28.08,
+          "end": 28.36,
+          "text": "した",
+          "probability": 0.9966
+        },
+        {
+          "start": 28.36,
+          "end": 28.56,
+          "text": "可能",
+          "probability": 0.9943
+        },
+        {
+          "start": 28.56,
+          "end": 28.8,
+          "text": "性",
+          "probability": 0.9991
+        },
+        {
+          "start": 28.8,
+          "end": 28.96,
+          "text": "が",
+          "probability": 0.9988
+        },
+        {
+          "start": 28.96,
+          "end": 29.1,
+          "text": "ある",
+          "probability": 0.9965
+        },
+        {
+          "start": 29.1,
+          "end": 29.28,
+          "text": "んだ",
+          "probability": 0.9956
+        }
+      ]
+    },
+    {
+      "start": 29.78,
+      "end": 37.08,
+      "text": "宿泊予約のシステムも最大約445万人の情報が 閲覧取得された可能性がある",
+      "avgLogprob": -0.1404,
+      "noSpeechProb": 0.3183,
+      "words": [
+        {
+          "start": 29.78,
+          "end": 30.14,
+          "text": "宿",
+          "probability": 0.5332
+        },
+        {
+          "start": 30.14,
+          "end": 30.4,
+          "text": "泊",
+          "probability": 0.994
+        },
+        {
+          "start": 30.4,
+          "end": 30.56,
+          "text": "予",
+          "probability": 0.9822
+        },
+        {
+          "start": 30.56,
+          "end": 30.7,
+          "text": "約",
+          "probability": 0.9981
+        },
+        {
+          "start": 30.7,
+          "end": 30.84,
+          "text": "の",
+          "probability": 0.984
+        },
+        {
+          "start": 30.84,
+          "end": 30.98,
+          "text": "シ",
+          "probability": 0.9958
+        },
+        {
+          "start": 30.98,
+          "end": 31.08,
+          "text": "ス",
+          "probability": 0.9979
+        },
+        {
+          "start": 31.08,
+          "end": 31.18,
+          "text": "テ",
+          "probability": 0.9982
+        },
+        {
+          "start": 31.18,
+          "end": 31.26,
+          "text": "ム",
+          "probability": 0.9993
+        },
+        {
+          "start": 31.26,
+          "end": 31.44,
+          "text": "も",
+          "probability": 0.9851
+        },
+        {
+          "start": 31.44,
+          "end": 32.08,
+          "text": "最",
+          "probability": 0.5774
+        },
+        {
+          "start": 32.08,
+          "end": 32.26,
+          "text": "大",
+          "probability": 0.9893
+        },
+        {
+          "start": 32.26,
+          "end": 32.48,
+          "text": "約",
+          "probability": 0.9898
+        },
+        {
+          "start": 32.48,
+          "end": 32.76,
+          "text": "4",
+          "probability": 0.8379
+        },
+        {
+          "start": 32.76,
+          "end": 33.2,
+          "text": "45",
+          "probability": 0.9389
+        },
+        {
+          "start": 33.2,
+          "end": 33.76,
+          "text": "万",
+          "probability": 0.9852
+        },
+        {
+          "start": 33.76,
+          "end": 33.94,
+          "text": "人",
+          "probability": 0.9912
+        },
+        {
+          "start": 33.94,
+          "end": 34.08,
+          "text": "の",
+          "probability": 0.9894
+        },
+        {
+          "start": 34.08,
+          "end": 34.26,
+          "text": "情",
+          "probability": 0.9103
+        },
+        {
+          "start": 34.26,
+          "end": 34.42,
+          "text": "報",
+          "probability": 0.9994
+        },
+        {
+          "start": 34.42,
+          "end": 34.68,
+          "text": "が",
+          "probability": 0.9808
+        },
+        {
+          "start": 35.1,
+          "end": 35.24,
+          "text": " 閲",
+          "probability": 0.5656
+        },
+        {
+          "start": 35.24,
+          "end": 35.42,
+          "text": "覧",
+          "probability": 0.9754
+        },
+        {
+          "start": 35.42,
+          "end": 35.82,
+          "text": "取",
+          "probability": 0.6088
+        },
+        {
+          "start": 35.82,
+          "end": 35.98,
+          "text": "得",
+          "probability": 0.9996
+        },
+        {
+          "start": 35.98,
+          "end": 36.14,
+          "text": "さ",
+          "probability": 0.996
+        },
+        {
+          "start": 36.14,
+          "end": 36.28,
+          "text": "れた",
+          "probability": 0.9976
+        },
+        {
+          "start": 36.28,
+          "end": 36.52,
+          "text": "可能",
+          "probability": 0.9959
+        },
+        {
+          "start": 36.52,
+          "end": 36.76,
+          "text": "性",
+          "probability": 0.9981
+        },
+        {
+          "start": 36.76,
+          "end": 36.92,
+          "text": "が",
+          "probability": 0.9972
+        },
+        {
+          "start": 36.92,
+          "end": 37.08,
+          "text": "ある",
+          "probability": 0.9947
+        }
+      ]
+    },
+    {
+      "start": 37.08,
+      "end": 42.6,
+      "text": "メールも感染登録も旅行の予約も 身近なものばかりだよね",
+      "avgLogprob": -0.1404,
+      "noSpeechProb": 0.3183,
+      "words": [
+        {
+          "start": 37.08,
+          "end": 37.66,
+          "text": "メ",
+          "probability": 0.7836
+        },
+        {
+          "start": 37.66,
+          "end": 37.88,
+          "text": "ール",
+          "probability": 0.9981
+        },
+        {
+          "start": 37.88,
+          "end": 38.12,
+          "text": "も",
+          "probability": 0.9777
+        },
+        {
+          "start": 38.12,
+          "end": 38.44,
+          "text": "感",
+          "probability": 0.349
+        },
+        {
+          "start": 38.44,
+          "end": 38.64,
+          "text": "染",
+          "probability": 0.8604
+        },
+        {
+          "start": 38.64,
+          "end": 38.94,
+          "text": "登録",
+          "probability": 0.8964
+        },
+        {
+          "start": 38.94,
+          "end": 39.32,
+          "text": "も",
+          "probability": 0.9814
+        },
+        {
+          "start": 39.32,
+          "end": 39.8,
+          "text": "旅",
+          "probability": 0.8268
+        },
+        {
+          "start": 39.8,
+          "end": 39.98,
+          "text": "行",
+          "probability": 0.9882
+        },
+        {
+          "start": 39.98,
+          "end": 40.14,
+          "text": "の",
+          "probability": 0.9919
+        },
+        {
+          "start": 40.14,
+          "end": 40.26,
+          "text": "予",
+          "probability": 0.9841
+        },
+        {
+          "start": 40.26,
+          "end": 40.4,
+          "text": "約",
+          "probability": 0.9997
+        },
+        {
+          "start": 40.4,
+          "end": 40.62,
+          "text": "も",
+          "probability": 0.9006
+        },
+        {
+          "start": 41.12,
+          "end": 41.2,
+          "text": " 身",
+          "probability": 0.8586
+        },
+        {
+          "start": 41.2,
+          "end": 41.36,
+          "text": "近",
+          "probability": 0.9193
+        },
+        {
+          "start": 41.36,
+          "end": 41.56,
+          "text": "な",
+          "probability": 0.9964
+        },
+        {
+          "start": 41.56,
+          "end": 41.7,
+          "text": "もの",
+          "probability": 0.9005
+        },
+        {
+          "start": 41.7,
+          "end": 41.94,
+          "text": "ば",
+          "probability": 0.9991
+        },
+        {
+          "start": 41.94,
+          "end": 42.06,
+          "text": "か",
+          "probability": 0.9958
+        },
+        {
+          "start": 42.06,
+          "end": 42.14,
+          "text": "り",
+          "probability": 0.9998
+        },
+        {
+          "start": 42.14,
+          "end": 42.24,
+          "text": "だ",
+          "probability": 0.9991
+        },
+        {
+          "start": 42.24,
+          "end": 42.6,
+          "text": "よね",
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "start": 43.2,
+      "end": 48.54,
+      "text": "5163万件て1秒に1件数えても1年以上だよ",
+      "avgLogprob": -0.1404,
+      "noSpeechProb": 0.3183,
+      "words": [
+        {
+          "start": 43.2,
+          "end": 43.56,
+          "text": "5",
+          "probability": 0.6089
+        },
+        {
+          "start": 43.56,
+          "end": 43.92,
+          "text": "16",
+          "probability": 0.8865
+        },
+        {
+          "start": 43.92,
+          "end": 44.7,
+          "text": "3",
+          "probability": 0.9836
+        },
+        {
+          "start": 44.7,
+          "end": 44.88,
+          "text": "万",
+          "probability": 0.9863
+        },
+        {
+          "start": 44.88,
+          "end": 45.08,
+          "text": "件",
+          "probability": 0.9722
+        },
+        {
+          "start": 45.08,
+          "end": 45.26,
+          "text": "て",
+          "probability": 0.518
+        },
+        {
+          "start": 45.26,
+          "end": 46.02,
+          "text": "1",
+          "probability": 0.7268
+        },
+        {
+          "start": 46.02,
+          "end": 46.26,
+          "text": "秒",
+          "probability": 0.968
+        },
+        {
+          "start": 46.26,
+          "end": 46.46,
+          "text": "に",
+          "probability": 0.9877
+        },
+        {
+          "start": 46.46,
+          "end": 46.64,
+          "text": "1",
+          "probability": 0.8679
+        },
+        {
+          "start": 46.64,
+          "end": 46.8,
+          "text": "件",
+          "probability": 0.9703
+        },
+        {
+          "start": 46.8,
+          "end": 47.04,
+          "text": "数",
+          "probability": 0.9708
+        },
+        {
+          "start": 47.04,
+          "end": 47.22,
+          "text": "えて",
+          "probability": 0.9841
+        },
+        {
+          "start": 47.22,
+          "end": 47.4,
+          "text": "も",
+          "probability": 0.991
+        },
+        {
+          "start": 47.4,
+          "end": 47.68,
+          "text": "1",
+          "probability": 0.7748
+        },
+        {
+          "start": 47.68,
+          "end": 47.88,
+          "text": "年",
+          "probability": 0.976
+        },
+        {
+          "start": 47.88,
+          "end": 48.14,
+          "text": "以上",
+          "probability": 0.9677
+        },
+        {
+          "start": 48.14,
+          "end": 48.32,
+          "text": "だ",
+          "probability": 0.9675
+        },
+        {
+          "start": 48.32,
+          "end": 48.54,
+          "text": "よ",
+          "probability": 0.9938
+        }
+      ]
+    },
+    {
+      "start": 49.14,
+      "end": 52.72,
+      "text": "僕はもうただのニュースとして 聞き流せないな",
+      "avgLogprob": -0.1404,
+      "noSpeechProb": 0.3183,
+      "words": [
+        {
+          "start": 49.14,
+          "end": 49.5,
+          "text": "僕",
+          "probability": 0.5066
+        },
+        {
+          "start": 49.5,
+          "end": 49.68,
+          "text": "は",
+          "probability": 0.9969
+        },
+        {
+          "start": 49.68,
+          "end": 49.92,
+          "text": "もう",
+          "probability": 0.9735
+        },
+        {
+          "start": 49.92,
+          "end": 50.58,
+          "text": "ただ",
+          "probability": 0.5678
+        },
+        {
+          "start": 50.58,
+          "end": 50.8,
+          "text": "の",
+          "probability": 0.9906
+        },
+        {
+          "start": 50.8,
+          "end": 50.98,
+          "text": "ニ",
+          "probability": 0.8931
+        },
+        {
+          "start": 50.98,
+          "end": 51.06,
+          "text": "ュ",
+          "probability": 0.9972
+        },
+        {
+          "start": 51.06,
+          "end": 51.08,
+          "text": "ー",
+          "probability": 0.9961
+        },
+        {
+          "start": 51.08,
+          "end": 51.2,
+          "text": "ス",
+          "probability": 0.9974
+        },
+        {
+          "start": 51.2,
+          "end": 51.32,
+          "text": "と",
+          "probability": 0.9796
+        },
+        {
+          "start": 51.32,
+          "end": 51.54,
+          "text": "して",
+          "probability": 0.987
+        },
+        {
+          "start": 51.54,
+          "end": 51.68,
+          "text": " 聞",
+          "probability": 0.9472
+        },
+        {
+          "start": 51.68,
+          "end": 51.8,
+          "text": "き",
+          "probability": 0.9958
+        },
+        {
+          "start": 51.8,
+          "end": 51.92,
+          "text": "流",
+          "probability": 0.8151
+        },
+        {
+          "start": 51.92,
+          "end": 52.12,
+          "text": "せ",
+          "probability": 0.9975
+        },
+        {
+          "start": 52.12,
+          "end": 52.24,
+          "text": "ない",
+          "probability": 0.9972
+        },
+        {
+          "start": 52.24,
+          "end": 52.72,
+          "text": "な",
+          "probability": 0.9982
+        }
+      ]
+    },
+    {
+      "start": 53.24,
+      "end": 56.84,
+      "text": "登録したまま忘れてるサービス 結構あるんだよね",
+      "avgLogprob": -0.1404,
+      "noSpeechProb": 0.3183,
+      "words": [
+        {
+          "start": 53.24,
+          "end": 53.6,
+          "text": "登録",
+          "probability": 0.9604
+        },
+        {
+          "start": 53.6,
+          "end": 53.96,
+          "text": "した",
+          "probability": 0.998
+        },
+        {
+          "start": 53.96,
+          "end": 54.1,
+          "text": "ま",
+          "probability": 0.9978
+        },
+        {
+          "start": 54.1,
+          "end": 54.22,
+          "text": "ま",
+          "probability": 0.9898
+        },
+        {
+          "start": 54.22,
+          "end": 54.42,
+          "text": "忘",
+          "probability": 0.9757
+        },
+        {
+          "start": 54.42,
+          "end": 54.62,
+          "text": "れて",
+          "probability": 0.9967
+        },
+        {
+          "start": 54.62,
+          "end": 54.78,
+          "text": "る",
+          "probability": 0.9134
+        },
+        {
+          "start": 54.78,
+          "end": 54.9,
+          "text": "サ",
+          "probability": 0.9633
+        },
+        {
+          "start": 54.9,
+          "end": 55.04,
+          "text": "ービ",
+          "probability": 0.9982
+        },
+        {
+          "start": 55.04,
+          "end": 55.22,
+          "text": "ス",
+          "probability": 0.9995
+        },
+        {
+          "start": 55.64,
+          "end": 55.82,
+          "text": " 結",
+          "probability": 0.9952
+        },
+        {
+          "start": 55.82,
+          "end": 56.12,
+          "text": "構",
+          "probability": 0.999
+        },
+        {
+          "start": 56.12,
+          "end": 56.36,
+          "text": "ある",
+          "probability": 0.8963
+        },
+        {
+          "start": 56.36,
+          "end": 56.56,
+          "text": "んだ",
+          "probability": 0.9984
+        },
+        {
+          "start": 56.56,
+          "end": 56.84,
+          "text": "よね",
+          "probability": 0.9846
+        }
+      ]
+    },
+    {
+      "start": 57.42,
+      "end": 62.34,
+      "text": "僕ならまず公式アプリやブックマークから案内を確認するかな",
+      "avgLogprob": -0.141,
+      "noSpeechProb": 0.2202,
+      "words": [
+        {
+          "start": 57.42,
+          "end": 57.74,
+          "text": "僕",
+          "probability": 0.7259
+        },
+        {
+          "start": 57.74,
+          "end": 57.98,
+          "text": "なら",
+          "probability": 0.9795
+        },
+        {
+          "start": 57.98,
+          "end": 58.62,
+          "text": "まず",
+          "probability": 0.9282
+        },
+        {
+          "start": 58.62,
+          "end": 58.98,
+          "text": "公",
+          "probability": 0.933
+        },
+        {
+          "start": 58.98,
+          "end": 59.26,
+          "text": "式",
+          "probability": 0.9966
+        },
+        {
+          "start": 59.26,
+          "end": 59.46,
+          "text": "ア",
+          "probability": 0.9788
+        },
+        {
+          "start": 59.46,
+          "end": 59.56,
+          "text": "プ",
+          "probability": 0.9961
+        },
+        {
+          "start": 59.56,
+          "end": 59.68,
+          "text": "リ",
+          "probability": 0.9967
+        },
+        {
+          "start": 59.68,
+          "end": 59.84,
+          "text": "や",
+          "probability": 0.9839
+        },
+        {
+          "start": 59.84,
+          "end": 60.02,
+          "text": "ブ",
+          "probability": 0.904
+        },
+        {
+          "start": 60.02,
+          "end": 60.2,
+          "text": "ック",
+          "probability": 0.8679
+        },
+        {
+          "start": 60.2,
+          "end": 60.42,
+          "text": "マ",
+          "probability": 0.9927
+        },
+        {
+          "start": 60.42,
+          "end": 60.46,
+          "text": "ー",
+          "probability": 0.9983
+        },
+        {
+          "start": 60.46,
+          "end": 60.56,
+          "text": "ク",
+          "probability": 0.9893
+        },
+        {
+          "start": 60.56,
+          "end": 60.78,
+          "text": "から",
+          "probability": 0.8664
+        },
+        {
+          "start": 60.78,
+          "end": 61.24,
+          "text": "案",
+          "probability": 0.8685
+        },
+        {
+          "start": 61.24,
+          "end": 61.42,
+          "text": "内",
+          "probability": 0.9976
+        },
+        {
+          "start": 61.42,
+          "end": 61.54,
+          "text": "を",
+          "probability": 0.9619
+        },
+        {
+          "start": 61.54,
+          "end": 61.7,
+          "text": "確",
+          "probability": 0.9455
+        },
+        {
+          "start": 61.7,
+          "end": 61.92,
+          "text": "認",
+          "probability": 0.9997
+        },
+        {
+          "start": 61.92,
+          "end": 62.1,
+          "text": "する",
+          "probability": 0.9436
+        },
+        {
+          "start": 62.1,
+          "end": 62.34,
+          "text": "かな",
+          "probability": 0.9377
+        }
+      ]
+    },
+    {
+      "start": 63.04,
+      "end": 67.9,
+      "text": "使い回してるパスワードは変えてパスキーや多様素認証も使いたいね",
+      "avgLogprob": -0.141,
+      "noSpeechProb": 0.2202,
+      "words": [
+        {
+          "start": 63.04,
+          "end": 63.36,
+          "text": "使",
+          "probability": 0.5421
+        },
+        {
+          "start": 63.36,
+          "end": 63.56,
+          "text": "い",
+          "probability": 0.9978
+        },
+        {
+          "start": 63.56,
+          "end": 63.68,
+          "text": "回",
+          "probability": 0.7266
+        },
+        {
+          "start": 63.68,
+          "end": 63.86,
+          "text": "して",
+          "probability": 0.9914
+        },
+        {
+          "start": 63.86,
+          "end": 64.0,
+          "text": "る",
+          "probability": 0.8504
+        },
+        {
+          "start": 64.0,
+          "end": 64.14,
+          "text": "パ",
+          "probability": 0.9751
+        },
+        {
+          "start": 64.14,
+          "end": 64.22,
+          "text": "ス",
+          "probability": 0.9954
+        },
+        {
+          "start": 64.22,
+          "end": 64.38,
+          "text": "ワ",
+          "probability": 0.9693
+        },
+        {
+          "start": 64.38,
+          "end": 64.52,
+          "text": "ード",
+          "probability": 0.9975
+        },
+        {
+          "start": 64.52,
+          "end": 64.66,
+          "text": "は",
+          "probability": 0.9633
+        },
+        {
+          "start": 64.66,
+          "end": 64.88,
+          "text": "変",
+          "probability": 0.8623
+        },
+        {
+          "start": 64.88,
+          "end": 65.16,
+          "text": "えて",
+          "probability": 0.9884
+        },
+        {
+          "start": 65.16,
+          "end": 65.78,
+          "text": "パ",
+          "probability": 0.6638
+        },
+        {
+          "start": 65.78,
+          "end": 65.92,
+          "text": "ス",
+          "probability": 0.9939
+        },
+        {
+          "start": 65.92,
+          "end": 66.06,
+          "text": "キ",
+          "probability": 0.9836
+        },
+        {
+          "start": 66.06,
+          "end": 66.14,
+          "text": "ー",
+          "probability": 0.9945
+        },
+        {
+          "start": 66.14,
+          "end": 66.28,
+          "text": "や",
+          "probability": 0.9786
+        },
+        {
+          "start": 66.28,
+          "end": 66.48,
+          "text": "多",
+          "probability": 0.9856
+        },
+        {
+          "start": 66.48,
+          "end": 66.64,
+          "text": "様",
+          "probability": 0.9424
+        },
+        {
+          "start": 66.64,
+          "end": 66.78,
+          "text": "素",
+          "probability": 0.8372
+        },
+        {
+          "start": 66.78,
+          "end": 66.98,
+          "text": "認",
+          "probability": 0.8892
+        },
+        {
+          "start": 66.98,
+          "end": 67.16,
+          "text": "証",
+          "probability": 0.9929
+        },
+        {
+          "start": 67.16,
+          "end": 67.3,
+          "text": "も",
+          "probability": 0.8923
+        },
+        {
+          "start": 67.3,
+          "end": 67.46,
+          "text": "使",
+          "probability": 0.9913
+        },
+        {
+          "start": 67.46,
+          "end": 67.66,
+          "text": "いた",
+          "probability": 0.9672
+        },
+        {
+          "start": 67.66,
+          "end": 67.74,
+          "text": "い",
+          "probability": 0.9997
+        },
+        {
+          "start": 67.74,
+          "end": 67.9,
+          "text": "ね",
+          "probability": 0.9645
+        }
+      ]
+    },
+    {
+      "start": 68.5,
+      "end": 70.02,
+      "text": "利用名材も見ておきたい",
+      "avgLogprob": -0.141,
+      "noSpeechProb": 0.2202,
+      "words": [
+        {
+          "start": 68.5,
+          "end": 68.82,
+          "text": "利",
+          "probability": 0.9325
+        },
+        {
+          "start": 68.82,
+          "end": 68.98,
+          "text": "用",
+          "probability": 0.9997
+        },
+        {
+          "start": 68.98,
+          "end": 69.16,
+          "text": "名",
+          "probability": 0.4524
+        },
+        {
+          "start": 69.16,
+          "end": 69.32,
+          "text": "材",
+          "probability": 0.5806
+        },
+        {
+          "start": 69.32,
+          "end": 69.48,
+          "text": "も",
+          "probability": 0.9955
+        },
+        {
+          "start": 69.48,
+          "end": 69.64,
+          "text": "見て",
+          "probability": 0.9103
+        },
+        {
+          "start": 69.64,
+          "end": 69.78,
+          "text": "お",
+          "probability": 0.9875
+        },
+        {
+          "start": 69.78,
+          "end": 69.88,
+          "text": "き",
+          "probability": 0.9897
+        },
+        {
+          "start": 69.88,
+          "end": 70.02,
+          "text": "たい",
+          "probability": 0.9982
+        }
+      ]
+    },
+    {
+      "start": 70.58,
+      "end": 74.8,
+      "text": "メールやSNSのリンクから慌ててログインしないようにしよう",
+      "avgLogprob": -0.141,
+      "noSpeechProb": 0.2202,
+      "words": [
+        {
+          "start": 70.58,
+          "end": 70.9,
+          "text": "メ",
+          "probability": 0.7982
+        },
+        {
+          "start": 70.9,
+          "end": 71.1,
+          "text": "ール",
+          "probability": 0.9939
+        },
+        {
+          "start": 71.1,
+          "end": 71.26,
+          "text": "や",
+          "probability": 0.9865
+        },
+        {
+          "start": 71.26,
+          "end": 71.62,
+          "text": "SN",
+          "probability": 0.2555
+        },
+        {
+          "start": 71.62,
+          "end": 71.96,
+          "text": "S",
+          "probability": 0.923
+        },
+        {
+          "start": 71.96,
+          "end": 72.12,
+          "text": "の",
+          "probability": 0.9604
+        },
+        {
+          "start": 72.12,
+          "end": 72.26,
+          "text": "リ",
+          "probability": 0.9899
+        },
+        {
+          "start": 72.26,
+          "end": 72.3,
+          "text": "ン",
+          "probability": 0.9958
+        },
+        {
+          "start": 72.3,
+          "end": 72.4,
+          "text": "ク",
+          "probability": 0.999
+        },
+        {
+          "start": 72.4,
+          "end": 72.6,
+          "text": "から",
+          "probability": 0.9969
+        },
+        {
+          "start": 72.6,
+          "end": 73.14,
+          "text": "慌",
+          "probability": 0.929
+        },
+        {
+          "start": 73.14,
+          "end": 73.3,
+          "text": "て",
+          "probability": 0.9942
+        },
+        {
+          "start": 73.3,
+          "end": 73.46,
+          "text": "て",
+          "probability": 0.9969
+        },
+        {
+          "start": 73.46,
+          "end": 73.58,
+          "text": "ロ",
+          "probability": 0.9353
+        },
+        {
+          "start": 73.58,
+          "end": 73.7,
+          "text": "グ",
+          "probability": 0.9963
+        },
+        {
+          "start": 73.7,
+          "end": 73.82,
+          "text": "イ",
+          "probability": 0.8805
+        },
+        {
+          "start": 73.82,
+          "end": 73.86,
+          "text": "ン",
+          "probability": 0.9941
+        },
+        {
+          "start": 73.86,
+          "end": 73.98,
+          "text": "し",
+          "probability": 0.9948
+        },
+        {
+          "start": 73.98,
+          "end": 74.14,
+          "text": "ない",
+          "probability": 0.9954
+        },
+        {
+          "start": 74.14,
+          "end": 74.38,
+          "text": "ように",
+          "probability": 0.9945
+        },
+        {
+          "start": 74.38,
+          "end": 74.6,
+          "text": "し",
+          "probability": 0.9962
+        },
+        {
+          "start": 74.6,
+          "end": 74.8,
+          "text": "よう",
+          "probability": 0.9657
+        }
+      ]
+    },
+    {
+      "start": 75.36,
+      "end": 78.2,
+      "text": "こたつから出なくてもそのくらいはできるしね",
+      "avgLogprob": -0.141,
+      "noSpeechProb": 0.2202,
+      "words": [
+        {
+          "start": 75.36,
+          "end": 75.68,
+          "text": "こ",
+          "probability": 0.5307
+        },
+        {
+          "start": 75.68,
+          "end": 75.84,
+          "text": "た",
+          "probability": 0.9434
+        },
+        {
+          "start": 75.84,
+          "end": 75.96,
+          "text": "つ",
+          "probability": 0.9812
+        },
+        {
+          "start": 75.96,
+          "end": 76.14,
+          "text": "から",
+          "probability": 0.9974
+        },
+        {
+          "start": 76.14,
+          "end": 76.28,
+          "text": "出",
+          "probability": 0.941
+        },
+        {
+          "start": 76.28,
+          "end": 76.44,
+          "text": "なく",
+          "probability": 0.9934
+        },
+        {
+          "start": 76.44,
+          "end": 76.6,
+          "text": "て",
+          "probability": 0.9597
+        },
+        {
+          "start": 76.6,
+          "end": 76.74,
+          "text": "も",
+          "probability": 0.9825
+        },
+        {
+          "start": 76.74,
+          "end": 77.24,
+          "text": "その",
+          "probability": 0.93
+        },
+        {
+          "start": 77.24,
+          "end": 77.42,
+          "text": "く",
+          "probability": 0.9054
+        },
+        {
+          "start": 77.42,
+          "end": 77.54,
+          "text": "らい",
+          "probability": 0.9957
+        },
+        {
+          "start": 77.54,
+          "end": 77.68,
+          "text": "は",
+          "probability": 0.9809
+        },
+        {
+          "start": 77.68,
+          "end": 77.8,
+          "text": "でき",
+          "probability": 0.8943
+        },
+        {
+          "start": 77.8,
+          "end": 77.98,
+          "text": "る",
+          "probability": 0.9983
+        },
+        {
+          "start": 77.98,
+          "end": 78.06,
+          "text": "し",
+          "probability": 0.9862
+        },
+        {
+          "start": 78.06,
+          "end": 78.2,
+          "text": "ね",
+          "probability": 0.9886
+        }
+      ]
+    }
+  ]
+}

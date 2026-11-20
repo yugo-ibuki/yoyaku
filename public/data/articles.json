@@ -206,6 +206,75 @@
       }
     },
     {
+      "id": "claude-code-mods",
+      "url": "https://claude.com/ja/resources/articles/claude-code-mods",
+      "title": "Customize Claude Code with mods",
+      "source": "Claude by Anthropic",
+      "genre": "AI開発",
+      "technologies": [
+        "Claude Code",
+        "Claude Mods",
+        "TypeScript",
+        "プラグイン",
+        "Hooks"
+      ],
+      "reading_minutes": 5,
+      "created_at": "2026-10-09",
+      "updated_at": "2026-10-09",
+      "summary": [
+        "Claude Modsは、小さなTypeScript関数でClaude CodeのCLIやデスクトップアプリの動作とUIを書き換え、プラグインとして配布できる拡張機構です。",
+        "プロンプトやツール呼び出しの書き換え、再試行、権限の承認・拒否、ツール出力の秘密情報除去を実装でき、イベント処理はbefore、after、instead、wrapから選べます。UIにはボタンや入力欄も追加できます。",
+        "hooksではイベントの書き換え、UI変更、組み込み機能の置換はできません。modsはClaude Code内部の処理経路へ介入するため、より深いカスタマイズが可能です。",
+        "複数のmodsは読み込み順にイベントを受け取り、結果は逆順に戻ります。最初に読み込まれたmodがイベントを最初に見て、結果を最後に処理します。",
+        "Claude Codeへ自然言語でmodの作成とインストールを依頼でき、開発中はホットリロードで試せます。組み込みの`/diff`もmodなので、`/plugin`から無効化や置換ができます。",
+        "modsはサンドボックスで隔離されず、Claude Codeと同じ権限で同じマシンへアクセスします。信頼できる提供元だけを使う必要があります。",
+        "Team・Enterprise、またはmanaged settingsがある端末では、組み込みの`sec-default`が最初に読み込まれて拒否規則の上書きを防ぎます。独自の管理者modを先にする場合も読み込みリストへ`sec-default`を含め、管理コンソールやmanaged settingsでプラグインとマーケットプレイスを許可・遮断できます。",
+        "modはClaudeのプラグインディレクトリまたはCLIの`/plugin`から導入できます。再利用時はプラグインへ梱包してディレクトリへ提出でき、CI/CD状況ペイン、production変更の確認、監査優先読み込みなどに応用できます。"
+      ],
+      "ogp": {
+        "image_url": "https://claude.com/ja/resources/articles/claude-code-mods/opengraph-image/og",
+        "title": "Customize Claude Code with mods in TypeScript",
+        "description": "Mods are small TypeScript functions that change how Claude Code works. Rewrite prompts, block risky commands, add custom UI, or replace built-in features. Write one yourself or ask Claude Code to write it, then share it as a plugin."
+      }
+    },
+    {
+      "id": "claude-code-v2-1-287",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.287",
+      "title": "v2.1.287",
+      "source": "GitHub (anthropics/claude-code)",
+      "genre": "AI開発",
+      "technologies": [
+        "Claude Code",
+        "Claude Mods",
+        "MCP",
+        "OpenTelemetry",
+        "Remote Control",
+        "Claude Code SDK",
+        "VS Code extension"
+      ],
+      "reading_minutes": 13,
+      "created_at": "2026-10-09",
+      "updated_at": "2026-10-09",
+      "summary": [
+        "v2.1.287はClaude Modsを追加しました。テレメトリが有効なファーストパーティーセッションでは、組み込みmod「You should know」を`/plugin enable cc-plugin-you-should-know@builtin`で有効化できます。",
+        "`claude agents`に`n:<text>`フィルターを追加し、バックグラウンドセッションの再開、権限待ち表示、メッセージのキュー処理を改善しました。",
+        "OpenTelemetryの`user_prompt`へ`prompt`の複製である`prompt_text`を追加し、`prompt`と同様の削除・マスクを求めています。MCPは2025-11-25のURLプロンプトに対応しました。",
+        "危険な`rm`の常時確認、作業ツリー外へのシンボリックリンク書き込み確認、MCPツール名`__proto__`で権限上限が失われる問題を修正しました。",
+        "Remote Controlの再接続、プロキシ、macOSスリープ、ファイル送信を修正し、クラウドとリモートの一時的な送信失敗は1回再試行するようにしました。",
+        "Bedrock・Vertexのモデル制限確認を直し、Opus 4.7以降とFableは対応基盤で1Mコンテキストを既定化しました。Bedrock Guardrailsの途中遮断も正しく表示します。",
+        "SDK・ヘッドレス実行ではheartbeat、部分メッセージ終端、forkスキルのストリーム、一時的なMCP接続失敗を修正・改善しました。",
+        "`asyncRewake`の壊れたhookによる反復起動、クラウドのSessionStart hooks、途中追加したリポジトリのskills・plugins・CLAUDE.md読み込みを修正しました。",
+        "スクリーンリーダーのカーソル、キー案内、差分読み上げ、重複読み上げを修正し、Reduce motion設定にも従うようにしました。",
+        "VS Codeへ「Run in background」とagent mapの背景出力を追加し、クラウドセッション、リンク、リモート表示、プラグイン管理の不具合を修正しました。",
+        "Claude Tagの不要なSlack通知を抑え、Code Reviewのコメント切断と、新しいpushを再レビューしない問題を修正しました。"
+      ],
+      "ogp": {
+        "image_url": "https://opengraph.githubassets.com/38e4e37d33c0357b710c8c6038b064ba34ea0050a96834af61ed3857cbbb2480/anthropics/claude-code/releases/tag/v2.1.287",
+        "title": "Release v2.1.287 · anthropics/claude-code",
+        "description": "What's changed\n\nAdded Claude Mods: plugins may now modify deeper behavior\nAdded You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn ..."
+      }
+    },
+    {
       "id": "jev-rag-speed-cost-evaluation",
       "url": "https://qiita.com/kikuziro/items/2be9091b328d8b844640",
       "title": "JevでRAG検索の爆速化＆コスト削減は実現できるのか検証してみた",
@@ -239,6 +308,173 @@
         "image_url": "https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-user-contents.imgix.net%2Fhttps%253A%252F%252Fcdn.qiita.com%252Fassets%252Fpublic%252Farticle-ogp-background-afbab5eb44e0b055cce1258705637a91.png%3Fixlib%3Drb-4.1.1%26w%3D1200%26blend64%3DaHR0cHM6Ly9xaWl0YS11c2VyLXByb2ZpbGUtaW1hZ2VzLmltZ2l4Lm5ldC9odHRwcyUzQSUyRiUyRnMzLWFwLW5vcnRoZWFzdC0xLmFtYXpvbmF3cy5jb20lMkZxaWl0YS1pbWFnZS1zdG9yZSUyRjAlMkYyOTMzNDg5JTJGMjVhNjVmY2U1ZWRiZDU5NWUxZDYzZDNjZGI4ODdjOTZmMWE2Njc4ZiUyRnhfbGFyZ2UucG5nJTNGMTc4MjkxNzQ3Mz9peGxpYj1yYi00LjEuMSZhcj0xJTNBMSZmaXQ9Y3JvcCZtYXNrPWVsbGlwc2UmYmc9RkZGRkZGJmZtPXBuZzMyJnM9ZGE0MmU0MmVjOGZmN2JlMzJjMzM0YTVkMmNiMzBiY2U%26blend-x%3D120%26blend-y%3D467%26blend-w%3D82%26blend-h%3D82%26blend-mode%3Dnormal%26s%3Dae51c5ee676e08f856bda33ea94c63f2?ixlib=rb-4.1.1&w=1200&fm=jpg&mark64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTk2MCZoPTMyNCZ0eHQ9SmV2JUUzJTgxJUE3UkFHJUU2JUE0JTlDJUU3JUI0JUEyJUUzJTgxJUFFJUU3JTg4JTg2JUU5JTgwJTlGJUU1JThDJTk2JUVGJUJDJTg2JUUzJTgyJUIzJUUzJTgyJUI5JUUzJTgzJTg4JUU1JTg5JThBJUU2JUI4JTlCJUUzJTgxJUFGJUU1JUFFJTlGJUU3JThGJUJFJUUzJTgxJUE3JUUzJTgxJThEJUUzJTgyJThCJUUzJTgxJUFFJUUzJTgxJThCJUU2JUE0JTlDJUU4JUE4JUJDJUUzJTgxJTk3JUUzJTgxJUE2JUUzJTgxJUJGJUUzJTgxJTlGJnR4dC1hbGlnbj1sZWZ0JTJDdG9wJnR4dC1jb2xvcj0lMjMxRTIxMjEmdHh0LWZvbnQ9SGlyYWdpbm8lMjBTYW5zJTIwVzYmdHh0LXNpemU9NTYmdHh0LXBhZD0wJnM9YmRjZmE0NTVkMThiOTk4YTI0YjZhNGNjNWNhOGIxMmU&mark-x=120&mark-y=112&blend64=aHR0cHM6Ly9xaWl0YS11c2VyLWNvbnRlbnRzLmltZ2l4Lm5ldC9-dGV4dD9peGxpYj1yYi00LjEuMSZ3PTgzOCZoPTU4JnR4dD0lNDBraWt1emlybyZ0eHQtY29sb3I9JTIzMUUyMTIxJnR4dC1mb250PUhpcmFnaW5vJTIwU2FucyUyMFc2JnR4dC1zaXplPTM2JnR4dC1wYWQ9MCZzPWM3OGI3M2Q5YTRjOWFhNTIyZjZmYzE4YWMzN2YwOThh&blend-x=242&blend-y=480&blend-w=838&blend-h=46&blend-fit=crop&blend-crop=left%2Cbottom&blend-mode=normal&s=37ebd559bb780ea786d70a1a986df279",
         "title": "JevでRAG検索の爆速化＆コスト削減は実現できるのか検証してみた - Qiita",
         "description": "👋 はじめに RAGのあちこちにJevを差し込んでどこがどう変わるのか測ってみました！ 🎯 対象購読者 ぶっちゃけJevってRAG検索に使えるの？と思っている方 RAG検索を愛している方 ⚡ Jevってなに？ JevはTypeSafe AIが2026年9月15日に..."
+      }
+    },
+    {
+      "id": "openai-coordinated-model-distillation-campaign",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "source": "OpenAI",
+      "genre": "AIセキュリティ",
+      "technologies": [
+        "モデル蒸留",
+        "推論モデル"
+      ],
+      "reading_minutes": 4,
+      "created_at": "2026-10-01",
+      "updated_at": "2026-10-01",
+      "summary": [
+        "OpenAIは、別モデルの学習や能力再現を目的に、保護された内部推論を不正に取り出す組織的な蒸留活動を検知し、阻止したと報告した。",
+        "攻撃は暗号の解読やデータベース侵入ではなく、会話への働きかけによって非公開の推論を出力させるものだった。",
+        "別会話へ暗号化された推論を持ち込み、その内容を書き出させる試みを観測した。研究者から報告されたモデル間や会話圧縮に関する攻撃経路も確認した。",
+        "活動は7月1日に始まり、7月24〜25日には4,000人超から16,000件の関連リクエストがあった。15,000人超の関連集団を特定し、7月28日までに活動を阻止した。数値は抽出の試行を表し、成功件数ではない。",
+        "OpenAIは活動の中核をKimi開発元のMoonshot AIに関係する人物へ帰属させたが、全員が同一主体に属するかは不明としている。",
+        "抽出された推論から別モデルを訓練すると、元モデルの安全対策を引き継がずに能力が移転する可能性があり、安全保障上の懸念にもつながると説明している。",
+        "不正アカウントの停止・制限、登録時とインフラの制御強化、関連ネットワークの監視を組み合わせて対応した。",
+        "他ユーザーの暗号化推論を再利用して内容を復元する経路を閉じ、推論を漏らす可能性のあるストリーミング出力を検出・保留する検査を追加した。",
+        "第三者サービスと連携して関連アカウントへ対応し、Frontier Model Forumや政府の情報共有経路を通じて知見を共有した。持ち運びや再利用が可能な推論データを扱う他社システムにも関連リスクがある。",
+        "対策は継続中で、パートナー環境への保護展開、ツール出力の検査、分類器やモデルの拒否動作を改善し、技術的保護・組織的活動の検知と対処・脅威情報共有を強化する方針を示した。"
+      ],
+      "ogp": {
+        "image_url": "https://images.ctfassets.net/kftzwdyauwt9/7MP5Bq8wKRpAAnnhqfdA8o/3ca1f00ae7ec16c5a569eb6195e24c90/disrupting-a-coordinated-model-distillation-campaign-seo.png?w=1600&h=900&fit=fill",
+        "title": "Disrupting a coordinated model-distillation campaign",
+        "description": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation."
+      }
+    },
+    {
+      "id": "fractal-engineering",
+      "url": "https://torus-engineering.uhyo.workers.dev/ja/fractal/",
+      "title": "フラクタルエンジニアリング — Fractal Engineering",
+      "source": "Torus Engineering",
+      "genre": "AI駆動開発",
+      "technologies": [
+        "AIエージェント",
+        "サブエージェント",
+        "推論時計算"
+      ],
+      "reading_minutes": 7,
+      "created_at": "2026-09-26",
+      "updated_at": "2026-09-26",
+      "summary": [
+        "記事は、トーラスエンジニアリングの次に整数次元を増やすのではなく、非整数次元を持つフラクタルへ進むという設定で、AIエージェントが子エージェントへ仕事を無限に委譲する開発手法を描きます。これはAI駆動開発コミュニティで次々に生まれるバズワードや万能論を風刺する作品であり、無限委譲が実際に可能だと実証する技術解説ではありません。",
+        "各階層のエージェントは、仕事の受領、分解、子への委譲、結果の検証、親への報告という同じ契約を持ちます。記事はこれを自己相似な余帰納的モデルとして表し、`children: () => Fractal[]` によって必要になった時だけ子を実体化すると説明しますが、フラクタル次元 D ≈ 1.585 は戯画的な推奨値として提示されています。",
+        "計算資源については、深さ n の階層へ r^n（0 < r < 1）の予算を割り当てれば、総量が等比級数 Σr^n = 1/(1-r) に収まるという『ゼノン予算』を持ち出します。無限階層でも有限予算に収まるという主張は、この数学的比喩に基づくジョークであり、実運用で保証されたコストモデルではありません。",
+        "品質保証では、レビュー作用が収縮的なら一意の不動点 v∞ が存在し、それを『完成』と呼びます。これとは別に、各レビューが欠陥密度を一定割合 q < 1 へ縮めると仮定して q^n → 0 からバグゼロを唱えますが、いずれも置いた前提から導く思考実験であり、現実のソフトウェア品質を証明するものではありません。",
+        "成果物はKoch雪片のように、有限段階では近似しか見えず、極限で初めて『端のない詳細』が現れるものとして描かれます。ただし実際に生成・転送するのは観測した部分だけとされ、Fig. 1 はその第4近似を示して、無限の構造と有限の観測結果を対比します。",
+        "Hilbertホテルの部屋番号を一つずつずらせば満室でも新しい客を受け入れられる話を、無限バックログへ緊急タスクを割り込ませる方法になぞらえます。終わりのない作業列にも再配置によって新しい仕事を入れられるという、無限集合の性質を使った戯画です。",
+        "無限の生成空間はバベルの図書館に例えられます。あらゆる成果物が生成可能になるなら、開発の価値は候補を作ることから、検証によって正解を特定することへ移ると論じます。",
+        "記事は無限階層の実質を推論時計算として整理します。トーラスエンジニアリングが時間方向に実行を改善で巻くのに対し、フラクタルエンジニアリングは深さ方向に委譲と検証を積み重ねるという対比で、同じ計算資源の使い方に異なる物語を与えています。",
+        "FAQでは 1 + 2 + 3 + ... = -1/12 を持ち出して見積もりを『-1/12人日』とするなど、数学上の概念を組織設計へ強引に接続します。末尾の説明や各所のオマージュも含め、数学・組織論・AIエージェント論の誇張を意図的に重ねたユーモアであることが示されています。"
+      ],
+      "ogp": {
+        "image_url": "https://torus-engineering.uhyo.workers.dev/og/fractal.png",
+        "title": "フラクタルエンジニアリング — Fractal Engineering",
+        "description": "分割せよ、そして分割させよ。無限の組織から、無限の成果を。"
+      }
+    },
+    {
+      "id": "openai-agentic-software-factory",
+      "url": "https://newsletter.pragmaticengineer.com/p/openai-software-factory",
+      "title": "Inside OpenAI’s agentic software factory",
+      "source": "The Pragmatic Engineer",
+      "genre": "AI駆動開発",
+      "technologies": [
+        "Codex",
+        "ChatGPT Work",
+        "AIエージェント",
+        "CI/CD",
+        "オブザーバビリティ"
+      ],
+      "reading_minutes": 17,
+      "created_at": "2026-09-25",
+      "updated_at": "2026-09-25",
+      "summary": [
+        "この記事はOpenAIのエンジニアリング責任者とエンジニア計7人への取材を基にしています。この要約はユーザー指定により、公開されている導入部と第1〜3章だけを対象とし、第4章以降は含みません。",
+        "財務、採用、法務など非エンジニア部門でのCodex利用率は4か月で約0%から90%へ伸び、ほぼ全社員がCodexまたはChatGPT Workを週次で利用しています。ただし社内版は多くの内部システムに接続され、外部提供版より高度な機能を持ちます。",
+        "Mac版・Windows版のCodexとChatGPT Work、長時間タスク、/goal、長いスレッドが普及を後押しし、4〜5月には利用率が60%から90%へ上昇しました。長時間動くエージェントがサブエージェントを起動するため、人間が直接並列管理する対象も減っています。",
+        "存在や用途を知らないawareness gapを口コミで埋め、役割別のスキルやプラグインを整備し、ドメイン専門家を開発チームへ加えることが非技術職への展開を支えました。一方で、CodexやChatGPT Workへの強い依存も生じています。",
+        "1月以降はIDEの利用が低下しました。CodexアプリはCLIとIDEの中間に位置する製品として始まり、6月にはファイル編集機能が追加されました。",
+        "PRの増加に伴い、一部のビルド、テスト、デプロイ基盤にかかる負荷は約6か月でおよそ10倍になり、バージョン管理、CI/CD、リリース工程が新たなボトルネックになりました。",
+        "OpenAIはPR、コードレビュー、デプロイの流れを再設計し、複数の専門エージェントによるレビューや、変更を本番環境まで見守り、必要に応じて独自のダッシュボードも作るエージェントを導入しています。",
+        "ネイティブモバイルアプリではAppleやGoogleの審査に数時間から数日かかるため、コード生成が高速化してもリリース速度が追いつかないという制約があります。",
+        "software factoryでは、人間が成果と優先順位を定義し、Codexがソースコード内のドキュメント、GitHub、Slack、Notion、Databricks、Datadog、ログ、社内スキルから文脈を集めて実装します。",
+        "エージェントはビルド、テスト、CI失敗の修正、PRの更新を継続し、perf harnessは問題が疑われるPRをSynthetics A/Bへ送り、性能への影響を評価します。",
+        "レビューにはドメイン別のエージェントを使い、変更リスクに応じてレビューの強度、人間による確認、コンプライアンス部門からの入力、低リスクPRの自動承認を振り分けます。",
+        "人間の承認後は変更単位のエージェントがデプロイと監視を担い、Perf Factoryが本番シグナルから回帰を検出して原因を分析し、修正を提案します。Sevbotは障害の文脈と緩和策を集めますが、現状では自律実行せず、オンコール担当者も残ります。"
+      ],
+      "ogp": {
+        "image_url": "https://substackcdn.com/image/fetch/$s_!Eiw9!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e73721e-e4d8-473f-a5a1-b6211c14f6ca_2048x1762.png",
+        "title": "Inside OpenAI’s agentic software factory",
+        "description": "A deepdive into how Codex has “taken over” OpenAI, how the frontier lab builds its agentic software factory, and the engineering challenges of one billion users. Details from inside OpenAI"
+      }
+    },
+    {
+      "id": "claude-code-four-ds",
+      "url": "https://zenn.dev/karamage/articles/2ef2c2aea7dfdf",
+      "title": "Anthropic公式のClaude Code講座で学んだ「4つのD」",
+      "source": "Zenn",
+      "genre": "AI活用",
+      "technologies": [
+        "Claude Code",
+        "Claude Academy",
+        "AI Fluency Framework",
+        "生成AI"
+      ],
+      "reading_minutes": 12,
+      "created_at": "2026-09-03",
+      "updated_at": "2026-09-03",
+      "summary": [
+        "Anthropic公式の無料学習サイトClaude Academyには、AI Fluency、AIの能力と限界、Claude Code、MCP、APIなどのコースがあります。記事が取り上げる「4つのD」は、14レッスンとクイズ1本で約4時間の「AI Fluency: Framework & Foundations」で扱われます。",
+        "4つのDは単なるプロンプト術ではなく、AIに仕事を任せる際の立ち回りをDelegation、Description、Discernment、Diligenceの4段階で整理した枠組みです。外部研究者のRick Dakan氏とJoseph Feller氏が作ったAI Fluency FrameworkをAnthropicが公式教材に採用しています。",
+        "AIとの関わり方は、決まった作業を渡すAutomation、思考相手にするAugmentation、その先の判断ごと任せるAgencyの3種類に分けられます。Claude Codeは3つを行き来するため、自分が相談したいのか、作業や判断まで委ねたいのかを明確にしないと意図しない編集につながります。",
+        "記事はClaude Codeを「今日チームに入った優秀な新人」に例えます。幅広い技術を知り作業も速い一方、会社、コードベース、過去の議論という固有の文脈を知らず、不確かな内容も自信を持って答えるため、適切な委任、指示、レビュー、責任管理が必要です。",
+        "Delegationは、AIを使うか、何を渡し、何を人間の判断として残すかを最初に決める段階です。著者は、アーキテクチャ、命名規約、ライブラリ選定など長期的に影響する設計判断は人間が担い、決めた方針に沿う実装、テストの雛形、リファクタリングをAIへ渡す方針を示します。",
+        "Descriptionは依頼内容を、成果物を示すProduct、進め方を示すProcess、作業中の振る舞いや停止点を示すBehaviorの3層で記述する段階です。「プランニングのみ」「ファイルは編集しない」「受け入れ基準やテストを整理したら止まる」と明示すれば、AIの先走りを抑えられます。",
+        "Discernmentは、AIの成果物とそこへ至る過程を疑い、要件充足、勝手な前提、テストが保証する内容、制約違反、架空の事実がないかを人間が見極める段階です。AIは正誤にかかわらず流暢で自信を持って答えるため、動くことと正しいことを区別して差分やテストの中身を確認します。",
+        "DescriptionとDiscernmentは一度で終わらず、成果を見て依頼を書き直し、再びレビューするループとして回します。一発で完璧な出力を狙うより、同じセッションで修正点を伝えて2周目、3周目と精度を上げる方が速く、CLAUDE.md、自動テスト、読みやすい差分は往復コストを下げます。",
+        "Diligenceは、AIが関与しても公開する成果への最終責任を人間が負う段階です。AIへ渡せるデータか、ツールがデータをどう扱うかを確認し、必要な相手にはAI利用を伝え、重要な仕事では人間のレビューを省かないという行動を、訓練可能なスキルとして扱います。",
+        "Claude Codeで実践するなら、DelegationにはPlan modeと慎重な権限設定、DescriptionにはCLAUDE.md、/init、明示的な受け入れ基準と停止指示、Discernmentには差分・テスト・レビューコマンドの確認、Diligenceには機密情報の保護、AI関与の明示、人間レビューが対応します。",
+        "著者が過去に作ったナレッジ検索AIでは、人とAIの役割分担、利用者向けガイドとAIへの制約、回答品質の評価、誤回答への責任の所在がいずれも欠けていました。「たまに嘘をつく」という評判で信頼を失い、数カ月後には使われなくなった経験が、4つのDを欠く実害として紹介されています。",
+        "結論は、AI時代でも仕事を任せる本質は変わらず、丸投げを避け、良い依頼とレビューを重ねることが重要だというものです。Claude Codeがうまくいかないときは、何を任せるか、どう頼むか、どう見極めるか、誰が責任を持つかのどこが不足しているかを点検できます。"
+      ],
+      "ogp": {
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--LpRD2Bob--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Anthropic%25E5%2585%25AC%25E5%25BC%258F%25E3%2581%25AEClaude%2520Code%25E8%25AC%259B%25E5%25BA%25A7%25E3%2581%25A7%25E5%25AD%25A6%25E3%2582%2593%25E3%2581%25A0%25E3%2580%258C4%25E3%2581%25A4%25E3%2581%25AED%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:karamage%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzc0NTAwMmJiMzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+        "title": "Anthropic公式のClaude Code講座で学んだ「4つのD」"
+      }
+    },
+    {
+      "id": "gpt-5-6-prompt-migration-guide",
+      "url": "https://note.com/ai_driven/n/nf5d67f39c468",
+      "title": "GPT-5.6公開直後の公式ドキュメントを読み解く——「プロンプト移行ガイド」徹底解説",
+      "source": "note",
+      "genre": "プロンプト設計",
+      "technologies": [
+        "GPT-5.6",
+        "OpenAI API",
+        "Programmatic Tool Calling",
+        "プロンプトエンジニアリング"
+      ],
+      "reading_minutes": 21,
+      "created_at": "2026-09-03",
+      "updated_at": "2026-09-03",
+      "summary": [
+        "記事は、OpenAIの「Prompting guidance for GPT-5.6 Sol」を軸に、既存プロンプトをGPT-5.6へ移行する際の判断基準を整理します。主な対象は、ChatGPTやOpenAI APIを業務で使い、システムプロンプトやツール呼び出しの基礎を理解している読者です。",
+        "GPT-5.6はSol、Terra、Lunaの3階層で構成され、Solはコーディングや長時間のエージェントタスク、Terraは日常業務、Lunaは高速・低コストの大量処理向けと説明されています。記事は価格やベンチマークも紹介しますが、性能値はOpenAI自身による測定であり、第三者検証ではない点に注意を促します。",
+        "移行の第一歩は、既存プロンプトへ指示を足すことではなく、重複したルール、挙動を変えない説明や例、無関係なツールを1グループずつ削り、同じ評価を繰り返すことです。記事が引用するOpenAI社内評価では、軽量化によりスコアが約10〜15%改善し、トークン量が41〜66%、コストが33〜67%減りましたが、効果はワークロードごとに検証する必要があります。",
+        "GPT-5.6には細かな手順書より、ユーザーへ届ける成果、成功条件、制約、停止条件を示す依頼書型のプロンプトが向くとされます。「必ず」などの絶対命令は安全性や必須要件だけに使い、検索、質問、継続の判断が分かれる場面では固定手順ではなく判断基準を与えます。",
+        "応答の長さはtext.verbosityで基準を設定し、タスク固有の構成だけをプロンプトで指定する役割分担が推奨されています。また、トーンや温かみを決めるPersonalityと、質問、仮定、主体的な行動、トレードオフ説明の方針を決めるCollaborationを分け、抽象的な形容詞ではなく具体的な振る舞いとして定義します。",
+        "自律性の境界は依頼の種類に応じて設計します。説明・診断・計画では調査と報告にとどめ、変更・構築・修正ではスコープ内の安全な作業と検証を進め、外部への書き込み、破壊的操作、大幅なスコープ拡張だけ事前確認の対象にします。調査、設計、実装、レビューなど現在の作業段階も区別し、意図しない越境を防ぎます。",
+        "ツールはタスクに関係するものだけを渡し、説明には用途、使用条件、重要な戻り値、エラー時の扱いを含めます。独立した読み取りは並列化して行動前に統合し、依存関係がある処理だけ直列化します。Programmatic Tool Callingは、大量データの絞り込み、重複排除、集計を小さなプログラム内で完結させ、モデルへ返す結果を圧縮できる場面に適しています。",
+        "Programmatic Tool Callingは、単発の呼び出し、途中結果が次の判断を左右する処理、承認が必要な操作、引用や生成物をそのまま残す処理には向きません。採用する場合は対象範囲、利用可能なツール、出力スキーマ、リトライ上限、直接呼び出しへ戻す条件を具体化し、program_outputと最終messageの両方を検証します。",
+        "根拠が必要な回答では、必要な証拠の種類と量、証拠不足時の振る舞いを定義し、見つからないことを存在しないことと混同しません。長時間タスクでは開始時に短い見通しを示し、大きな局面の変化だけを更新します。履歴の圧縮は区切りのよい時点で行い、前提が変わった後まで古い推論を引き継がないようにします。",
+        "reasoning effortは以前の設定を基準に1段階低い設定と比較し、lowは速度重視、mediumは起点、highやxhighは評価で改善した場合、maxは最難関タスクに限定する段階的な選び方が示されています。設定を上げる前に、成功条件、依存関係、ツールの振り分け、検証ループがプロンプトから欠けていないか確認します。",
+        "フロントエンドや視覚的な成果物では、既存のデザイントークン、コンポーネント、レスポンシブ挙動を保ち、依頼されていない機能や装飾を追加しません。完成前に実際にレンダリングし、崩れ、はみ出し、余白、欠落、一貫性を確認します。コード変更でもテスト、型チェック、lint、ビルドを行い、実行不能ならスモークテストや理由の説明で補います。",
+        "推奨プロンプトはRole、Personality、Goal、Success criteria、Constraints、Tools、Output、Stop rulesの8ブロックで構成します。実際の移行では、モデルだけを切り替えて既存評価の基準値を取り、不要な指示やツールを削り、測定された不具合に必要な最小限の指示だけを追加し、変更のたびに同じ評価を再実行します。一度に全面改稿せず、原因を切り分けられる小さな変更を重ねることが結論です。"
+      ],
+      "ogp": {
+        "image_url": "https://assets.st-note.com/production/uploads/images/309147693/rectangle_large_type_2_9158475f7d4d817d3bbccb9ef8930483.png?fit=bounds&quality=85&width=1280",
+        "title": "GPT-5.6公開直後の公式ドキュメントを読み解く——「プロンプト移行ガイド」徹底解説｜アイドリ | AI-Driven Lab",
+        "description": "本記事の対象    主な対象者：ChatGPTやOpenAI APIを業務で使っており、GPT-5.6への移行でプロンプトをどう見直すか迷っている読者を想定しています。    技術レベル：初級／中級／上級のうち、主に中級を想定しています。    前提知識：システムプロンプトやツール呼び出しといったAPI利用の基礎用語と、ChatGPTやAPI経由でのプロンプト運用の基本操作を理解していることを前提とします。    この記事で得られるもの：GPT-5.6向けにプロンプトのどこを削り、どこを変え、どこは変えなくてよいかを判断できるようになり、自社のプロンプト移行計画を立てる材料を得られます"
       }
     },
     {
@@ -747,7 +983,9 @@
     "genres": [
       "AIエージェント",
       "AIエージェント開発",
+      "AIセキュリティ",
       "AI活用",
+      "AI開発",
       "AI駆動開発",
       "CI/CD",
       "ITマネジメント",
@@ -758,10 +996,12 @@
       "システム設計",
       "ソフトウェア設計",
       "ブラウザ自動化",
+      "プロンプト設計",
       "検索拡張生成"
     ],
     "technologies": [
       "AGENTS.md",
+      "AI Fluency Framework",
       "AIエージェント",
       "AI時代のソフトウェア開発",
       "API設計",
@@ -770,12 +1010,16 @@
       "Agent Plugins",
       "Amazon Bedrock",
       "CDP",
+      "CI/CD",
       "ChatGPT",
       "ChatGPT Sites",
       "ChatGPT Work",
       "Claude",
+      "Claude Academy",
       "Claude Code",
+      "Claude Code SDK",
       "Claude Cowork",
+      "Claude Mods",
       "Claude Opus 5.5",
       "Cloudflare",
       "Cloudflare Browser Run",
@@ -793,11 +1037,13 @@
       "Durable Objects",
       "DynamoDB",
       "GLM-5.2",
+      "GPT-5.6",
       "Gemini Spark",
       "GitHub Actions",
       "Go",
       "Grok Bot",
       "HMAC",
+      "Hooks",
       "IT組織",
       "JWT",
       "Jev",
@@ -806,10 +1052,13 @@
       "MySQL",
       "OAuth 2.0",
       "OIDC",
+      "OpenAI API",
       "OpenID Connect",
+      "OpenTelemetry",
       "PKCE",
       "Playwright",
       "PostgreSQL",
+      "Programmatic Tool Calling",
       "Puppeteer",
       "Quint",
       "R2",
@@ -817,25 +1066,35 @@
       "RFC 9700",
       "RankMixer",
       "ReAct",
+      "Remote Control",
       "Ruby on Rails",
       "SQLite",
       "Skills",
       "TAKT",
+      "TypeScript",
+      "VS Code extension",
       "WebMCP",
       "mTLS",
       "mmap",
       "エンジニアリングマネジメント",
       "エージェントメモリ",
+      "オブザーバビリティ",
       "コードレビュー",
+      "サブエージェント",
       "ドメイン駆動設計",
       "ハーネスエンジニアリング",
       "フロー効率",
+      "プラグイン",
+      "プロンプトエンジニアリング",
       "マルチエージェント",
       "モデリング",
+      "モデル蒸留",
       "人材配置",
       "大規模言語モデル",
       "技術的負債",
       "推薦システム",
+      "推論モデル",
+      "推論時計算",
       "敵対的検証",
       "概念設計",
       "生成AI",
@@ -846,17 +1105,23 @@
       "開発生産性"
     ],
     "sources": [
+      "Claude by Anthropic",
       "Cloudflare Docs",
       "DataCamp",
       "Felix Rieseberg",
+      "GitHub (anthropics/claude-code)",
+      "OpenAI",
       "Qiita",
       "Speaker Deck",
+      "The Pragmatic Engineer",
       "Timee Product Team Blog",
+      "Torus Engineering",
       "X",
       "Zenn",
       "arXiv",
       "every Tech Blog",
-      "gihyo.jp"
+      "gihyo.jp",
+      "note"
     ]
   }
 }

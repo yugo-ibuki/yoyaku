@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "14b714b180b715362159f2688a20f35ff94af405d8faace2e7053614f561d52c",
+  "boundaryMethod": "Faster Whisper word timestamps cross-checked against ffmpeg silencedetect at -38 dB for 0.40 s; turn 9 and turn 11 boundaries also use ASR word transitions inside adjacent output",
+  "subjectiveListeningPerformed": false,
+  "turns": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "scriptText": "先生、ノートパソコンを閉じても、Claude Codeが働き続けるって本当？",
+      "asrText": "先生 ノートパソコンを閉じても クロードコードが働き続けるって 本当?",
+      "start": 0.0,
+      "end": 5.295,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 1; Claudeの表記差を除き文意と語順が一致"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "ASR 0.000-5.100; following -38 dB silence begins 5.295"}
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "scriptText": "本当です。クラウドセッションは、手元のパソコンではなく、クラウド側の環境で動きます。だから、ふたを閉じても処理は続きます。",
+      "asrText": "本当です クラウドセッションは 手元のパソコンではなく クラウド側の環境で動きます だから 蓋を閉じても処理は続きます",
+      "start": 6.109,
+      "end": 17.494,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segments 2-3 match the script after punctuation normalization"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 5.295-6.109 and 17.494-18.462 at -38 dB"}
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "scriptText": "料理を注文して、私は出かけても、厨房では作り続けてくれる感じ？",
+      "asrText": "料理を注文して 私は出かけても 中防では作り続けてくれる感じ?",
+      "start": 18.462,
+      "end": 23.58,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 4; 厨房の同音付近だけ誤字"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 17.494-18.462 and 23.580-24.368 at -38 dB"}
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "scriptText": "いい例えですね。途中の様子は、デスクトップ、ブラウザ、スマホから確認でき、別の端末でも同じセッションを続けて操作できます。",
+      "asrText": "いい例えですね。途中の様子はデスクトップ、ブラウザ、スマホから確認でき、別の端末でも同じセッションを続けて操作できます。",
+      "start": 24.368,
+      "end": 35.825,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 5 matches after punctuation normalization"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 23.580-24.368 and 35.825-36.433 at -38 dB"}
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "scriptText": "じゃあ、始める前に何を用意すればいいんですか？",
+      "asrText": "じゃあ始める前に何を用意すればいいんですか?",
+      "start": 36.433,
+      "end": 39.47,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 6 matches after punctuation normalization"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 35.825-36.433 and 39.470-40.149 at -38 dB"}
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "scriptText": "通常は、アクセスできるGitHubのリポジトリを選び、デスクトップなら実行先をローカルからクラウド環境へ切り替えて指示します。",
+      "asrText": "通常はアクセスできるGitHubのリポジトリを選び、デスクトップなら実行先をローカルからクラウド環境へ切り替えて指示します。",
+      "start": 40.149,
+      "end": 51.41,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 7 matches after punctuation normalization"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 39.470-40.149 and 51.410-52.161 at -38 dB"}
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "scriptText": "私のパソコンだけにある設定や、作りかけのファイルも見えるの？",
+      "asrText": "私のパソコンだけにある設定や作りかけのファイルも見えるの?",
+      "start": 52.161,
+      "end": 56.182,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 8 matches after punctuation normalization"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 51.410-52.161 and 56.182-56.852 at -38 dB"}
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "scriptText": "通常はGitHubから複製して始まるので、リポジトリにコミットしたものを使います。手元だけの設定やスクリプトは自動では入りません。ただし、ターミナルから手元のリポジトリを送る経路もあるので、開始方法は確認しましょう。",
+      "asrText": "通常はGitHubから複製して始まるので リポジトリにコミットしたものを使います 手元だけの設定やスクリプトは自動では入りません ただしターミナルから手元のリポジトリを送る経路もあるので 開始方法は確認しましょう",
+      "start": 56.852,
+      "end": 75.686,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segments 9-13 and independent Japanese CTC ASR both recognize スクリプト; final synchronized script differs from studio input スキル"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 56.182-56.852 and 75.686-76.192 at -38 dB; two ASR engines agree on disputed word"}
+    },
+    {
+      "id": 9,
+      "speakerId": "left_student",
+      "scriptText": "クラウドの作業場所は、自分向けに整えられるんですか？",
+      "asrText": "クラウドの作業場所は自分向けに整えられるんですか?",
+      "start": 76.192,
+      "end": 80.013,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 14 matches after punctuation normalization"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 75.686-76.192 and 80.013-80.974 at -38 dB"}
+    },
+    {
+      "id": 10,
+      "speakerId": "right_teacher",
+      "scriptText": "はい。クラウド環境という保存設定で、ネットワークの範囲、環境変数、起動前に走らせるセットアップスクリプトを用途ごとに決められます。",
+      "asrText": "はい クラウド環境という保存設定で ネットワークの範囲 環境変数 起動前に走らせる セットアップスクリプトを用途ごとに決められます",
+      "start": 80.974,
+      "end": 95.16,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segments 15-16 through word timestamp 95.240 and CTC cross-check match"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 80.013-80.974 and 95.160-95.952 at -38 dB"}
+    },
+    {
+      "id": 11,
+      "speakerId": "left_student",
+      "scriptText": "インターネットには、最初からどこへでも行けるの？",
+      "asrText": "インターネットには最初からどこへでもいけるの?",
+      "start": 95.952,
+      "end": 99.093,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 16 from word timestamp 95.460 and CTC cross-check match"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Speech resumes after 95.160-95.952 silence and ends at following silence 99.093"}
+    },
+    {
+      "id": 12,
+      "speakerId": "right_teacher",
+      "scriptText": "初期のTrustedは、GitHubや主なパッケージ配布元などに絞られます。ニュースやブログを調べる仕事なら、必要な接続先を許可する設定にします。必要な行き先だけにすると、外部サイトを扱う作業にも向いています。",
+      "asrText": "初期のトラストは ギットハブや主なパッケージ配布もとなどに絞られます ニュースやブログを調べる仕事なら、必要な接続先を許可する設定にします。必要な行き先だけにすると、外部サイトを扱う作業にも向いています。",
+      "start": 99.87,
+      "end": 118.51,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segments 17-19 match, with English term readings and orthographic substitutions"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 99.093-99.870 and 118.510-119.068 at -38 dB"}
+    },
+    {
+      "id": 13,
+      "speakerId": "left_student",
+      "scriptText": "見ていない間に動かすなら、便利なぶん心配もありますね。",
+      "asrText": "見ていない間に動かすなら、便利な分心配もありますね。",
+      "start": 119.068,
+      "end": 122.896,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segment 20 matches after orthographic normalization"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 118.510-119.068 and 122.896-123.742 at -38 dB"}
+    },
+    {
+      "id": 14,
+      "speakerId": "right_teacher",
+      "scriptText": "そうですね。接続先を絞るだけで作業が正しいとは限りません。終わったら会話、変更内容、テスト結果を見て、意図どおりか人が確かめましょう。",
+      "asrText": "そうですね。接続先を絞るだけで、作業が正しいとは限りません。終わったら会話変更内容 テスト結果を見て 糸通りか人が確かめましょう",
+      "start": 123.742,
+      "end": 138.126,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segments 21-23 match except 意図どおりの同音誤字"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 122.896-123.742 and 138.126-138.911 at -38 dB"}
+    },
+    {
+      "id": 15,
+      "speakerId": "left_student",
+      "scriptText": "まとめると、パソコンを閉じても動き、どの端末からでも追いかけられる。その代わり、GitHubに置くものとクラウド環境を先に整えるんですね。",
+      "asrText": "まとめるとパソコンを閉じても動き どの端末からでも追いかけられる その代わりGitHubに置くものと クラウド環境を先に整えるんですね",
+      "start": 138.911,
+      "end": 148.78,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper segments 24-25 match after punctuation normalization"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silences 138.126-138.911 and 148.780-149.591 at -38 dB"}
+    },
+    {
+      "id": 16,
+      "speakerId": "right_teacher",
+      "scriptText": "そのとおり。クラウドセッションは、席を離れても仕事を進められる仕組みです。リポジトリ、接続先、実行準備をそろえ、最後の確認までを一組で考えましょう。",
+      "asrText": "その通り クラウドセッションは席を離れても仕事を [Faster Whisper missing middle] 準備を揃え、最後の確認までを一組で考えましょう",
+      "start": 149.591,
+      "end": 163.875,
+      "textAssessment": {"status": "machine_compatible", "evidence": "Faster Whisper collapses 153.960-159.400 into one token, but independent Japanese CTC ASR recognizes 仕事を進められる仕組みです リポジトリ 接続先 実行準備をそろえ; waveform contains continued speech"},
+      "review": {"status": "machine_reviewed", "subjectiveListening": false, "evidence": "Boundary silence begins 148.780 and speech resumes 149.591; trailing silence begins 163.875; CTC resolves primary ASR omission"}
+    }
+  ]
+}

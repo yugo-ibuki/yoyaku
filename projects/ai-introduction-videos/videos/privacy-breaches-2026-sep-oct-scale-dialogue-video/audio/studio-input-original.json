@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "status": "prepared_not_executed",
+  "ui": "Google AI Studio Speech",
+  "sources": [
+    "https://jouhourouei.clipmaster.jp/months/2026-09",
+    "https://jouhourouei.clipmaster.jp/months/2026-10",
+    "https://www.cuenote.jp/information/news/unauthorizedaccess2.html",
+    "https://www.sourcenext.com/support/i/2026/1015_info/",
+    "https://www.temairazu.co.jp/pdf/1212/ir-news",
+    "https://www.caa.go.jp/policies/policy/consumer_policy/caution/caution_039"
+  ],
+  "language": "ja-JP",
+  "speakerMapping": {
+    "Speaker 1": {
+      "characterId": "left_student",
+      "visibleLabel": "",
+      "voice": "若めの女性 2",
+      "direction": "明るく自然な質問口調。落ち着いた会話として自然な速度で、数字や語尾まで明瞭に話す。被害者や企業をあざ笑わず、不安を煽らない。"
+    },
+    "Speaker 2": {
+      "characterId": "right_teacher",
+      "visibleLabel": "",
+      "voice": "話し相手の教授 3",
+      "direction": "落ち着いた自然な説明口調。数字、件数と人数、確認と可能性を明瞭に区別する。"
+    }
+  },
+  "fillerEnabled": false,
+  "ttsTurns": [
+    {
+      "id": 1,
+      "characterId": "left_student",
+      "studioSpeaker": "Speaker 1",
+      "ttsText": "最近、情報漏洩のニュース多すぎない？"
+    },
+    {
+      "id": 2,
+      "characterId": "right_teacher",
+      "studioSpeaker": "Speaker 2",
+      "ttsText": "うん、さすがに多いと感じるよ。九月と十月だけでも、情報漏洩や不正アクセスの発表が千六百件以上あるんだよ。"
+    },
+    {
+      "id": 3,
+      "characterId": "left_student",
+      "studioSpeaker": "Speaker 1",
+      "ttsText": "千六百件以上？一つ一つの規模も大きいの？"
+    },
+    {
+      "id": 4,
+      "characterId": "right_teacher",
+      "studioSpeaker": "Speaker 2",
+      "ttsText": "メール配信サービスの件なんて、延べ約五千百六十三万件。別の会員サイトでも、約二千二百五十二万件の情報が流出した可能性があるんだ。宿泊予約のシステムも、最大約四百四十五万人の情報が閲覧・取得された可能性がある。"
+    },
+    {
+      "id": 5,
+      "characterId": "left_student",
+      "studioSpeaker": "Speaker 1",
+      "ttsText": "メールも会員登録も旅行の予約も、身近なものばかりだよね。"
+    },
+    {
+      "id": 6,
+      "characterId": "right_teacher",
+      "studioSpeaker": "Speaker 2",
+      "ttsText": "五千百六十三万件って、一秒に一件数えても一年以上だよ。僕はもう、ただのニュースとして聞き流せないな。"
+    },
+    {
+      "id": 7,
+      "characterId": "left_student",
+      "studioSpeaker": "Speaker 1",
+      "ttsText": "登録したまま忘れてるサービス、結構あるんだよね。"
+    },
+    {
+      "id": 8,
+      "characterId": "right_teacher",
+      "studioSpeaker": "Speaker 2",
+      "ttsText": "僕なら、まず公式アプリやブックマークから案内を確認するかな。使い回してるパスワードは変えて、パスキーや多要素認証も使いたいね。利用明細も見ておきたい。メールやエスエムエスのリンクから、慌ててログインしないようにしよう。こたつから出なくても、そのくらいはできるしね。"
+    }
+  ]
+}

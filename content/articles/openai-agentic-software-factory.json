@@ -1,0 +1,36 @@
+{
+  "id": "openai-agentic-software-factory",
+  "url": "https://newsletter.pragmaticengineer.com/p/openai-software-factory",
+  "title": "Inside OpenAI’s agentic software factory",
+  "source": "The Pragmatic Engineer",
+  "genre": "AI駆動開発",
+  "technologies": [
+    "Codex",
+    "ChatGPT Work",
+    "AIエージェント",
+    "CI/CD",
+    "オブザーバビリティ"
+  ],
+  "reading_minutes": 17,
+  "created_at": "2026-09-25",
+  "updated_at": "2026-09-25",
+  "summary": [
+    "この記事はOpenAIのエンジニアリング責任者とエンジニア計7人への取材を基にしています。この要約はユーザー指定により、公開されている導入部と第1〜3章だけを対象とし、第4章以降は含みません。",
+    "財務、採用、法務など非エンジニア部門でのCodex利用率は4か月で約0%から90%へ伸び、ほぼ全社員がCodexまたはChatGPT Workを週次で利用しています。ただし社内版は多くの内部システムに接続され、外部提供版より高度な機能を持ちます。",
+    "Mac版・Windows版のCodexとChatGPT Work、長時間タスク、/goal、長いスレッドが普及を後押しし、4〜5月には利用率が60%から90%へ上昇しました。長時間動くエージェントがサブエージェントを起動するため、人間が直接並列管理する対象も減っています。",
+    "存在や用途を知らないawareness gapを口コミで埋め、役割別のスキルやプラグインを整備し、ドメイン専門家を開発チームへ加えることが非技術職への展開を支えました。一方で、CodexやChatGPT Workへの強い依存も生じています。",
+    "1月以降はIDEの利用が低下しました。CodexアプリはCLIとIDEの中間に位置する製品として始まり、6月にはファイル編集機能が追加されました。",
+    "PRの増加に伴い、一部のビルド、テスト、デプロイ基盤にかかる負荷は約6か月でおよそ10倍になり、バージョン管理、CI/CD、リリース工程が新たなボトルネックになりました。",
+    "OpenAIはPR、コードレビュー、デプロイの流れを再設計し、複数の専門エージェントによるレビューや、変更を本番環境まで見守り、必要に応じて独自のダッシュボードも作るエージェントを導入しています。",
+    "ネイティブモバイルアプリではAppleやGoogleの審査に数時間から数日かかるため、コード生成が高速化してもリリース速度が追いつかないという制約があります。",
+    "software factoryでは、人間が成果と優先順位を定義し、Codexがソースコード内のドキュメント、GitHub、Slack、Notion、Databricks、Datadog、ログ、社内スキルから文脈を集めて実装します。",
+    "エージェントはビルド、テスト、CI失敗の修正、PRの更新を継続し、perf harnessは問題が疑われるPRをSynthetics A/Bへ送り、性能への影響を評価します。",
+    "レビューにはドメイン別のエージェントを使い、変更リスクに応じてレビューの強度、人間による確認、コンプライアンス部門からの入力、低リスクPRの自動承認を振り分けます。",
+    "人間の承認後は変更単位のエージェントがデプロイと監視を担い、Perf Factoryが本番シグナルから回帰を検出して原因を分析し、修正を提案します。Sevbotは障害の文脈と緩和策を集めますが、現状では自律実行せず、オンコール担当者も残ります。"
+  ],
+  "ogp": {
+    "image_url": "https://substackcdn.com/image/fetch/$s_!Eiw9!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e73721e-e4d8-473f-a5a1-b6211c14f6ca_2048x1762.png",
+    "title": "Inside OpenAI’s agentic software factory",
+    "description": "A deepdive into how Codex has “taken over” OpenAI, how the frontier lab builds its agentic software factory, and the engineering challenges of one billion users. Details from inside OpenAI"
+  }
+}

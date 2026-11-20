@@ -1,0 +1,189 @@
+{
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "asrSha256": "6c2e384994682deb9fcbb9078f95c4e329cea4a46ada5b8b3c37720c40d8c3f6",
+  "method": {
+    "thresholdDbfs": -38.0,
+    "windowSeconds": 0.02,
+    "hopSeconds": 0.005
+  },
+  "note": "Waveform energy supports audio-specific reviewed boundaries. It is not subjective listening evidence.",
+  "turns": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "asrSlices": [
+        {
+          "segment": 0
+        }
+      ],
+      "asrRange": [
+        0.0,
+        3.12
+      ],
+      "activeRange": [
+        0.2,
+        3.245
+      ],
+      "precedingInactiveGapSeconds": 0.2,
+      "boundaryConfidence": "reviewed_contiguous_handoff"
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "asrSlices": [
+        {
+          "segment": 1
+        },
+        {
+          "segment": 2
+        }
+      ],
+      "asrRange": [
+        3.8,
+        12.7
+      ],
+      "activeRange": [
+        3.82,
+        12.685
+      ],
+      "precedingInactiveGapSeconds": 0.575,
+      "boundaryConfidence": "high"
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "asrSlices": [
+        {
+          "segment": 3
+        }
+      ],
+      "asrRange": [
+        13.12,
+        17.3
+      ],
+      "activeRange": [
+        13.305,
+        17.425
+      ],
+      "precedingInactiveGapSeconds": 0.62,
+      "boundaryConfidence": "high"
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "asrSlices": [
+        {
+          "segment": 4
+        },
+        {
+          "segment": 5
+        },
+        {
+          "segment": 6
+        }
+      ],
+      "asrRange": [
+        17.78,
+        37.08
+      ],
+      "activeRange": [
+        18.0,
+        37.075
+      ],
+      "precedingInactiveGapSeconds": 0.575,
+      "boundaryConfidence": "high"
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "asrSlices": [
+        {
+          "segment": 7
+        }
+      ],
+      "asrRange": [
+        37.08,
+        42.6
+      ],
+      "activeRange": [
+        37.545,
+        42.655
+      ],
+      "precedingInactiveGapSeconds": 0.47,
+      "boundaryConfidence": "high"
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "asrSlices": [
+        {
+          "segment": 8
+        },
+        {
+          "segment": 9
+        }
+      ],
+      "asrRange": [
+        43.2,
+        52.72
+      ],
+      "activeRange": [
+        43.25,
+        52.545
+      ],
+      "precedingInactiveGapSeconds": 0.595,
+      "boundaryConfidence": "high"
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "asrSlices": [
+        {
+          "segment": 10
+        }
+      ],
+      "asrRange": [
+        53.24,
+        56.84
+      ],
+      "activeRange": [
+        53.27,
+        57.0
+      ],
+      "precedingInactiveGapSeconds": 0.725,
+      "boundaryConfidence": "high"
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "asrSlices": [
+        {
+          "segment": 11
+        },
+        {
+          "segment": 12
+        },
+        {
+          "segment": 13
+        },
+        {
+          "segment": 14
+        },
+        {
+          "segment": 15
+        }
+      ],
+      "asrRange": [
+        57.42,
+        78.2
+      ],
+      "activeRange": [
+        57.54,
+        78.25
+      ],
+      "precedingInactiveGapSeconds": 0.54,
+      "boundaryConfidence": "high"
+    }
+  ]
+}

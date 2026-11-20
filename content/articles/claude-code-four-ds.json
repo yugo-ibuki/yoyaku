@@ -1,0 +1,34 @@
+{
+  "id": "claude-code-four-ds",
+  "url": "https://zenn.dev/karamage/articles/2ef2c2aea7dfdf",
+  "title": "Anthropic公式のClaude Code講座で学んだ「4つのD」",
+  "source": "Zenn",
+  "genre": "AI活用",
+  "technologies": [
+    "Claude Code",
+    "Claude Academy",
+    "AI Fluency Framework",
+    "生成AI"
+  ],
+  "reading_minutes": 12,
+  "created_at": "2026-09-03",
+  "updated_at": "2026-09-03",
+  "summary": [
+    "Anthropic公式の無料学習サイトClaude Academyには、AI Fluency、AIの能力と限界、Claude Code、MCP、APIなどのコースがあります。記事が取り上げる「4つのD」は、14レッスンとクイズ1本で約4時間の「AI Fluency: Framework & Foundations」で扱われます。",
+    "4つのDは単なるプロンプト術ではなく、AIに仕事を任せる際の立ち回りをDelegation、Description、Discernment、Diligenceの4段階で整理した枠組みです。外部研究者のRick Dakan氏とJoseph Feller氏が作ったAI Fluency FrameworkをAnthropicが公式教材に採用しています。",
+    "AIとの関わり方は、決まった作業を渡すAutomation、思考相手にするAugmentation、その先の判断ごと任せるAgencyの3種類に分けられます。Claude Codeは3つを行き来するため、自分が相談したいのか、作業や判断まで委ねたいのかを明確にしないと意図しない編集につながります。",
+    "記事はClaude Codeを「今日チームに入った優秀な新人」に例えます。幅広い技術を知り作業も速い一方、会社、コードベース、過去の議論という固有の文脈を知らず、不確かな内容も自信を持って答えるため、適切な委任、指示、レビュー、責任管理が必要です。",
+    "Delegationは、AIを使うか、何を渡し、何を人間の判断として残すかを最初に決める段階です。著者は、アーキテクチャ、命名規約、ライブラリ選定など長期的に影響する設計判断は人間が担い、決めた方針に沿う実装、テストの雛形、リファクタリングをAIへ渡す方針を示します。",
+    "Descriptionは依頼内容を、成果物を示すProduct、進め方を示すProcess、作業中の振る舞いや停止点を示すBehaviorの3層で記述する段階です。「プランニングのみ」「ファイルは編集しない」「受け入れ基準やテストを整理したら止まる」と明示すれば、AIの先走りを抑えられます。",
+    "Discernmentは、AIの成果物とそこへ至る過程を疑い、要件充足、勝手な前提、テストが保証する内容、制約違反、架空の事実がないかを人間が見極める段階です。AIは正誤にかかわらず流暢で自信を持って答えるため、動くことと正しいことを区別して差分やテストの中身を確認します。",
+    "DescriptionとDiscernmentは一度で終わらず、成果を見て依頼を書き直し、再びレビューするループとして回します。一発で完璧な出力を狙うより、同じセッションで修正点を伝えて2周目、3周目と精度を上げる方が速く、CLAUDE.md、自動テスト、読みやすい差分は往復コストを下げます。",
+    "Diligenceは、AIが関与しても公開する成果への最終責任を人間が負う段階です。AIへ渡せるデータか、ツールがデータをどう扱うかを確認し、必要な相手にはAI利用を伝え、重要な仕事では人間のレビューを省かないという行動を、訓練可能なスキルとして扱います。",
+    "Claude Codeで実践するなら、DelegationにはPlan modeと慎重な権限設定、DescriptionにはCLAUDE.md、/init、明示的な受け入れ基準と停止指示、Discernmentには差分・テスト・レビューコマンドの確認、Diligenceには機密情報の保護、AI関与の明示、人間レビューが対応します。",
+    "著者が過去に作ったナレッジ検索AIでは、人とAIの役割分担、利用者向けガイドとAIへの制約、回答品質の評価、誤回答への責任の所在がいずれも欠けていました。「たまに嘘をつく」という評判で信頼を失い、数カ月後には使われなくなった経験が、4つのDを欠く実害として紹介されています。",
+    "結論は、AI時代でも仕事を任せる本質は変わらず、丸投げを避け、良い依頼とレビューを重ねることが重要だというものです。Claude Codeがうまくいかないときは、何を任せるか、どう頼むか、どう見極めるか、誰が責任を持つかのどこが不足しているかを点検できます。"
+  ],
+  "ogp": {
+    "image_url": "https://res.cloudinary.com/zenn/image/upload/s--LpRD2Bob--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Anthropic%25E5%2585%25AC%25E5%25BC%258F%25E3%2581%25AEClaude%2520Code%25E8%25AC%259B%25E5%25BA%25A7%25E3%2581%25A7%25E5%25AD%25A6%25E3%2582%2593%25E3%2581%25A0%25E3%2580%258C4%25E3%2581%25A4%25E3%2581%25AED%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:karamage%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzc0NTAwMmJiMzQuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "title": "Anthropic公式のClaude Code講座で学んだ「4つのD」"
+  }
+}

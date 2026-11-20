@@ -83,6 +83,10 @@ export YOYAKU_REPOSITORY_URL=https://github.com/your-name/your-repository
 cargo run -p yoyaku -- enrich content/articles/my-article.json
 ```
 
+## 制作プロジェクト
+
+- [AI紹介動画](./projects/ai-introduction-videos/README.md): 猫対話による縦動画2本、共有画像素材、台本、音声、強制アラインメント、再現・同期検証手順
+
 ## テストとビルド
 
 ```bash

@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "status": "complete_machine_audio_and_visual_validation_passed",
+  "date": "2026-11-02",
+  "timezone": "Asia/Jayapura",
+  "generationUi": "Google AI Studio Speech in Chrome",
+  "project": "Private Services Dev",
+  "model": "gemini-3.8-flash-tts",
+  "input": {
+    "path": "audio/studio-input.json",
+    "sha256": "c6412fde810b1fae526bc485864a63f28bca4740fcf5ef5fd24148f4c579f8c7",
+    "blocks": 8
+  },
+  "scriptApproval": {
+    "path": "script-approval.json",
+    "sha256": "afd6cab79f4d8c7db8e316beecac4e781d7f06f75103ec614b44595e913c5685",
+    "approvedScriptSha256": "e38ff2e0631e41e7543ee593eb6e1544bb9f682e6d5d8abb30956f34a1e0af26"
+  },
+  "uiVerification": {
+    "date": "2026-11-01T15:24:24.246Z",
+    "project": "Private Services Dev",
+    "model": "gemini-3.8-flash-tts",
+    "speechBlocks": 8,
+    "textsMatched": true,
+    "stylesMatched": true,
+    "speakersMatched": true,
+    "fillerChecked": "false"
+  },
+  "speakerMapping": {
+    "Speaker 1": {
+      "characterId": "left_student",
+      "visibleLabel": "",
+      "voice": "若めの女性 2",
+      "direction": "明るく自然な質問口調。落ち着いた会話として自然な速度で、数字や語尾まで明瞭に話す。被害者や企業をあざ笑わず、不安を煽らない。"
+    },
+    "Speaker 2": {
+      "characterId": "right_teacher",
+      "visibleLabel": "",
+      "voice": "話し相手の教授 3",
+      "direction": "落ち着いた教授の声。自然な会話より少し速めのテンポで話す（従来の先生の話速より約10％速めが目安）。言葉をはっきり区切り、語尾まで明瞭に話す。文中の間を長く取りすぎず、文末や話者交代では自然な間を保つ。"
+    }
+  },
+  "fillerEnabled": false,
+  "billingAndPermissionsChanged": false,
+  "xUploadDeferredByUser": true,
+  "subjectiveFullListeningVerified": false,
+  "runCount": 1,
+  "adoptedAudio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "audioInfo": {
+    "duration": 78.6,
+    "sampleRate": 24000,
+    "channels": 1,
+    "sampleWidthBytes": 2,
+    "frames": 1886400
+  },
+  "download": {
+    "originalFilename": "Generated Audio November 02, 2026 - 12_26AM.wav",
+    "method": "AI Studio Download UI",
+    "copiedWithoutConversion": true
+  },
+  "screenshots": [
+    "audio/studio-input-verified.png",
+    "audio/ai-studio-generated.png"
+  ],
+  "uiAutoPlaybackObserved": true,
+  "completedVideo": {
+    "path": "privacy-breaches-2026-sep-oct-scale-cats.mp4",
+    "sha256": "d760976ed638bdf24bc91c82f368b58c59bde339de73c932922ff488fa93c3d1",
+    "durationSeconds": 78.6
+  },
+  "validation": {
+    "machineAudio": "qa/machine-qa.json",
+    "timeline": "qa/timeline-verification.json",
+    "visual": "qa/visual-review.json",
+    "unittestsPassed": 10,
+    "subjectiveFullListeningVerified": false
+  }
+}

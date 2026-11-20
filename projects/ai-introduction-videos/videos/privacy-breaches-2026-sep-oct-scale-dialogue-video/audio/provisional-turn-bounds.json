@@ -1,0 +1,54 @@
+{
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "status": "provisional_pending_text_review",
+  "turns": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "start": 0.2,
+      "end": 3.245
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "start": 3.82,
+      "end": 12.685
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "start": 13.305,
+      "end": 17.425
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "start": 18.0,
+      "end": 37.075
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "start": 37.545,
+      "end": 42.655
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "start": 43.25,
+      "end": 52.545
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "start": 53.27,
+      "end": 57.0
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "start": 57.54,
+      "end": 78.25
+    }
+  ]
+}

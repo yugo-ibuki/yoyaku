@@ -1,0 +1,165 @@
+{
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "asrSha256": "6c2e384994682deb9fcbb9078f95c4e329cea4a46ada5b8b3c37720c40d8c3f6",
+  "status": "machine_reviewed_no_subjective_listening",
+  "turns": [
+    {
+      "id": 1,
+      "speakerId": "left_student",
+      "asrSlices": [
+        {
+          "segment": 0
+        }
+      ],
+      "searchStart": 0,
+      "searchEnd": 3.5,
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR reproduces the news-too-many question. ローエー is a phonetic transcription of漏洩 rather than a different event claim. subjectiveListening=false."
+      },
+      "boundaryReview": "Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported."
+    },
+    {
+      "id": 2,
+      "speakerId": "right_teacher",
+      "asrSlices": [
+        {
+          "segment": 1
+        },
+        {
+          "segment": 2
+        }
+      ],
+      "searchStart": 3.6,
+      "searchEnd": 12.95,
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR1-2 preserves the subjectiveうん response, September/October, relevant announcements and1600件以上. うーん is performance elongation of the acknowledgment, not a meaning change. CTC supports the months and六百 component; full ASR explicitly1,600. No claim of1600 independent confirmed attacks is added; the exact1654 listing value is a separately approved visual. subjectiveListening=false."
+      },
+      "boundaryReview": "Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported."
+    },
+    {
+      "id": 3,
+      "speakerId": "left_student",
+      "asrSlices": [
+        {
+          "segment": 3
+        }
+      ],
+      "searchStart": 13.05,
+      "searchEnd": 17.65,
+      "textAssessment": {
+        "status": "confirmed_match",
+        "evidence": "Fresh ASR3 reproduces1600件以上 and the individual-scale question. subjectiveListening=false."
+      },
+      "boundaryReview": "Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported."
+    },
+    {
+      "id": 4,
+      "speakerId": "right_teacher",
+      "asrSlices": [
+        {
+          "segment": 4
+        },
+        {
+          "segment": 5
+        },
+        {
+          "segment": 6
+        }
+      ],
+      "searchStart": 17.7,
+      "searchEnd": 37.3,
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR4-6 preserves延べ5163万件,2252万件 possible exposure and最大445万人 possible viewing/acquisition. Local no-prompt ASR reproduces五千百六十三万件,二千二百五十二万件,四百四十五万人. Full ASR infection-site reading is an ASR disagreement: full CTC館員サイト, local ASR関インサイト and focused independent CTC23.7-24.65の会員さいとでも support the intended membership-site wording. No corporate/service name is spoken in the machine transcripts. 延べ/約/最大/可能性 and units remain distinct. subjectiveListening=false."
+      },
+      "boundaryReview": "Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported."
+    },
+    {
+      "id": 5,
+      "speakerId": "left_student",
+      "asrSlices": [
+        {
+          "segment": 7
+        }
+      ],
+      "searchStart": 37.35,
+      "searchEnd": 42.9,
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR infection-registration reading is reviewed against independent CTC: broad crop yields<unk>員登録 and focused38-39.35 yields家品登録. These phonetic/member-ending outputs do not supportセン of感染; the common member-registration phrase and canonical text are consistent with the source phrase. Rest of mail/travel/everyday-relevance sentence is reproduced. This is a machine spelling assessment, not subjective listening. subjectiveListening=false."
+      },
+      "boundaryReview": "Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported."
+    },
+    {
+      "id": 6,
+      "speakerId": "right_teacher",
+      "asrSlices": [
+        {
+          "segment": 8
+        },
+        {
+          "segment": 9
+        }
+      ],
+      "searchStart": 43,
+      "searchEnd": 52.9,
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR8-9 preserves5163万件,1秒に1件数えても1年以上 and the subjective not-just-news reaction. Independent CTC supports5千…/one-second/one-item/one-year sequence with orthographic errors. The comparison is arithmetic on count, not unique people. subjectiveListening=false."
+      },
+      "boundaryReview": "Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported."
+    },
+    {
+      "id": 7,
+      "speakerId": "left_student",
+      "asrSlices": [
+        {
+          "segment": 10
+        }
+      ],
+      "searchStart": 53.05,
+      "searchEnd": 57.2,
+      "textAssessment": {
+        "status": "confirmed_match",
+        "evidence": "Fresh ASR10 reproduces forgotten registrations and the subjective closing question. subjectiveListening=false."
+      },
+      "boundaryReview": "Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported."
+    },
+    {
+      "id": 8,
+      "speakerId": "right_teacher",
+      "asrSlices": [
+        {
+          "segment": 11
+        },
+        {
+          "segment": 12
+        },
+        {
+          "segment": 13
+        },
+        {
+          "segment": 14
+        },
+        {
+          "segment": 15
+        }
+      ],
+      "searchStart": 57.3,
+      "searchEnd": 78.6,
+      "textAssessment": {
+        "status": "reviewed_asr_disagreement",
+        "evidence": "Fresh ASR11-15 preserves official-app/bookmark check, reused passwords, passkeys/multi-factor authentication, statements, avoiding email/SMS login links and kotatsu. 多様素/利用名材 are recognition variants; independent CTC explicitly利用明細. ASR SNS differs from explicit TTSエスエムエス; broad and focused CTC bothエスエメース support the M consonant rather thanヌ, so adopted as an acronym recognition disagreement. No advice was omitted or rewritten. subjectiveListening=false."
+      },
+      "boundaryReview": "Fresh original-WAV ASR content plus waveform active interval; speaker identity independently supported by current voice evidence for all7 handoffs. No earlier edition timings were imported."
+    }
+  ],
+  "supportingEvidence": {
+    "audio/ctc-crosscheck.json": "f5ecff0ebca0df6721a696a5c228c8211381ebcf8b3fcd415cc328c3adf6a9e6",
+    "audio/asr-local-crosscheck.json": "a77622ca69ae1f3075f879e2d15e8ca8fc7693cd7e6b91da99bdea6eb630a02a",
+    "audio/phonetic-crosscheck.json": "8a255d2cd3e7deebe7afcfb855a2351f2d930d78f7fe820869da50d008bb2977",
+    "audio/voice-evidence.json": "3388669de3678102b959186f1af8238ec4e9473fbccc9f99d908147cb4187fea"
+  }
+}

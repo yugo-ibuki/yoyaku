@@ -1,0 +1,50 @@
+{
+  "audio": "audio/ai-studio-original.wav",
+  "audioSha256": "05ab63d0d16a988d9a73d788a9bdb75a5d4afcdba2eb1ec3b05ee5e81dfd5836",
+  "engine": "cf031e020336460d15a417eba710bbc5bb43be9a",
+  "note": "Independent CTC output is supporting machine evidence, not full subjective listening.",
+  "segments": [
+    {
+      "label": "T2千六百",
+      "start": 6.3,
+      "end": 12.9,
+      "text": "９月と十月だけでも情報路へや不政学接の発表が１六百権以上あるんだよ"
+    },
+    {
+      "label": "T4延べ五千百六十三万",
+      "start": 17.6,
+      "end": 22.9,
+      "text": "メールハ神サービスの兼なんて述べ約個百六３万県"
+    },
+    {
+      "label": "T4会員二千二百五十二万",
+      "start": 23.0,
+      "end": 29.5,
+      "text": "別の館員サイトでも約２２５２万県の情報が流出した可能性があるんだ"
+    },
+    {
+      "label": "T4最大四百四十五万人",
+      "start": 29.6,
+      "end": 37.2,
+      "text": "宿白予やくのシステもも最大約４４５問人の情報が奴ら取得された可能性がある"
+    },
+    {
+      "label": "T5会員登録",
+      "start": 37.2,
+      "end": 42.8,
+      "text": "メールも<unk>員登録も旅行の予約もかなものばかりだよね"
+    },
+    {
+      "label": "T6一秒一件一年",
+      "start": 43.0,
+      "end": 48.8,
+      "text": "５千１６３万県で一病に一軒重えても１年以上だよ"
+    },
+    {
+      "label": "T8明細SMS",
+      "start": 68.3,
+      "end": 75.0,
+      "text": "利用明細も見ておきたいメールアエスエメースのリクから慌ててログインしないようにしよう"
+    }
+  ]
+}

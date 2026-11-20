@@ -1,0 +1,4 @@
+interface:
+  display_name: "動物の会話動画を制作"
+  short_description: "動物と場面を指定して、会話動画を制作・検証"
+  default_prompt: "Use $create-animal-dialogue-video to create a dialogue video with my chosen animal characters, scene, voices, and source material."

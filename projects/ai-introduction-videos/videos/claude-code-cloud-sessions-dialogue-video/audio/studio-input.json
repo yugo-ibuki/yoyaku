@@ -1,0 +1,149 @@
+{
+  "recorded_at_utc": "2026-09-27T09:51:35.333307+00:00",
+  "source_article": "https://zenn.dev/goat_eat_any/articles/claude-code-cloud-sessions",
+  "ui": "Google AI Studio Speech",
+  "account_slot_observed": "u/0",
+  "project_observed": "private-services-dev",
+  "model_observed": "gemini-3.8-flash-tts",
+  "generation_strategy": "single_run",
+  "speaker_map": [
+    {
+      "character_id": "left_student",
+      "visible_label": "生徒",
+      "studio_speaker": "Speaker 1",
+      "voice": "若めの女性 2",
+      "style": ""
+    },
+    {
+      "character_id": "right_teacher",
+      "visible_label": "先生",
+      "studio_speaker": "Speaker 2",
+      "voice": "話し相手の教授 3",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    }
+  ],
+  "turns": [
+    {
+      "id": 1,
+      "character_id": "left_student",
+      "studio_speaker": "Speaker 1",
+      "text": "先生、ノートパソコンを閉じても、Claude Codeが働き続けるって本当？",
+      "style": ""
+    },
+    {
+      "id": 2,
+      "character_id": "right_teacher",
+      "studio_speaker": "Speaker 2",
+      "text": "本当です。クラウドセッションは、手元のパソコンではなく、クラウド側の環境で動きます。だから、ふたを閉じても処理は続きます。",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    },
+    {
+      "id": 3,
+      "character_id": "left_student",
+      "studio_speaker": "Speaker 1",
+      "text": "料理を注文して、私は出かけても、厨房では作り続けてくれる感じ？",
+      "style": ""
+    },
+    {
+      "id": 4,
+      "character_id": "right_teacher",
+      "studio_speaker": "Speaker 2",
+      "text": "いい例えですね。途中の様子は、デスクトップ、ブラウザ、スマホから確認でき、別の端末でも同じセッションを続けて操作できます。",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    },
+    {
+      "id": 5,
+      "character_id": "left_student",
+      "studio_speaker": "Speaker 1",
+      "text": "じゃあ、始める前に何を用意すればいいんですか？",
+      "style": ""
+    },
+    {
+      "id": 6,
+      "character_id": "right_teacher",
+      "studio_speaker": "Speaker 2",
+      "text": "通常は、アクセスできるGitHubのリポジトリを選び、デスクトップなら実行先をローカルからクラウド環境へ切り替えて指示します。",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    },
+    {
+      "id": 7,
+      "character_id": "left_student",
+      "studio_speaker": "Speaker 1",
+      "text": "私のパソコンだけにある設定や、作りかけのファイルも見えるの？",
+      "style": ""
+    },
+    {
+      "id": 8,
+      "character_id": "right_teacher",
+      "studio_speaker": "Speaker 2",
+      "text": "通常はGitHubから複製して始まるので、リポジトリにコミットしたものを使います。手元だけの設定やスキルは自動では入りません。ただし、ターミナルから手元のリポジトリを送る経路もあるので、開始方法は確認しましょう。",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    },
+    {
+      "id": 9,
+      "character_id": "left_student",
+      "studio_speaker": "Speaker 1",
+      "text": "クラウドの作業場所は、自分向けに整えられるんですか？",
+      "style": ""
+    },
+    {
+      "id": 10,
+      "character_id": "right_teacher",
+      "studio_speaker": "Speaker 2",
+      "text": "はい。クラウド環境という保存設定で、ネットワークの範囲、環境変数、起動前に走らせるセットアップスクリプトを用途ごとに決められます。",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    },
+    {
+      "id": 11,
+      "character_id": "left_student",
+      "studio_speaker": "Speaker 1",
+      "text": "インターネットには、最初からどこへでも行けるの？",
+      "style": ""
+    },
+    {
+      "id": 12,
+      "character_id": "right_teacher",
+      "studio_speaker": "Speaker 2",
+      "text": "初期のTrustedは、GitHubや主なパッケージ配布元などに絞られます。ニュースやブログを調べる仕事なら、必要な接続先を許可する設定にします。必要な行き先だけにすると、外部サイトを扱う作業にも向いています。",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    },
+    {
+      "id": 13,
+      "character_id": "left_student",
+      "studio_speaker": "Speaker 1",
+      "text": "見ていない間に動かすなら、便利なぶん心配もありますね。",
+      "style": ""
+    },
+    {
+      "id": 14,
+      "character_id": "right_teacher",
+      "studio_speaker": "Speaker 2",
+      "text": "そうですね。接続先を絞るだけで作業が正しいとは限りません。終わったら会話、変更内容、テスト結果を見て、意図どおりか人が確かめましょう。",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    },
+    {
+      "id": 15,
+      "character_id": "left_student",
+      "studio_speaker": "Speaker 1",
+      "text": "まとめると、パソコンを閉じても動き、どの端末からでも追いかけられる。その代わり、GitHubに置くものとクラウド環境を先に整えるんですね。",
+      "style": ""
+    },
+    {
+      "id": 16,
+      "character_id": "right_teacher",
+      "studio_speaker": "Speaker 2",
+      "text": "そのとおり。クラウドセッションは、席を離れても仕事を進められる仕組みです。リポジトリ、接続先、実行準備をそろえ、最後の確認までを一組で考えましょう。",
+      "style": "落ち着いた40代の男性教師のような低めで安定した声。ゆっくり丁寧に、感情の起伏を抑えて説明する。"
+    }
+  ],
+  "result": {
+    "downloaded_original": "audio/ai-studio-original.wav",
+    "sha256": "14b714b180b715362159f2688a20f35ff94af405d8faace2e7053614f561d52c",
+    "duration_seconds": 164.2,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate_hz": 24000,
+    "ui_result_observed": "Music player 2:44; Download enabled",
+    "download_source_filename": "Generated Audio September 27, 2026 - 6_53PM.wav"
+  }
+}
