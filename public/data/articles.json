@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-11-05T00:00:00Z",
+  "generated_at": "2026-11-20T00:00:00Z",
   "articles": [
+    {
+      "id": "reading-less-preparing-more",
+      "url": "https://zenn.dev/hiromoo/articles/reading-less-preparing-more",
+      "title": "最近、コードを真面目に読まなくなった",
+      "source": "Zenn",
+      "genre": "AI駆動開発",
+      "technologies": [
+        "生成AI",
+        "Skills",
+        "コードレビュー"
+      ],
+      "reading_minutes": 9,
+      "created_at": "2026-11-20",
+      "updated_at": "2026-11-20",
+      "summary": [
+        "著者はAIの差分を精読する時間を減らし、実装前の前提と評価方法を整える時間を増やしている。",
+        "「AIのコードは大体正しい」は著者の実感で、正解率を測定した結果ではない。",
+        "動作確認と全行の精読を分け、テスト結果を見て判断が難しい箇所や影響の大きい箇所を深く読む。",
+        "HLEやSwarmEvolveを例に、AIとツール・評価の組み合わせに注目する。コードレビューの効果を直接示す研究ではない。",
+        "未指定の言語や画面の振る舞いはAIが推測するため、合理的な実装でも依頼者の期待とずれることがある。",
+        "対象者と解く問題、表示言語、完成条件、既存の仕組みや運用の制約を、実装前に共有する。",
+        "要件には今回作るものと条件を、Skillには繰り返し使う設計方針・手順・検証方法と理由を残す。",
+        "Skillどおりに実装される保証はなく、期待とずれたらコードに加えて要件やSkillも見直す。",
+        "コードを理解する力は設計や原因分析に使い、実装後の細部確認から実装前の判断へ時間配分を見直す。"
+      ],
+      "ogp": {
+        "image_url": "https://res.cloudinary.com/zenn/image/upload/s--kRTjrdWd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%2580%25E8%25BF%2591%25E3%2580%2581%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E7%259C%259F%25E9%259D%25A2%25E7%259B%25AE%25E3%2581%25AB%25E8%25AA%25AD%25E3%2581%25BE%25E3%2581%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%2580%25E3%2581%259F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzhjMTA1YTk5ZmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+        "title": "最近、コードを真面目に読まなくなった"
+      }
+    },
     {
       "id": "formal-methods-domain-modeling-aggregates",
       "url": "https://zenn.dev/nrs/articles/33ba79c8b2542e",
@@ -796,6 +826,7 @@
       "mmap",
       "エンジニアリングマネジメント",
       "エージェントメモリ",
+      "コードレビュー",
       "ドメイン駆動設計",
       "ハーネスエンジニアリング",
       "フロー効率",
